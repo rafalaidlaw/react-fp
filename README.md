@@ -1,239 +1,54 @@
-# funparty
+# Monster Tamer
 
-Phaser 3 Tilebase Experiment
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Project Setup:
-☐ create basic html page with minor css
-☐ running project on local web server
-☐ add phaser 3 library
-☐ create a basic phaser 3 game instance
-☐ add jsconfig to get phaser 3 types and intellisense
+Monster Tamer - Pokemon like RPG Tutorial with Phaser 3
 
-Game Project Assets:
-☐ download game assets and add to project
-☐ show links to where assets can be found
+A Pokemon like game created using [Phaser 3](https://github.com/photonstorm/phaser)!
 
-Battle System:
-☐ load game assets
-☐ create battle scene layout
-☐ create dialog menu
-☐ create option menu
-☐ create monster attack move list
-☐ handle player input
-☐ code optimization - move logic to components
-☐ create health component
-☐ create background component
-☐ create monster components
-☐ adding basic attack logic
-☐ taking damage and monster knock out
-☐ battle state machine
-☐ what is a finite state machine
-☐ review the battle states and what each one represents
-☐ implement each state
-☐ add item, flee, and monster states
-☐ player input improvements
-☐ battle scene polish
-☐ text animations
-☐ monster animations
-☐ skip animations
-☐ attack animations
-☐ scene transitions
-☐ custom fonts
+This is the official code repository for the [Monster Tamer - Pokemon like RPG Tutorial with Phaser 3](https://www.youtube.com/playlist?list=PLmcXe0-sfoSgq-pyXrFx0GZjHbvoVUW8t) series available on YouTube.
 
-World Scene:
-☐ load level background
-☐ create player
-☐ handle player input
-☐ camera movement
-☐ handle grid based movement
-☐ handle collisions
-☐ add wild monster encounter logic
-☐ store player position in data manager
+## Local Setup
 
-Level Development With Tiled:
-☐ Basic level design concepts
-☐ Add collision layer
-☐ Add custom types to Tiled
-☐ Add game objects
-☐ Add npcs
-☐ Exporting level images and JSON
+This project is currently setup to require a very minimal amount of tools to run the web application. The main tools that are needed are:
 
-World Scene Part 2:
-☐ add interactive game objects
-☐ dialog ui component
-☐ add npcs
-☐ add npc dialog
-☐ add npc movement
+- IDE (Integrated Development Environment), or any program you can use to edit code.
+  - In the video tutorial series linked above, I use the [VS Code](https://code.visualstudio.com/), and this code base has some out of the box settings and extensions that are recommended for formatting and running the code.
+- A local web server, this is needed due to browser security and how we are loading files with the Phaser 3 framework for our game.
+  - You can use any local web server you are familiar with, however if you use VS Code, I recommend the following extension [LiveServer by Ritwick Dey](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-Title Screen:
-☐ create basic title screen
-☐ add options menu
-☐ save & loading options
-☐ connecting option data to battle scene
+### Downloading Assets
 
-Bug Fixes Part 1:
-☐ battle scene - health bar value when battle starts
-☐ health bar - animation when value of delay is provided
-☐ battle scene - at battle start player can provide input
-☐ world scene - player movement, handle when only sprite direction changes
+By default, none of the audio and image assets are included in the code repository. As the size of the project grows, it was chosen to omit these files and to instead provide a link to zipped folder that contains the assets that are used in this project. You find the latest assets for this game here: [Latest Game Assets](https://github.com/devshareacademy/monster-tamer/releases/download/assets/all-game-assets.zip).
 
-Tools Part 1:
-☐ using tweakpane for testing
-☐ tweakpane basics
-☐ positioning game objects
-☐ monster attacks
-☐ animations
-☐ util function for moving game objects
+After you have downloaded the assets, you will need to place those folders in the `/assets` folder.
 
-Saving & Loading:
-☐ add game menu with option to save game
-☐ update menu scene with continue option to load game
-☐ on new game, we should reset the player data (pos, monsters, etc)
+## How To Play
 
-Monster Party & Monster Detail Scenes:
-☐ create monster party scene
-☐ allow player to select a monster in the scene
-☐ create monster detail scene
-☐ connect monster detail scene to monster party scene
-☐ add game menu option for viewing monster party scene
+Currently, the only supported way to play the game is with a Keyboard. The game has not been tested with a Gamepad at this time, but will be supported in the future.
 
-Inventory:
-☐ create class for items and inventory
-☐ create ui screen for viewing items
-☐ update menu to have view bag option
-☐ update data manager to allow saving of inventory items
-☐ update ui screen to allow player to use items
+### Controls
 
-Battle Scene Part 2:
-☐ using items
-☐ running away
-☐ enemy random attack
-☐ player faint
-☐ attacking order
-☐ update data manager to persist monster data and current stats
-☐ dynamic monster data based on player party and encounter
+| Keys                                   | Description                                                                                           |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Arrow Keys (Up, Down, Left, and Right) | While in battle, these keys will move the input cursor, which allows the player to select the option. |
+| Space                                  | While in battle, this key confirm the currently selected action.                                      |
+| Shift                                  | While in battle, this key acts as a back key and allows players to navigate back the previous option. |
 
-Audio:
-☐ adding background music
-☐ adding battle music
-☐ adding attack effects
-☐ connecting audio options to settings
+## Credits
 
-World Scene Part 3:
-☐ advanced wild monster encounter logic
-☐ buildings
-☐ items in the field
-☐ npc event data structure
-☐ respawn next to npc
+This project uses both assets I developed as well as other assets that have been created by some wondering creators. This project would not have been possible without the following people/resources:
 
-Leveling & Experience:
-☐ review math for leveling and exp gain
-☐ update monseters json file and types to include exp info
-☐ add new assets for exp bar
-☐ refactor hp bar into re-usable class
-☐ update battle scene to display exp bar
-☐ update monster details scene to display exp bar
-☐ gain exp when battle is over
-☐ add new battle state for tracking
-☐ new leveling utils for updates
-☐ update monster classes to support
-☐ update battle menu ui to have wordwrap
+| Asset    | Author | Link                                                                         |
+| -------- | ------ | ---------------------------------------------------------------------------- |
+| Fonts    | Kenney | [Kenney Fonts](https://www.kenney.nl/assets/kenney-fonts)                    |
+| UI Panel | Kenney | [Kenney UI Space Pack](https://www.kenney.nl/assets/ui-pack-space-expansion) |
 
-Multiple Monsters:
-☐ load new assets
-☐ battle scene
-☐ battle monster class
-☐ add support for switching monster details
-☐ player battle monster class
-☐ add support for switching monster details
-☐ update deatch animation to hide health bar components
-☐ battle menu
-☐ update switch monster logic to align with flee attempt
-☐ battle scene
-☐ new state for switching monsters and scene resume logic
-☐ update existing states to support switching active monster
-☐ update existing logic for switching monster when active monster is knocked out
-☐ update logic tied to exp gain and message ordering
-☐ add ui to show number of monsters in party
-☐ monster party scene
-☐ add support for selecting monster for switching active monster during battle
-☐ world scene
-☐ refactor world menu into reusable component
-☐ create confirmation sub menu
-☐ switch monsters positions in party
-☐ release monster into the wild
+## Issues
 
-Catching Monsters:
-☐ review feature and load assets
-☐ item and monster model updates
-☐ add category to items
-☐ add new item type for capture
-☐ update monster id field to be a string
-☐ add new item to json data
-☐ add new item to data manager
-☐ create ball class
-☐ test new animations in test scene
-☐ add new animations to battle monster class
-☐ inventory scene
-☐ support for capture items
-☐ safe guard if monster party is full
-☐ battle menu
-☐ support to get used item details
-☐ battle scene
-☐ new battle states for using items
-☐ new battle state for catching monster with stubbed logic
-☐ review monster catching logic
+For any issues you encounter, please open a new [GitHub Issue](https://github.com/devshareacademy/monster-tamer/issues) on this project.
 
-Cutscenes & In Game Events:
-☐ update npc animation logic
-☐ add new npc animations to animation json file
-☐ update npc json file to support animation key prefix
-☐ update npc class to support animation prefix
-☐ update map data
-☐ update tilemap to show event areas
-☐ update world scene to create event zone areas
-☐ update world scene update logic to check for overlaps with event zones
-☐ story events
-☐ create events json file for cutscenes
-☐ add events data types
-☐ update data utils for parsing events data
-☐ update data manager for viewed events
-☐ update npc class to support custom movement path
-☐ update world scene to handle custom events
-☐ story flags
-☐ update data manager for story flags
-☐ update npc json file to support required story flags
-☐ update events json file to support setting and removing flags
-☐ add data types for story flags
-☐ cutscenes
-☐ create new cutscene class and trigger from world scene
-☐ update dialog ui to be a new scene
+## Questions, Comments, and Suggestions
 
-Full Screen Support:
-☐ update controls to support full screen button
-☐ update base scene to launch full screen mode
-
-Bug Fixes Part 2:
-☐ fix bug with resetting battle scene state
-☐ fix beach asset file name
-
-Multiple Encounter Areas & Special Tiles:
-☐ tiled updates
-☐ support multiple encounter zones
-☐ new class with tile type
-☐ update to support multiple encounter zones
-☐ import new spritesheet
-☐ refactor encounter check to start before player moves
-☐ add grass tiles
-
----
-
-Possible Future Content:
-☐ shops
-☐ battle npcs
-☐ monster encyclopedia
-☐ monster league/gyms
-
----
-
-## ☐ ✔ ✘
+For any questions, comments, or issues on the code in this project
+If you have any questions, comments, or suggestions for future content, please feel free to open a new [GitHub Discussion](https://github.com/devshareacademy/monster-tamer/discussions) on this project.
