@@ -5,11 +5,13 @@ import { BattleScene } from './scenes/battle-scene.js';
 
 const game = new Phaser.Game({
   type: Phaser.CANVAS,
-  pixelArt: false,
+  pixelArt: true,
   scale: {
     parent: 'game-container',
-    width: 1024,
-    height: 576,
+    // width: 1024,
+    // height: 576,
+    width: 320,
+    height: 180,
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
