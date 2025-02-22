@@ -47,13 +47,21 @@ export class PreloadScene extends Phaser.Scene {
     );
 
     // monster assets
-    this.load.image(
-      MONSTER_ASSET_KEYS.CARNODUSK,
-      `${monsterTamerAssetPath}/monsters/carnodusk.png`
+    this.load.spritesheet(
+      MONSTER_ASSET_KEYS.ENEMY,
+      `${monsterTamerAssetPath}/monsters/carnodusk.png`,
+      {
+        frameWidth: 64,
+        frameHeight: 64,
+      }
     );
-    this.load.image(
-      MONSTER_ASSET_KEYS.IGUANIGNITE,
-      `${monsterTamerAssetPath}/monsters/iguanignite.png`
+    this.load.spritesheet(
+      MONSTER_ASSET_KEYS.ORPHAN,
+      `${monsterTamerAssetPath}/monsters/iguanignite.png`,
+      {
+        frameWidth: 29,
+        frameHeight: 35,
+      }
     );
   }
 

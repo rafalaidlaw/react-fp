@@ -15,10 +15,13 @@ export class BattleScene extends Phaser.Scene {
   create() {
     console.log(`[${BattleScene.name}:create] invoked`);
     // create main background
-    this.add.image(0, 0, BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0);
+    this.add.sprite(0, 0, BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0);
 
     // render out the player and enemy monsters
-    this.add.image(768, 144, MONSTER_ASSET_KEYS.CARNODUSK, 0);
-    this.add.image(256, 316, MONSTER_ASSET_KEYS.IGUANIGNITE, 0).setFlipX(true);
+    this.add.sprite(240, 50, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1.5);
+    this.add
+      .image(75, 112, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .setFlipX(true)
+      .setScale(2);
   }
 }
