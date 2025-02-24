@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.15">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="2382" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="924" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,11 +32,68 @@
         <mxCell id="c4BANhSZFIQ7KN4WRA-t-1" value="Orphodex&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Using react fundamentals course to make&lt;/div&gt;&lt;div&gt;pokedex for orphans where I will. be able to keep my daily orphan drawings&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="410" width="130" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="lMN6it-LYemtHTq4qIZc-1" value="8 Gyms&lt;div&gt;Are churches following other religions. Once youj defeat the cult leader your cross or effiigy is raised on top of church like mario flag when clearing a level&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lMN6it-LYemtHTq4qIZc-1" value="8 Gyms&lt;div&gt;Are churches following other religions. Once youj defeat the cult leader your cross or effiigy is raised on top of church like mario flag when clearing a level&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="420" width="130" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="lMN6it-LYemtHTq4qIZc-2" value="&lt;div&gt;8 Types&lt;/div&gt;&lt;div&gt;Each gym has type and a biome.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Top of screen London has steam Orphans.&lt;/div&gt;&lt;div&gt;They&#39;re god is commerce.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Volcano Biome&lt;br&gt;Has Ash and Fire types. Their God is Ancient Balrog.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Teal Area&lt;/div&gt;&lt;div&gt;Twighlight Type. Focus on sleep&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;French War&lt;br&gt;Napoleonic area war torn.&lt;br&gt;God of War&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Snow Area&lt;br&gt;&lt;br&gt;&lt;br&gt;Myst Area&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hell ARea&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heaven Area&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lMN6it-LYemtHTq4qIZc-2" value="&lt;div&gt;8 Types&lt;/div&gt;&lt;div&gt;Each gym has type and a biome.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Top of screen London has steam Orphans.&lt;/div&gt;&lt;div&gt;They&#39;re god is commerce.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Volcano Biome&lt;br&gt;Has Ash and Fire types. Their God is Ancient Balrog.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Teal Area&lt;/div&gt;&lt;div&gt;Twighlight Type. Focus on sleep&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;French War&lt;br&gt;Napoleonic area war torn.&lt;br&gt;God of War&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Snow Area&lt;br&gt;&lt;br&gt;&lt;br&gt;Myst Area&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hell ARea&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heaven Area&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="380" width="130" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-1" value="BP State Machine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1160" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-2" value="Info" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1340" as="sourcePoint" />
+            <mxPoint x="200" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-6" value="Info" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1392" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1432" as="sourcePoint" />
+            <mxPoint x="200" y="1482" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-8" value="Info" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1482" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1522" as="sourcePoint" />
+            <mxPoint x="200" y="1572" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-10" value="Info" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1610" as="sourcePoint" />
+            <mxPoint x="200" y="1660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-12" value="Info" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1662" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1702" as="sourcePoint" />
+            <mxPoint x="200" y="1752" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-14" value="Info" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1752" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1dcjqhPWXCqPS0pfsLZp-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1792" as="sourcePoint" />
+            <mxPoint x="200" y="1842" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
