@@ -61,9 +61,9 @@ export class BattleScene extends Phaser.Scene {
     });
     this.add.container(0, 0, [
       this.add
-        .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
+        .image(15, 10, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
         .setOrigin(0)
-        .setScale(1, 0.8),
+        .setScale(0.35, 0.4),
       enemyMonsterName,
       this.#createHealth(34, 34),
       this.add.text(enemyMonsterName.width + 35, 23, 'L5', {
