@@ -59,8 +59,8 @@ export class PreloadScene extends Phaser.Scene {
       MONSTER_ASSET_KEYS.ORPHAN,
       `${monsterTamerAssetPath}/monsters/iguanignite.png`,
       {
-        frameWidth: 29,
-        frameHeight: 35,
+        frameWidth: 58,
+        frameHeight: 70,
       }
     );
   }

@@ -20,11 +20,11 @@ export class BattleScene extends Phaser.Scene {
     this.add.sprite(0, 0, BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0);
 
     // render out the player and enemy monsters
-    this.add.sprite(240, 50, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1.5);
+    this.add.sprite(230, 60, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .image(75, 112, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .image(90, 105, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
-      .setScale(2);
+      .setScale(1);
 
     // render out the player health bar
     const playerMonsterName = this.add.text(30, 20, MONSTER_ASSET_KEYS.ORPHAN, {
@@ -32,10 +32,10 @@ export class BattleScene extends Phaser.Scene {
       fontSize: '32px',
     });
     this.add
-      .container(130, 110, [
-        this.add
-          .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
-          .setOrigin(0),
+      .container(2242, 80, [
+        // this.add
+        //   .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
+        //   .setOrigin(0),
         playerMonsterName,
         this.#createHealth(34, 34),
         this.add.text(playerMonsterName.width + 35, 23, 'L5', {
@@ -54,7 +54,8 @@ export class BattleScene extends Phaser.Scene {
           })
           .setOrigin(1, 0),
       ])
-      .setScale(0.3, 0.3);
+      .setScale(0.11, 0.2)
+      .setRotation(1.57);
 
     // render out the enemy health bar
     const enemyMonsterName = this.add.text(30, 20, MONSTER_ASSET_KEYS.ENEMY, {
@@ -62,11 +63,11 @@ export class BattleScene extends Phaser.Scene {
       fontSize: '32px',
     });
     this.add
-      .container(30, 13, [
-        this.add
-          .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
-          .setOrigin(0)
-          .setScale(1, 0.8),
+      .container(2230, 13, [
+        // this.add
+        //   .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
+        //   .setOrigin(0)
+        //   .setScale(1, 0.8),
         enemyMonsterName,
         this.#createHealth(34, 34),
         this.add.text(enemyMonsterName.width + 35, 23, 'L5', {
@@ -79,7 +80,8 @@ export class BattleScene extends Phaser.Scene {
           fontStyle: 'italic',
         }),
       ])
-      .setScale(0.3, 0.3);
+      .setScale(0.11, 0.2)
+      .setRotation(1.57);
   }
 
   #createHealth(x, y) {
