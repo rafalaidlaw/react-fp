@@ -29,7 +29,7 @@ export class PreloadScene extends Phaser.Scene {
     // battle assets
     this.load.image(
       BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND,
-      `${kenneysAssetPath}/ui-space-expansion/custom-ui.png`
+      `${monsterTamerAssetPath}/battle-backgrounds/syringe-healthbar.png`
     );
 
     // health bar assets
@@ -43,7 +43,7 @@ export class PreloadScene extends Phaser.Scene {
     );
     this.load.image(
       HEALTH_BAR_ASSET_KEYS.LEFT_CAP,
-      `${kenneysAssetPath}/ui-space-expansion/barHorizontal_green_left.png`
+      `${monsterTamerAssetPath}/battle-backgrounds/syringe-nubbin.png`
     );
 
     // monster assets

@@ -13,93 +13,57 @@ export class BattleScene extends Phaser.Scene {
       key: SCENE_KEYS.BATTLE_SCENE,
     });
   }
-
+  let;
   create() {
+    let bill = [
+      this.add
+        .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
+        .setOrigin(0),
+      this.add
+        .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
+        .setOrigin(0),
+    ];
+    let bob = [];
+    bob = this.#nubbinCreate();
+    console.log(bob.map((x) => eval(x)));
     console.log(`[${BattleScene.name}:create] invoked`);
     // create main background
     this.add.sprite(0, 0, BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0);
 
     // render out the player and enemy monsters
-    this.add.sprite(230, 60, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
+    this.add.sprite(239, 98, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .image(90, 105, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .image(86, 102, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
-    // render out the player health bar
-    const playerMonsterName = this.add.text(30, 20, MONSTER_ASSET_KEYS.ORPHAN, {
-      color: '#7E3D3F',
-      fontSize: '32px',
-    });
-    this.add
-      .container(2242, 80, [
-        // this.add
-        //   .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
-        //   .setOrigin(0),
-        playerMonsterName,
-        this.#createHealth(34, 34),
-        this.add.text(playerMonsterName.width + 35, 23, 'L5', {
-          color: '#ED474B',
-          fontSize: '28px',
-        }),
-        this.add.text(30, 55, 'HP', {
-          color: '#FF6505',
-          fontSize: '24px',
-          fontStyle: 'italic',
-        }),
-        this.add
-          .text(443, 80, '25/25', {
-            color: '#7E3D3F',
-            fontSize: '16px',
-          })
-          .setOrigin(1, 0),
-      ])
-      .setScale(0.11, 0.2)
-      .setRotation(1.57);
+    this.add.container(
+      1,
+      2,
+      [].concat(bob.map((x) => eval(x)).concat(bill[0]))
+    );
 
-    // render out the enemy health bar
-    const enemyMonsterName = this.add.text(30, 20, MONSTER_ASSET_KEYS.ENEMY, {
-      color: '#7E3D3F',
-      fontSize: '32px',
-    });
     this.add
-      .container(2230, 13, [
-        // this.add
-        //   .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
-        //   .setOrigin(0)
-        //   .setScale(1, 0.8),
-        enemyMonsterName,
-        this.#createHealth(34, 34),
-        this.add.text(enemyMonsterName.width + 35, 23, 'L5', {
-          color: '#ED474B',
-          fontSize: '28px',
-        }),
-        this.add.text(30, 55, 'HP', {
-          color: '#FF6505',
-          fontSize: '24px',
-          fontStyle: 'italic',
-        }),
-      ])
-      .setScale(0.11, 0.2)
-      .setRotation(1.57);
+      .container(319, 2, [].concat(bob.map((x) => eval(x)).concat(bill[1])))
+      .setScale(-1, 1);
   }
 
   #createHealth(x, y) {
-    const scaleY = 0.7;
+    const scaleY = 1;
     const leftCap = this.add
       .image(x, y, HEALTH_BAR_ASSET_KEYS.LEFT_CAP)
-      .setOrigin(0, 0.5)
-      .setScale(1, scaleY);
-    const middle = this.add
-      .image(leftCap.x + leftCap.width, y, HEALTH_BAR_ASSET_KEYS.MIDDLE)
-      .setOrigin(0, 0.5)
-      .setScale(1, scaleY);
-    middle.displayWidth = 360;
-    const rightCap = this.add
-      .image(middle.x + middle.displayWidth, y, HEALTH_BAR_ASSET_KEYS.RIGHT_CAP)
-      .setOrigin(0, 0.5)
+      .setOrigin(1, 0.5)
       .setScale(1, scaleY);
 
-    return this.add.container(x, y, [leftCap, middle, rightCap]);
+    return this.add.container(x, y, [leftCap]);
+  }
+
+  #nubbinCreate() {
+    let bob = [];
+    for (let i = 0; i <= 7; i++) {
+      bob.push(`this.#createHealth(16 + 2 * ${i}, 9).setDepth(-1)`);
+    }
+    //console.log(bob);
+    return bob.slice();
   }
 }
