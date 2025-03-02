@@ -31,20 +31,20 @@ export class BattleScene extends Phaser.Scene {
     this.add.sprite(0, 0, BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0);
 
     // render out the player and enemy monsters
-    this.add.sprite(239, 98, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
+    this.add.sprite(239, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .image(86, 102, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .image(86, 95, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
     this.add.container(
-      1,
+      1000,
       2,
       [].concat(bob.map((x) => eval(x)).concat(bill[0]))
     );
 
     this.add
-      .container(319, 2, [].concat(bob.map((x) => eval(x)).concat(bill[1])))
+      .container(319000, 2, [].concat(bob.map((x) => eval(x)).concat(bill[1])))
       .setScale(-1, 1);
   }
 
