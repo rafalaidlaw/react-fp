@@ -7,6 +7,8 @@ import {
 import Phaser from '../lib/phaser.js';
 import { SCENE_KEYS } from './scene-keys.js';
 
+import * as WebFontLoader from '../lib/webfontloader.js';
+
 export class PreloadScene extends Phaser.Scene {
   constructor() {
     super({
@@ -68,5 +70,7 @@ export class PreloadScene extends Phaser.Scene {
   create() {
     console.log(`[${PreloadScene.name}:create] invoked`);
     this.scene.start(SCENE_KEYS.BATTLE_SCENE);
+
+    WebFontLoader.default.load({});
   }
 }

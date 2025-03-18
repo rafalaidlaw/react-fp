@@ -15,7 +15,7 @@ const BATTLE_MENU_OPTIONS = Object.freeze({
 });
 const battleUiTextStyle = {
   color: 'rgb(251, 199, 238)',
-  fontSize: '12x px',
+  fontSize: '10px',
 };
 
 export class BattleScene extends Phaser.Scene {
@@ -103,11 +103,12 @@ export class BattleScene extends Phaser.Scene {
         this.scale.height - rectHeight - 2,
         this.scale.width - 96,
         rectHeight - 2,
-        0xd551b1,
+        //0xd551b1,
+        0x719dca,
         1
       )
       .setOrigin(0)
-      .setStrokeStyle(2, 0xe768fb, 1);
+      .setStrokeStyle(2, /*0xe768fb*/ 0x5657ba, 1);
   }
 
   #createMainInfoSubPane() {
@@ -115,8 +116,8 @@ export class BattleScene extends Phaser.Scene {
     const rectHeight = 41;
 
     return this.add
-      .rectangle(-108, 2, rectWidth, rectHeight, 0xd551b1, 1)
+      .rectangle(-108, 2, rectWidth, rectHeight, 0x719dca, 1)
       .setOrigin(0)
-      .setStrokeStyle(2, 0xe768fb, 1);
+      .setStrokeStyle(2, 0x5657ba, 1);
   }
 }
