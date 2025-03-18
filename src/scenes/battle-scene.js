@@ -8,14 +8,15 @@ import Phaser from '../lib/phaser.js';
 import { SCENE_KEYS } from './scene-keys.js';
 
 const BATTLE_MENU_OPTIONS = Object.freeze({
-  FIGHT: 'FIGHT',
-  SWITCH: 'SWITCH',
-  ITEM: 'ITEM',
-  FLEE: 'FLEE',
+  FIGHT: 'Duel',
+  SWITCH: 'Pray',
+  ITEM: 'Tincture',
+  FLEE: 'Flee',
 });
 const battleUiTextStyle = {
   color: 'rgb(251, 199, 238)',
-  fontSize: '10px',
+  fontSize: '16px',
+  fontFamily: 'PressStart2P',
 };
 
 export class BattleScene extends Phaser.Scene {
@@ -25,6 +26,13 @@ export class BattleScene extends Phaser.Scene {
     });
   }
   let;
+  preload() {
+    this.load.font(
+      'PressStart2P',
+      'assets/fonts/Jacquard12-Regular.ttf',
+      'truetype'
+    );
+  }
   create() {
     let bill = [
       this.add
@@ -67,10 +75,10 @@ export class BattleScene extends Phaser.Scene {
       this.add.text(70, 25, BATTLE_MENU_OPTIONS.FLEE, battleUiTextStyle),
     ]);
     this.add.container(45, this.scale.height - 47, [
-      this.add.text(15, 2, 'slash', battleUiTextStyle),
-      this.add.text(70, 2, 'growl', battleUiTextStyle),
-      this.add.text(15, 25, '-', battleUiTextStyle),
-      this.add.text(70, 25, '-', battleUiTextStyle),
+      this.add.text(15, 2, 'Cough', battleUiTextStyle),
+      this.add.text(70, 2, 'Pray', battleUiTextStyle),
+      this.add.text(15, 25, 'Extoll', battleUiTextStyle),
+      this.add.text(70, 25, 'laudanum', battleUiTextStyle),
     ]);
   }
 
