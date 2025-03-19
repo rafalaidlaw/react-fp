@@ -81,7 +81,7 @@ export class BattleScene extends Phaser.Scene {
       this.#txt(10, 5, 'Pounce'),
       this.#txtPINK(65, 5, 'Ensare'),
       this.#txtPINK(10, 24, 'Tincture'),
-      this.#txtPINK(65, 24, 'Flee'),
+      this.#txtPINK(65, 24, 'Plead'),
       this.add
         .bitmapText(-15, -124, 'Jacquard', 'Duel')
         .setFontSize(21)
@@ -90,7 +90,7 @@ export class BattleScene extends Phaser.Scene {
     this.add.container(45, this.scale.height - 47, [
       this.#txtPINK(13, 5, 'Cough'),
       this.#txtPINK(63, 5, 'Pray'),
-      this.#txtPINK(13, 24, 'Extoll'),
+      this.#txtPINK(13, 24, 'Extol'),
       this.#txtPINK(63, 24, 'Laudanum'),
     ]);
   }
