@@ -34,6 +34,11 @@ export class BattleScene extends Phaser.Scene {
       'assets/fonts/bitmap/Lookout16.png',
       'assets/fonts/bitmap/Lookout16.xml'
     );
+    this.load.bitmapFont(
+      'Lookout16PINK',
+      'assets/fonts/bitmap/Lookout16PINK.png',
+      'assets/fonts/bitmap/Lookout16PINK.xml'
+    );
   }
 
   create() {
@@ -74,19 +79,19 @@ export class BattleScene extends Phaser.Scene {
       this.#createMainInfoSubPane(),
 
       this.#txt(10, 5, 'Pounce'),
-      this.#txt(65, 5, 'Ensare'),
-      this.#txt(10, 24, 'Tincture'),
-      this.#txt(65, 24, 'Flee'),
+      this.#txtPINK(65, 5, 'Ensare'),
+      this.#txtPINK(10, 24, 'Tincture'),
+      this.#txtPINK(65, 24, 'Flee'),
       this.add
         .bitmapText(-15, -124, 'Jacquard', 'Duel')
         .setFontSize(21)
         .setCharacterTint(0, -1, true, 0xff0000),
     ]);
     this.add.container(45, this.scale.height - 47, [
-      this.#txt(13, 5, 'Cough'),
-      this.#txt(63, 5, 'Pray'),
-      this.#txt(13, 24, 'Extoll'),
-      this.#txt(63, 24, 'Laudanum'),
+      this.#txtPINK(13, 5, 'Cough'),
+      this.#txtPINK(63, 5, 'Pray'),
+      this.#txtPINK(13, 24, 'Extoll'),
+      this.#txtPINK(63, 24, 'Laudanum'),
     ]);
   }
 
@@ -120,11 +125,11 @@ export class BattleScene extends Phaser.Scene {
         this.scale.width - 96,
         rectHeight - 2,
         //0xd551b1,
-        0x719dca,
+        0xcf5dac,
         1
       )
       .setOrigin(0)
-      .setStrokeStyle(2, /*0xe768fb*/ 0x5657ba, 1);
+      .setStrokeStyle(2, /*0xe768fb*/ 0x620044, 1);
   }
 
   #createMainInfoSubPane() {
@@ -132,14 +137,14 @@ export class BattleScene extends Phaser.Scene {
     const rectHeight = 41;
 
     return this.add
-      .rectangle(-106, 4, rectWidth - 2, rectHeight - 4, 0x719dca, 1)
+      .rectangle(-106, 4, rectWidth - 2, rectHeight - 4, 0xcf5dac, 1)
       .setOrigin(0)
-      .setStrokeStyle(2, 0xc5e1ed, 1);
+      .setStrokeStyle(2, 0x8d1f6a, 1);
   }
   #txt(x, y, txt) {
-    return this.add
-      .bitmapText(x, y, 'Lookout16', `${txt}`)
-      .setFontSize(16)
-      .setCharacterTint(0, -1, true, 0xff0000);
+    return this.add.bitmapText(x, y, 'Lookout16', `${txt}`).setFontSize(16);
+  }
+  #txtPINK(x, y, txt) {
+    return this.add.bitmapText(x, y, 'Lookout16PINK', `${txt}`).setFontSize(16);
   }
 }
