@@ -5,16 +5,11 @@ import {
   MONSTER_ASSET_KEYS,
 } from '../assets/asset-keys.js';
 import Phaser from '../lib/phaser.js';
+import { BattleMenu } from './battle-menu.js';
 import { SCENE_KEYS } from './scene-keys.js';
 
-const BATTLE_MENU_OPTIONS = Object.freeze({
-  FIGHT: 'Duel',
-  SWITCH: 'Pray',
-  ITEM: 'Tincture',
-  FLEE: 'Flee',
-});
-
 export class BattleScene extends Phaser.Scene {
+  #battleMenu;
   constructor() {
     super({
       key: SCENE_KEYS.BATTLE_SCENE,
@@ -73,26 +68,9 @@ export class BattleScene extends Phaser.Scene {
     this.add
       .container(319000, 2, [].concat(bob.map((x) => eval(x)).concat(bill[1])))
       .setScale(-1, 1);
-    //render main info and sub info panes
-    this.#createMainInfoPane();
-    this.add.container(this.scale.width / 2 - 2, this.scale.height - 47, [
-      this.#createMainInfoSubPane(),
 
-      this.#txt(10, 5, 'Pounce'),
-      this.#txtPINK(65, 5, 'Ensare'),
-      this.#txtPINK(10, 24, 'Tincture'),
-      this.#txtPINK(65, 24, 'Plead'),
-      this.add
-        .bitmapText(-15, -124, 'Jacquard', 'Duel')
-        .setFontSize(21)
-        .setCharacterTint(0, -1, true, 0xff0000),
-    ]);
-    this.add.container(45, this.scale.height - 47, [
-      this.#txtPINK(13, 5, 'Cough'),
-      this.#txtPINK(63, 5, 'Pray'),
-      this.#txtPINK(13, 24, 'Extol'),
-      this.#txtPINK(63, 24, 'Laudanum'),
-    ]);
+    //render main info and sub info panes
+    this.#battleMenu = new BattleMenu(this);
   }
 
   #createHealthBar(x, y) {
@@ -112,39 +90,5 @@ export class BattleScene extends Phaser.Scene {
     }
     //console.log(bob);
     return bob.slice();
-  }
-
-  #createMainInfoPane() {
-    const padding = 50;
-    const rectHeight = 43;
-
-    this.add
-      .rectangle(
-        padding,
-        this.scale.height - rectHeight - 2,
-        this.scale.width - 96,
-        rectHeight - 2,
-        //0xd551b1,
-        0xcf5dac,
-        1
-      )
-      .setOrigin(0)
-      .setStrokeStyle(2, /*0xe768fb*/ 0x620044, 1);
-  }
-
-  #createMainInfoSubPane() {
-    const rectWidth = (this.scale.width - 98) / 2;
-    const rectHeight = 41;
-
-    return this.add
-      .rectangle(-106, 4, rectWidth - 2, rectHeight - 4, 0xcf5dac, 1)
-      .setOrigin(0)
-      .setStrokeStyle(2, 0x8d1f6a, 1);
-  }
-  #txt(x, y, txt) {
-    return this.add.bitmapText(x, y, 'Lookout16', `${txt}`).setFontSize(16);
-  }
-  #txtPINK(x, y, txt) {
-    return this.add.bitmapText(x, y, 'Lookout16PINK', `${txt}`).setFontSize(16);
   }
 }
