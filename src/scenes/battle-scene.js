@@ -13,11 +13,6 @@ const BATTLE_MENU_OPTIONS = Object.freeze({
   ITEM: 'Tincture',
   FLEE: 'Flee',
 });
-const battleUiTextStyle = {
-  color: 'rgb(251, 199, 238)',
-  fontSize: '16px',
-  fontFamily: 'PressStart2P',
-};
 
 export class BattleScene extends Phaser.Scene {
   constructor() {
@@ -26,13 +21,21 @@ export class BattleScene extends Phaser.Scene {
     });
   }
   let;
+
   preload() {
-    this.load.font(
-      'PressStart2P',
-      'assets/fonts/Jacquard12-Regular.ttf',
-      'truetype'
+    this.load.bitmapFont(
+      'Jacquard',
+      'assets/fonts/bitmap/Jacquard21.png',
+      'assets/fonts/bitmap/Jacquard21.xml'
+    );
+
+    this.load.bitmapFont(
+      'Lookout16',
+      'assets/fonts/bitmap/Lookout16.png',
+      'assets/fonts/bitmap/Lookout16.xml'
     );
   }
+
   create() {
     let bill = [
       this.add
@@ -69,16 +72,21 @@ export class BattleScene extends Phaser.Scene {
     this.#createMainInfoPane();
     this.add.container(this.scale.width / 2 - 2, this.scale.height - 47, [
       this.#createMainInfoSubPane(),
-      this.add.text(15, 2, BATTLE_MENU_OPTIONS.FIGHT, battleUiTextStyle),
-      this.add.text(70, 2, BATTLE_MENU_OPTIONS.SWITCH, battleUiTextStyle),
-      this.add.text(15, 25, BATTLE_MENU_OPTIONS.ITEM, battleUiTextStyle),
-      this.add.text(70, 25, BATTLE_MENU_OPTIONS.FLEE, battleUiTextStyle),
+
+      this.#txt(10, 5, 'Pounce'),
+      this.#txt(65, 5, 'Ensare'),
+      this.#txt(10, 24, 'Tincture'),
+      this.#txt(65, 24, 'Flee'),
+      this.add
+        .bitmapText(-15, -124, 'Jacquard', 'Duel')
+        .setFontSize(21)
+        .setCharacterTint(0, -1, true, 0xff0000),
     ]);
     this.add.container(45, this.scale.height - 47, [
-      this.add.text(15, 2, 'Cough', battleUiTextStyle),
-      this.add.text(70, 2, 'Pray', battleUiTextStyle),
-      this.add.text(15, 25, 'Extoll', battleUiTextStyle),
-      this.add.text(70, 25, 'laudanum', battleUiTextStyle),
+      this.#txt(13, 5, 'Cough'),
+      this.#txt(63, 5, 'Pray'),
+      this.#txt(13, 24, 'Extoll'),
+      this.#txt(63, 24, 'Laudanum'),
     ]);
   }
 
@@ -94,7 +102,7 @@ export class BattleScene extends Phaser.Scene {
 
   #nubbinCreate() {
     let bob = [];
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i <= 9; i++) {
       bob.push(`this.#createHealthBar(16 + 2 * ${i}, 9).setDepth(-1)`);
     }
     //console.log(bob);
@@ -124,8 +132,14 @@ export class BattleScene extends Phaser.Scene {
     const rectHeight = 41;
 
     return this.add
-      .rectangle(-108, 2, rectWidth, rectHeight, 0x719dca, 1)
+      .rectangle(-106, 4, rectWidth - 2, rectHeight - 4, 0x719dca, 1)
       .setOrigin(0)
-      .setStrokeStyle(2, 0x5657ba, 1);
+      .setStrokeStyle(2, 0xc5e1ed, 1);
+  }
+  #txt(x, y, txt) {
+    return this.add
+      .bitmapText(x, y, 'Lookout16', `${txt}`)
+      .setFontSize(16)
+      .setCharacterTint(0, -1, true, 0xff0000);
   }
 }
