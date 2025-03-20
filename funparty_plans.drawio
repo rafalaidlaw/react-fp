@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="1114" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="924" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -163,6 +163,15 @@
         </mxCell>
         <mxCell id="WhSgem01bFfFkYUl3J8e-1" value="&lt;div&gt;&lt;b&gt;í ¾íº¦&lt;/b&gt;&lt;/div&gt;&lt;b&gt;DEATH BESEECH YOU&lt;/b&gt;&lt;div&gt;&lt;b&gt;í ¾íº¦&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;í ¾íº¦&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;í ¾íº¦&lt;br&gt;To be written across screen on death.&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="282" width="256" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WhSgem01bFfFkYUl3J8e-2" value="Catch Foes in PNematic Tubes.&lt;div&gt;Up[on captuire you may choose to&lt;/div&gt;&lt;div&gt;keep or convert.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Converting sqeezezes their essence out of pnematic tube to be used as stim packs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;or potentially to create tarot card&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1260" width="120" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="WhSgem01bFfFkYUl3J8e-3" value="Name selection has&lt;div&gt;ouija board option&lt;/div&gt;&lt;div&gt;where ghost&lt;/div&gt;&lt;div&gt;asks is your name wendolf&lt;/div&gt;&lt;div&gt;bardolf&lt;/div&gt;&lt;div&gt;rolg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1520" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="WhSgem01bFfFkYUl3J8e-4" value="Collecting specimenss&lt;div&gt;for Darwins Theory of&lt;/div&gt;&lt;div&gt;Evolution&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1560" width="120" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
