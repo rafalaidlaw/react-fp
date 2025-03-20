@@ -32,8 +32,8 @@ export class BattleMenu {
 
   hideMainBattleMenu() {
     this.#mainBattleMenuPhaserContainerGameObject.setAlpha(0);
-    //     this.#battleTextGameObjectLine1.setAlpha(0);
-    //     this.#battleTextGameObjectLine2.setAlpha(0);
+    this.#battleTextGameObjectLine1.setAlpha(0);
+    this.#battleTextGameObjectLine2.setAlpha(0);
   }
 
   showMonsterAttackSubMenu() {
@@ -45,13 +45,6 @@ export class BattleMenu {
   }
 
   #createMainBattleMenu() {
-    this.#battleTextGameObjectLine1 = this.#txtBLUE(134, 139, 'What will');
-    this.#battleTextGameObjectLine2 = this.#txtBLUE(
-      110,
-      154,
-      `${MONSTER_ASSET_KEYS.ORPHAN} do next?`
-    );
-
     this.#mainBattleMenuPhaserContainerGameObject = this.#scene.add.container(
       this.#scene.scale.width / 2 - 2,
       this.#scene.scale.height - 47,
@@ -59,14 +52,26 @@ export class BattleMenu {
         this.#createMainInfoSubPane(),
 
         this.#txtBLUE(10, 5, 'Pounce'),
-        this.#txtPINK(65, 5, 'Ensare'),
-        this.#txtPINK(10, 24, 'Tincture'),
+        this.#txtPINK(65, 5, 'Tincture'),
+        this.#txtPINK(10, 24, 'Pneuma'),
         this.#txtPINK(65, 24, 'Plead'),
         this.#scene.add
           .bitmapText(-15, -124, 'Jacquard', 'Duel')
           .setFontSize(21),
       ]
     );
+    this.#battleTextGameObjectLine1 = this.#txtPINK(
+      66,
+      139,
+      'What will you do'
+    );
+    // TODO update use orphan data to populate name with chosen orphan
+    this.#battleTextGameObjectLine2 = this.#txtPINK(
+      80,
+      154,
+      `${MONSTER_ASSET_KEYS.ORPHAN}?`
+    );
+
     this.hideMainBattleMenu();
   }
 
@@ -99,11 +104,11 @@ export class BattleMenu {
   }
 
   #createMainInfoSubPane() {
-    const rectWidth = (this.#scene.scale.width - 98) / 2;
+    const rectWidth = (this.#scene.scale.width - 90) / 2;
     const rectHeight = 41;
 
     return this.#scene.add
-      .rectangle(-106, 4, rectWidth - 2, rectHeight - 4, 0xcf5dac, 1)
+      .rectangle(-106, 2, rectWidth - 2, rectHeight, 0xcf5dac, 1)
       .setOrigin(0)
       .setStrokeStyle(2, 0x8d1f6a, 1);
   }

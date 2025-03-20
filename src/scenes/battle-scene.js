@@ -55,7 +55,7 @@ export class BattleScene extends Phaser.Scene {
     // render out the player and enemy monsters
     this.add.sprite(239, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .image(86, 95, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .image(85, 95, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
@@ -71,6 +71,7 @@ export class BattleScene extends Phaser.Scene {
 
     //render main info and sub info panes
     this.#battleMenu = new BattleMenu(this);
+    this.#battleMenu.showMainBattleMenu();
   }
 
   #createHealthBar(x, y) {
