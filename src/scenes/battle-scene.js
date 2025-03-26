@@ -7,10 +7,13 @@ import {
 import Phaser from '../lib/phaser.js';
 import { BattleMenu } from './battle-menu.js';
 import { SCENE_KEYS } from './scene-keys.js';
+import { DIRECTION } from '../common/direction.js';
 
 export class BattleScene extends Phaser.Scene {
   /** @type {BattleMenu} */
   #battleMenu;
+  /** @type {Phaser.Types.Input.Keyboard.CursorKeys} */
+  #cursorKeys;
   constructor() {
     super({
       key: SCENE_KEYS.BATTLE_SCENE,
@@ -73,7 +76,47 @@ export class BattleScene extends Phaser.Scene {
     //render main info and sub info panes
     this.#battleMenu = new BattleMenu(this);
     this.#battleMenu.showMainBattleMenu();
+
+    this.#cursorKeys = this.input.keyboard.createCursorKeys();
   }
+
+  update() {
+    const wasSpaceKeyPressed = Phaser.Input.Keyboard.JustDown(
+      this.#cursorKeys.space
+    );
+    if (wasSpaceKeyPressed) {
+      this.#battleMenu.handlePlayerInput('OK');
+      return;
+    }
+
+    if (Phaser.Input.Keyboard.JustDown(this.#cursorKeys.shift)) {
+      this.#battleMenu.handlePlayerInput('CANCEL');
+      return;
+    }
+
+    /** @type {import('../common/direction.js').Direction} */
+    let selectedDirection = DIRECTION.NONE;
+    if (this.#cursorKeys.left.isDown) {
+      selectedDirection = DIRECTION.LEFT;
+    } else if (this.#cursorKeys.right.isDown) {
+      selectedDirection = DIRECTION.RIGHT;
+    } else if (this.#cursorKeys.up.isDown) {
+      selectedDirection = DIRECTION.UP;
+    } else if (this.#cursorKeys.down.isDown) {
+      selectedDirection = DIRECTION.DOWN;
+    }
+
+    if (selectedDirection !== DIRECTION.NONE) {
+      this.#battleMenu.handlePlayerInput(selectedDirection);
+    }
+  }
+
+  /**
+   *
+   * @param {number} x the x position to place the health bar container
+   * @param {number} y the y position to place the health bar container
+   * @returns {Phaser.GameObjects.Container}
+   */
 
   #createHealthBar(x, y) {
     const scaleY = 1;
