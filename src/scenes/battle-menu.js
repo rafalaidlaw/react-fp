@@ -1,5 +1,5 @@
 import { MONSTER_ASSET_KEYS } from '../assets/asset-keys.js';
-
+import Phaser from '../lib/phaser.js';
 //preparing the battle-menu
 
 const BATTLE_MENU_OPTIONS = Object.freeze({
@@ -10,11 +10,22 @@ const BATTLE_MENU_OPTIONS = Object.freeze({
 });
 
 export class BattleMenu {
+  /** @type {Phaser.Scene} */
   #scene;
+  /** @type {Phaser.GameObjects.Container} */
   #mainBattleMenuPhaserContainerGameObject;
+  /** @type {Phaser.GameObjects.Container} */
   #moveSelectionSubBattleMenuPhaserContainerGameObject;
+  /** @type {Phaser.GameObjects.BitmapText} */
   #battleTextGameObjectLine1;
+  /** @type {Phaser.GameObjects.BitmapText} */
   #battleTextGameObjectLine2;
+
+  /**
+   *
+   *
+   * @param {Phaser.Scene} scene the Phaser 3 Scene the battle menu will be added to
+   */
 
   constructor(scene) {
     this.#scene = scene;
