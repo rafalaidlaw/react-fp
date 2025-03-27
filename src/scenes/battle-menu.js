@@ -13,6 +13,14 @@ const BATTLE_MENU_OPTIONS = Object.freeze({
   ITEM: 'ITEM',
   FLEE: 'FLEE',
 });
+
+const ATTACK_MOVE_OPTIONS = Object.freeze({
+  MOVE_01: 'MOVE_01',
+  MOVE_02: 'MOVE_02',
+  MOVE_03: 'MOVE_03',
+  MOVE_04: 'MOVE_04',
+});
+
 const BATTLE_MENU_CURSOR_POS = Object.freeze({
   x: -13,
   y: 13,
