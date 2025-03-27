@@ -3,6 +3,7 @@ import {
   BATTLE_BACKGROUND_ASSET_KEYS,
   HEALTH_BAR_ASSET_KEYS,
   MONSTER_ASSET_KEYS,
+  UI_ASSET_KEYS,
 } from '../assets/asset-keys.js';
 import Phaser from '../lib/phaser.js';
 import { SCENE_KEYS } from './scene-keys.js';
@@ -55,6 +56,7 @@ export class PreloadScene extends Phaser.Scene {
         frameHeight: 64,
       }
     );
+    //monster asset
     this.load.spritesheet(
       MONSTER_ASSET_KEYS.ORPHAN,
       `${monsterTamerAssetPath}/monsters/iguanignite.png`,
@@ -62,6 +64,12 @@ export class PreloadScene extends Phaser.Scene {
         frameWidth: 58,
         frameHeight: 70,
       }
+    );
+
+    //ui assets
+    this.load.image(
+      UI_ASSET_KEYS.CURSOR,
+      `${monsterTamerAssetPath}/cursor.png`
     );
   }
 
