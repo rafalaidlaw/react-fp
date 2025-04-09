@@ -120,15 +120,12 @@ export class BattleMenu {
   }
 
   #createMainBattleMenu() {
-    this.#mainBattleMenuCursorPhaserImageGameObject = this.#scene.add
-      .image(
-        BATTLE_MENU_CURSOR_POS.x,
-        BATTLE_MENU_CURSOR_POS.y,
-        UI_ASSET_KEYS.CURSOR,
-        0
-      )
-      .setOrigin(0.5)
-      .setScale(1);
+    this.#mainBattleMenuCursorPhaserImageGameObject = this.#scene.add.image(
+      BATTLE_MENU_CURSOR_POS.x,
+      BATTLE_MENU_CURSOR_POS.y,
+      UI_ASSET_KEYS.CURSOR,
+      0
+    );
 
     this.#mainBattleMenuPhaserContainerGameObject = this.#scene.add.container(
       this.#scene.scale.width / 2 - 2,
@@ -169,10 +166,10 @@ export class BattleMenu {
 
     this.#moveSelectionSubBattleMenuPhaserContainerGameObject =
       this.#scene.add.container(45, this.#scene.scale.height - 47, [
-        this.#txtPINK(15, 5, 'Cough'),
-        this.#txtPINK(65, 5, 'Lunge'),
-        this.#txtPINK(15, 24, 'Extol'),
-        this.#txtPINK(65, 24, 'Laudanum'),
+        this.#txtPINK(25, 5, 'Cough Red'),
+        this.#txtPINK(110, 5, 'Forward March'),
+        this.#txtPINK(25, 24, 'Riposte'),
+        this.#txtPINK(110, 24, 'Fleche'),
         this.#attackBattleMenuCursorPhaserImageGameObject,
       ]);
     this.hideMonsterAttackSubMenu();
@@ -219,75 +216,77 @@ export class BattleMenu {
    * @param {import('../common/direction.js').Direction} direction
    */
   #updateSelectedBattleMenuOptionFromInput(direction) {
-    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.DUEL) {
-      switch (direction) {
-        case DIRECTION.RIGHT:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.SWITCH;
-          return;
-        case DIRECTION.DOWN:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.ITEM;
-          return;
-        case DIRECTION.LEFT:
-        case DIRECTION.UP:
-        case DIRECTION.NONE:
-          return;
-        default:
-          exhaustiveGuard(direction);
+    if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
+      if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.DUEL) {
+        switch (direction) {
+          case DIRECTION.RIGHT:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.SWITCH;
+            return;
+          case DIRECTION.DOWN:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.ITEM;
+            return;
+          case DIRECTION.LEFT:
+          case DIRECTION.UP:
+          case DIRECTION.NONE:
+            return;
+          default:
+            exhaustiveGuard(direction);
+        }
+        return;
       }
-      return;
-    }
-    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
-      switch (direction) {
-        case DIRECTION.LEFT:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
-          return;
-        case DIRECTION.DOWN:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.FLEE;
-          return;
-        case DIRECTION.RIGHT:
-        case DIRECTION.UP:
-        case DIRECTION.NONE:
-          return;
-        default:
-          exhaustiveGuard(direction);
+      if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
+        switch (direction) {
+          case DIRECTION.LEFT:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
+            return;
+          case DIRECTION.DOWN:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.FLEE;
+            return;
+          case DIRECTION.RIGHT:
+          case DIRECTION.UP:
+          case DIRECTION.NONE:
+            return;
+          default:
+            exhaustiveGuard(direction);
+        }
+        return;
       }
-      return;
-    }
 
-    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
-      switch (direction) {
-        case DIRECTION.RIGHT:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.FLEE;
-          return;
-        case DIRECTION.UP:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
-          return;
-        case DIRECTION.LEFT:
-        case DIRECTION.DOWN:
-        case DIRECTION.NONE:
-          return;
-        default:
-          exhaustiveGuard(direction);
+      if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
+        switch (direction) {
+          case DIRECTION.RIGHT:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.FLEE;
+            return;
+          case DIRECTION.UP:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
+            return;
+          case DIRECTION.LEFT:
+          case DIRECTION.DOWN:
+          case DIRECTION.NONE:
+            return;
+          default:
+            exhaustiveGuard(direction);
+        }
+        return;
       }
-      return;
-    }
 
-    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
-      switch (direction) {
-        case DIRECTION.LEFT:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.ITEM;
-          return;
-        case DIRECTION.UP:
-          this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.SWITCH;
-          return;
-        case DIRECTION.RIGHT:
-        case DIRECTION.DOWN:
-        case DIRECTION.NONE:
-          return;
-        default:
-          exhaustiveGuard(direction);
+      if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
+        switch (direction) {
+          case DIRECTION.LEFT:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.ITEM;
+            return;
+          case DIRECTION.UP:
+            this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.SWITCH;
+            return;
+          case DIRECTION.RIGHT:
+          case DIRECTION.DOWN:
+          case DIRECTION.NONE:
+            return;
+          default:
+            exhaustiveGuard(direction);
+        }
+        return;
       }
-      return;
     }
   }
   #txtColorDUEL(blue) {
@@ -357,19 +356,20 @@ export class BattleMenu {
   }
 
   #txtColorDESTROY() {
-    this.#battleTextGameObjectDUEL.destroy();
-    this.#battleTextGameObjectSWITCH.destroy();
-    this.#battleTextGameObjectITEM.destroy();
-    this.#battleTextGameObjectFLEE.destroy();
+    if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
+      this.#battleTextGameObjectDUEL.destroy();
+      this.#battleTextGameObjectSWITCH.destroy();
+      this.#battleTextGameObjectITEM.destroy();
+      this.#battleTextGameObjectFLEE.destroy();
+    }
   }
 
   #moveMainBattleMenuCursor() {
     switch (this.#selectedBattleMenuOption) {
       case BATTLE_MENU_OPTIONS.DUEL:
-        this.#mainBattleMenuCursorPhaserImageGameObject.setPosition(
-          BATTLE_MENU_CURSOR_POS.x,
-          BATTLE_MENU_CURSOR_POS.y
-        );
+        this.#mainBattleMenuCursorPhaserImageGameObject
+          .setPosition(BATTLE_MENU_CURSOR_POS.x, BATTLE_MENU_CURSOR_POS.y)
+          .setRotation(0);
         this.#txtColorDESTROY();
 
         this.#txtColorDUEL(true);
@@ -378,10 +378,9 @@ export class BattleMenu {
         this.#txtColorFLEE(false);
         return;
       case BATTLE_MENU_OPTIONS.SWITCH:
-        this.#mainBattleMenuCursorPhaserImageGameObject.setPosition(
-          56,
-          BATTLE_MENU_CURSOR_POS.y
-        );
+        this.#mainBattleMenuCursorPhaserImageGameObject
+          .setPosition(58, BATTLE_MENU_CURSOR_POS.y + 1)
+          .setRotation(1.5708);
         this.#txtColorDESTROY();
         this.#txtColorDUEL(false);
         this.#txtColorSWITCH(true);
@@ -389,10 +388,9 @@ export class BattleMenu {
         this.#txtColorFLEE(false);
         return;
       case BATTLE_MENU_OPTIONS.ITEM:
-        this.#mainBattleMenuCursorPhaserImageGameObject.setPosition(
-          BATTLE_MENU_CURSOR_POS.x,
-          32
-        );
+        this.#mainBattleMenuCursorPhaserImageGameObject
+          .setPosition(BATTLE_MENU_CURSOR_POS.x, 32)
+          .setRotation(0);
         this.#txtColorDESTROY();
         this.#txtColorDUEL(false);
         this.#txtColorSWITCH(false);
@@ -400,7 +398,9 @@ export class BattleMenu {
         this.#txtColorFLEE(false);
         return;
       case BATTLE_MENU_OPTIONS.FLEE:
-        this.#mainBattleMenuCursorPhaserImageGameObject.setPosition(56, 32);
+        this.#mainBattleMenuCursorPhaserImageGameObject
+          .setPosition(56, 32)
+          .setRotation(0);
         this.#txtColorDESTROY();
         this.#txtColorDUEL(false);
         this.#txtColorSWITCH(false);

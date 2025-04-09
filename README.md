@@ -1,54 +1,25 @@
-# Monster Tamer
+Game Synopsis: "The Orphans of Victorian London"
 
-![License](https://img.shields.io/badge/license-MIT-green)
+In a grim yet whimsical alternate Victorian-era London, a mysterious phenomenon has emerged, giving the orphaned children of the city extraordinary powers. These orphans, born into lives of hardship, now possess unique abilities tied to their past struggles, dreams, and fears. As a mysterious figure known only as "The Collector," players embark on a journey to capture these orphaned souls, discovering their deep, often tragic backstories, and harnessing their powers for an uncertain future.
 
-Monster Tamer - Pokemon like RPG Tutorial with Phaser 3
+Gameplay Overview:
 
-A Pokemon like game created using [Phaser 3](https://github.com/photonstorm/phaser)!
+Players traverse the sprawling, fog-filled streets of Victorian London, encountering a variety of orphans scattered throughout the city’s districts, each embodying different aspects of the era—poverty, oppression, and social unrest. Like a twisted version of Pokémon, players must use a combination of wit, empathy, and strategy to "capture" these children, not in the traditional sense, but through a bond forged by understanding their pains, desires, and fears.
 
-This is the official code repository for the [Monster Tamer - Pokemon like RPG Tutorial with Phaser 3](https://www.youtube.com/playlist?list=PLmcXe0-sfoSgq-pyXrFx0GZjHbvoVUW8t) series available on YouTube.
+The orphans’ abilities are shaped by their pasts. Some may have abilities like manipulating shadows, while others can summon memories or dreams. These powers are not only useful in battle but also essential for solving complex puzzles and overcoming obstacles within the game’s world. As players delve deeper into the city, they will face moral dilemmas about whether or not to use the orphans for personal gain or help them seek redemption from the twisted fate they’ve been forced into.
 
-## Local Setup
+Core Features:
 
-This project is currently setup to require a very minimal amount of tools to run the web application. The main tools that are needed are:
+Victorian-Era Orphans: Capture orphans with unique abilities, each representing different facets of Victorian society— from street urchins to former factory workers, each with their own tragic backstory.
 
-- IDE (Integrated Development Environment), or any program you can use to edit code.
-  - In the video tutorial series linked above, I use the [VS Code](https://code.visualstudio.com/), and this code base has some out of the box settings and extensions that are recommended for formatting and running the code.
-- A local web server, this is needed due to browser security and how we are loading files with the Phaser 3 framework for our game.
-  - You can use any local web server you are familiar with, however if you use VS Code, I recommend the following extension [LiveServer by Ritwick Dey](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Moral Choices: Choose whether to help the orphans heal and find a better future, or use them for your own gain. Your decisions shape the fate of both the orphans and the city.
 
-### Downloading Assets
+Battles and Powers: Orphans’ abilities can be used in various challenges, from solving puzzles to confronting sinister forces in the city. Their powers evolve as you form bonds with them, and their backstories unfold.
 
-By default, none of the audio and image assets are included in the code repository. As the size of the project grows, it was chosen to omit these files and to instead provide a link to zipped folder that contains the assets that are used in this project. You find the latest assets for this game here: [Latest Game Assets](https://github.com/devshareacademy/monster-tamer/releases/download/assets/all-game-assets.zip).
+A Dark, Atmospheric World: Explore Victorian London in all its gritty glory— from the dark alleys of the slums to the gilded mansions of the elite, filled with secrets and mysteries waiting to be uncovered.
 
-After you have downloaded the assets, you will need to place those folders in the `/assets` folder.
+Emotional Storytelling: Discover the orphans’ individual stories, diving into the hardships of the Victorian era, from child labor to the brutal class divides, all while forming meaningful connections with the characters.
 
-## How To Play
+In the end, The Orphans of Victorian London isn’t just about capturing or controlling; it’s about understanding the resilience and power that lies in the most vulnerable of souls. Will you help them rise above their pasts, or exploit them for your own purpose?
 
-Currently, the only supported way to play the game is with a Keyboard. The game has not been tested with a Gamepad at this time, but will be supported in the future.
-
-### Controls
-
-| Keys                                   | Description                                                                                           |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Arrow Keys (Up, Down, Left, and Right) | While in battle, these keys will move the input cursor, which allows the player to select the option. |
-| Space                                  | While in battle, this key confirm the currently selected action.                                      |
-| Shift                                  | While in battle, this key acts as a back key and allows players to navigate back the previous option. |
-
-## Credits
-
-This project uses both assets I developed as well as other assets that have been created by some wondering creators. This project would not have been possible without the following people/resources:
-
-| Asset    | Author | Link                                                                         |
-| -------- | ------ | ---------------------------------------------------------------------------- |
-| Fonts    | Kenney | [Kenney Fonts](https://www.kenney.nl/assets/kenney-fonts)                    |
-| UI Panel | Kenney | [Kenney UI Space Pack](https://www.kenney.nl/assets/ui-pack-space-expansion) |
-
-## Issues
-
-For any issues you encounter, please open a new [GitHub Issue](https://github.com/devshareacademy/monster-tamer/issues) on this project.
-
-## Questions, Comments, and Suggestions
-
-For any questions, comments, or issues on the code in this project
-If you have any questions, comments, or suggestions for future content, please feel free to open a new [GitHub Discussion](https://github.com/devshareacademy/monster-tamer/discussions) on this project.
+This concept blends dark, historical elements with a narrative-driven experience, giving players a chance to explore Victorian London through a lens of empathy, resilience, and morality.
