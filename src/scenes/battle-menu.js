@@ -42,6 +42,14 @@ export class BattleMenu {
   #battleTextGameObjectITEM;
   /** @type {Phaser.GameObjects.BitmapText} */
   #battleTextGameObjectFLEE;
+  /** @type {Phaser.GameObjects.BitmapText} */
+  #battleTextGameObjectMove_1;
+  /** @type {Phaser.GameObjects.BitmapText} */
+  #battleTextGameObjectMove_2;
+  /** @type {Phaser.GameObjects.BitmapText} */
+  #battleTextGameObjectMove_3;
+  /** @type {Phaser.GameObjects.BitmapText} */
+  #battleTextGameObjectMove_4;
   /** @type {import('./battle-menu-options.js').AttackMoveOptions} */
   #selectedAttackMenuOption;
   /** @type {import('./battle-menu-options.js').ActiveBattleMenu} */
@@ -75,18 +83,25 @@ export class BattleMenu {
   showMainBattleMenu() {
     //this.#battleTextGameObjectLine1.setText('what should');
     this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_MAIN;
+    this.#battleTextGameObjectLine1 = this.#txtPINK(
+      46,
+      139,
+      'What will you do'
+    );
+    // this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
     this.#mainBattleMenuPhaserContainerGameObject.setAlpha(1);
+    // this.#txtColorDESTROY();
+    // this.#txtColorDUEL(true);
+    // this.#txtColorSWITCH(false);
+    // this.#txtColorITEM(false);
+    // this.#txtColorFLEE(false);
+
     this.#battleTextGameObjectLine1.setAlpha(1);
     this.#battleTextGameObjectLine2.setAlpha(1);
     this.#battleTextGameObjectDUEL.setAlpha(1);
     this.#battleTextGameObjectSWITCH.setAlpha(1);
     this.#battleTextGameObjectITEM.setAlpha(1);
     this.#battleTextGameObjectFLEE.setAlpha(1);
-
-    this.#mainBattleMenuCursorPhaserImageGameObject.setPosition(
-      BATTLE_MENU_CURSOR_POS.x,
-      BATTLE_MENU_CURSOR_POS.y
-    );
   }
 
   hideMainBattleMenu() {
@@ -102,10 +117,18 @@ export class BattleMenu {
   showMonsterAttackSubMenu() {
     this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_MOVE_SELECT;
     this.#moveSelectionSubBattleMenuPhaserContainerGameObject.setAlpha(1);
+    this.#battleTextGameObjectMove_1.setAlpha(1);
+    this.#battleTextGameObjectMove_2.setAlpha(1);
+    this.#battleTextGameObjectMove_3.setAlpha(1);
+    this.#battleTextGameObjectMove_4.setAlpha(1);
   }
 
   hideMonsterAttackSubMenu() {
     this.#moveSelectionSubBattleMenuPhaserContainerGameObject.setAlpha(0);
+    this.#battleTextGameObjectMove_1.setAlpha(0);
+    this.#battleTextGameObjectMove_2.setAlpha(0);
+    this.#battleTextGameObjectMove_3.setAlpha(0);
+    this.#battleTextGameObjectMove_4.setAlpha(0);
   }
 
   /**
@@ -152,6 +175,7 @@ export class BattleMenu {
 
   #updateInfoPaneWithMessage() {
     this.#waitingForPlayerInput = false;
+
     this.#battleTextGameObjectLine1.setText('').setAlpha(1);
 
     // check if all messages have been displayed from the queue and call the callback
@@ -165,7 +189,8 @@ export class BattleMenu {
 
     // get first message from queue and animate message
     const messageToDisplay = this.#queuedInfoPanelMessages.shift();
-    this.#battleTextGameObjectLine1.setText(messageToDisplay);
+    // this.#battleTextGameObjectLine1.setText(messageToDisplay);
+    this.#battleTextGameObjectLine1 = this.#txtBLUE(66, 139, messageToDisplay); ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     this.#waitingForPlayerInput = true;
   }
 
@@ -221,12 +246,17 @@ export class BattleMenu {
 
     this.#moveSelectionSubBattleMenuPhaserContainerGameObject =
       this.#scene.add.container(45, this.#scene.scale.height - 47, [
-        this.#txtPINK(25, 5, 'Cough Red'),
-        this.#txtPINK(110, 5, 'Forward March'),
-        this.#txtPINK(25, 24, 'Riposte'),
-        this.#txtPINK(110, 24, 'Fleche'),
+        // this.#txtPINK(25, 5, 'Cough Red'),
+        // this.#txtPINK(110, 5, 'Forward March'),
+        // this.#txtPINK(25, 24, 'Riposte'),
+        // this.#txtPINK(110, 24, 'Fleche'),
         this.#attackBattleMenuCursorPhaserImageGameObject,
       ]);
+    this.#txtColorMove_1(true);
+    this.#txtColorMove_2(false);
+    this.#txtColorMove_3(false);
+    this.#txtColorMove_4(false);
+
     this.hideMonsterAttackSubMenu();
   }
   #createMainInfoPane() {
@@ -347,6 +377,62 @@ export class BattleMenu {
       }
     }
   }
+  #txtColorMove_1(blue) {
+    if (blue == true) {
+      return (this.#battleTextGameObjectMove_1 = this.#txtBLUE(
+        69,
+        138,
+        'Cough Blood'
+      ));
+    }
+    return (this.#battleTextGameObjectMove_1 = this.#txtPINK(
+      69,
+      138,
+      'Cough Blood'
+    ));
+  }
+  #txtColorMove_2(blue) {
+    if (blue == true) {
+      return (this.#battleTextGameObjectMove_2 = this.#txtBLUE(
+        154,
+        138,
+        'Forward March'
+      ));
+    }
+    return (this.#battleTextGameObjectMove_2 = this.#txtPINK(
+      154,
+      138,
+      'Forward March'
+    ));
+  }
+  #txtColorMove_3(blue) {
+    if (blue == true) {
+      return (this.#battleTextGameObjectMove_3 = this.#txtBLUE(
+        69,
+        157,
+        'Riposte'
+      ));
+    }
+    return (this.#battleTextGameObjectMove_3 = this.#txtPINK(
+      69,
+      157,
+      'Riposte'
+    ));
+  }
+  #txtColorMove_4(blue) {
+    if (blue == true) {
+      return (this.#battleTextGameObjectMove_4 = this.#txtBLUE(
+        154,
+        157,
+        'Fleche'
+      ));
+    }
+    return (this.#battleTextGameObjectMove_4 = this.#txtPINK(
+      154,
+      157,
+      'Fleche'
+    ));
+  }
   #txtColorDUEL(blue) {
     if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
       if (blue == true) {
@@ -421,6 +507,12 @@ export class BattleMenu {
       this.#battleTextGameObjectFLEE.destroy();
     }
   }
+  #txtColorDESTROYmove() {
+    this.#battleTextGameObjectMove_1.destroy();
+    this.#battleTextGameObjectMove_2.destroy();
+    this.#battleTextGameObjectMove_3.destroy();
+    this.#battleTextGameObjectMove_4.destroy();
+  }
 
   #moveMainBattleMenuCursor() {
     if (this.#activeBattleMenu !== ACTIVE_BATTLE_MENU.BATTLE_MAIN) {
@@ -481,6 +573,12 @@ export class BattleMenu {
     }
 
     if (this.#selectedAttackMenuOption === ATTACK_MOVE_OPTIONS.MOVE_1) {
+      this.#txtColorDESTROYmove();
+
+      this.#txtColorMove_1(true);
+      this.#txtColorMove_2(false);
+      this.#txtColorMove_3(false);
+      this.#txtColorMove_4(false);
       switch (direction) {
         case DIRECTION.RIGHT:
           this.#selectedAttackMenuOption = ATTACK_MOVE_OPTIONS.MOVE_2;
@@ -499,6 +597,12 @@ export class BattleMenu {
     }
 
     if (this.#selectedAttackMenuOption === ATTACK_MOVE_OPTIONS.MOVE_2) {
+      this.#txtColorDESTROYmove();
+
+      this.#txtColorMove_1(false);
+      this.#txtColorMove_2(true);
+      this.#txtColorMove_3(false);
+      this.#txtColorMove_4(false);
       switch (direction) {
         case DIRECTION.LEFT:
           this.#selectedAttackMenuOption = ATTACK_MOVE_OPTIONS.MOVE_1;
@@ -517,6 +621,12 @@ export class BattleMenu {
     }
 
     if (this.#selectedAttackMenuOption === ATTACK_MOVE_OPTIONS.MOVE_3) {
+      this.#txtColorDESTROYmove();
+
+      this.#txtColorMove_1(false);
+      this.#txtColorMove_2(false);
+      this.#txtColorMove_3(true);
+      this.#txtColorMove_4(false);
       switch (direction) {
         case DIRECTION.RIGHT:
           this.#selectedAttackMenuOption = ATTACK_MOVE_OPTIONS.MOVE_4;
@@ -535,6 +645,12 @@ export class BattleMenu {
     }
 
     if (this.#selectedAttackMenuOption === ATTACK_MOVE_OPTIONS.MOVE_4) {
+      this.#txtColorDESTROYmove();
+
+      this.#txtColorMove_1(false);
+      this.#txtColorMove_2(false);
+      this.#txtColorMove_3(false);
+      this.#txtColorMove_4(true);
       switch (direction) {
         case DIRECTION.LEFT:
           this.#selectedAttackMenuOption = ATTACK_MOVE_OPTIONS.MOVE_3;
@@ -600,6 +716,16 @@ export class BattleMenu {
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
       // TODO
+      this.updateInfoPaneMessagesAndWaitForInput(
+        [
+          "The Medicine Bag's Latch is Stuck...",
+          'You try to wiggle it loose...',
+          'If only you had some whale blubber...',
+        ],
+        () => {
+          this.#switchToMainBattleMenu();
+        }
+      );
       return;
     }
 
