@@ -81,13 +81,16 @@ export class BattleMenu {
   }
 
   showMainBattleMenu() {
-    //this.#battleTextGameObjectLine1.setText('what should');
+    // this.#battleTextGameObjectLine1.setText('What will you do').setX(46);
+    if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 0) {
+      this.#battleTextGameObjectLine1 = this.#txtPINK(
+        46,
+        139,
+        'What will you do'
+      );
+    }
     this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_MAIN;
-    this.#battleTextGameObjectLine1 = this.#txtPINK(
-      46,
-      139,
-      'What will you do'
-    );
+
     // this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
     this.#mainBattleMenuPhaserContainerGameObject.setAlpha(1);
     // this.#txtColorDESTROY();
