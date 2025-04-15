@@ -11,7 +11,7 @@ import {
 
 const BATTLE_MENU_CURSOR_POS = Object.freeze({
   x: -13,
-  y: 13,
+  y: 11,
 });
 const ATTACK_MENU_CURSOR_POS = Object.freeze({
   x: 15,
@@ -207,17 +207,17 @@ export class BattleMenu {
 
     this.#mainBattleMenuPhaserContainerGameObject = this.#scene.add.container(
       this.#scene.scale.width / 2 - 2,
-      this.#scene.scale.height - 47,
+      this.#scene.scale.height - 44,
       [
         this.#createMainInfoSubPane(),
 
-        this.#scene.add
-          .bitmapText(-15, -124, 'Jacquard', 'Duel')
-          .setFontSize(21),
         this.#mainBattleMenuCursorPhaserImageGameObject,
       ]
     );
-    this.#txtColorDUEL(true);
+    this.#scene.add
+      .bitmapText(93, 9, 'Jacquard', 'What will you do?')
+      .setFontSize(21),
+      this.#txtColorDUEL(true);
     this.#txtColorSWITCH(false);
     this.#txtColorITEM(false);
     this.#txtColorFLEE(false);
@@ -269,7 +269,7 @@ export class BattleMenu {
     this.#scene.add
       .rectangle(
         padding,
-        this.#scene.scale.height - rectHeight - 2,
+        this.#scene.scale.height - rectHeight - 1,
         this.#scene.scale.width - 96,
         rectHeight - 2,
         //0xd551b1,
@@ -281,8 +281,8 @@ export class BattleMenu {
   }
 
   #createMainInfoSubPane() {
-    const rectWidth = 99;
-    const rectHeight = 44;
+    const rectWidth = 100;
+    const rectHeight = 41;
 
     return this.#scene.add
       .rectangle(-119, 0, rectWidth - 2, rectHeight, 0xcf5dac, 1)
@@ -399,13 +399,13 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_2 = this.#txtBLUE(
         154,
         138,
-        'Forward March'
+        'Kick The Can'
       ));
     }
     return (this.#battleTextGameObjectMove_2 = this.#txtPINK(
       154,
       138,
-      'Forward March'
+      'Kick The Can'
     ));
   }
   #txtColorMove_3(blue) {
@@ -413,27 +413,23 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_3 = this.#txtBLUE(
         69,
         157,
-        'Riposte'
+        'Pout'
       ));
     }
-    return (this.#battleTextGameObjectMove_3 = this.#txtPINK(
-      69,
-      157,
-      'Riposte'
-    ));
+    return (this.#battleTextGameObjectMove_3 = this.#txtPINK(69, 157, 'Pout'));
   }
   #txtColorMove_4(blue) {
     if (blue == true) {
       return (this.#battleTextGameObjectMove_4 = this.#txtBLUE(
         154,
         157,
-        'Fleche'
+        'Despair'
       ));
     }
     return (this.#battleTextGameObjectMove_4 = this.#txtPINK(
       154,
       157,
-      'Fleche'
+      'Despair'
     ));
   }
   #txtColorDUEL(blue) {
@@ -720,6 +716,26 @@ export class BattleMenu {
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
       // TODO
       this.updateInfoPaneMessagesAndWaitForInput(
+        ['You open a Pneumatic Tube...', 'Oops, butter fingers...'],
+        () => {
+          this.#switchToMainBattleMenu();
+        }
+      );
+      return;
+    }
+
+    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
+      this.updateInfoPaneMessagesAndWaitForInput(
+        ['God is Dead..', 'And his angels are starving..'],
+        () => {
+          this.#switchToMainBattleMenu();
+        }
+      );
+      return;
+    }
+
+    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
+      this.updateInfoPaneMessagesAndWaitForInput(
         [
           "The Medicine Bag's Latch is Stuck...",
           'You try to wiggle it loose...',
@@ -729,16 +745,6 @@ export class BattleMenu {
           this.#switchToMainBattleMenu();
         }
       );
-      return;
-    }
-
-    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
-      // TODO
-      return;
-    }
-
-    if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
-      // TODO
       return;
     }
 
