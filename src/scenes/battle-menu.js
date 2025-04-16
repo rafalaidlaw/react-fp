@@ -35,6 +35,8 @@ export class BattleMenu {
   /** @type {import('../battle/ui/menu/battle-menu-options.js').BattleMenuOptions} */
   #selectedBattleMenuOption;
   /** @type {Phaser.GameObjects.BitmapText} */
+  #TopTextBattleGameObject;
+  /** @type {Phaser.GameObjects.BitmapText} */
   #battleTextGameObjectDUEL;
   /** @type {Phaser.GameObjects.BitmapText} */
   #battleTextGameObjectSWITCH;
@@ -214,10 +216,12 @@ export class BattleMenu {
         this.#mainBattleMenuCursorPhaserImageGameObject,
       ]
     );
-    this.#scene.add
-      .bitmapText(93, 9, 'Jacquard', 'What will you do?')
-      .setFontSize(21),
-      this.#txtColorDUEL(true);
+    (this.#TopTextBattleGameObject = this.#scene.add
+      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
+      .setFontSize(21)
+      .setOrigin(0.5)),
+      console.log('This is the width: ' + this.#TopTextBattleGameObject.width);
+    this.#txtColorDUEL(true);
     this.#txtColorSWITCH(false);
     this.#txtColorITEM(false);
     this.#txtColorFLEE(false);
@@ -263,14 +267,14 @@ export class BattleMenu {
     this.hideMonsterAttackSubMenu();
   }
   #createMainInfoPane() {
-    const padding = 50;
+    const padding = 39;
     const rectHeight = 43;
 
     this.#scene.add
       .rectangle(
         padding,
-        this.#scene.scale.height - rectHeight - 1,
-        this.#scene.scale.width - 96,
+        this.#scene.scale.height - rectHeight - 3,
+        this.#scene.scale.width - padding * 2,
         rectHeight - 2,
         //0xd551b1,
         0xcf5dac,
@@ -285,7 +289,7 @@ export class BattleMenu {
     const rectHeight = 41;
 
     return this.#scene.add
-      .rectangle(-119, 0, rectWidth - 2, rectHeight, 0xcf5dac, 1)
+      .rectangle(-119, -2, rectWidth - 2, rectHeight, 0xcf5dac, 1)
       .setOrigin(0)
       .setStrokeStyle(2, 0x8d1f6a, 1);
   }
@@ -750,4 +754,11 @@ export class BattleMenu {
 
     exhaustiveGuard(this.#selectedBattleMenuOption);
   }
+  // #handleTopTextContainer(){
+  //   this.TopTextContainer.width = this.#TopTextBattleGameObject.width;
+  //   this.#handleTopTextContainerLeftNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+  //   this.#handleTopTextContainerRighttNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+
+  //   }
+  // }
 }
