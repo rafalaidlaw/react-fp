@@ -6,6 +6,7 @@ import { BattleScene } from './scenes/battle-scene.js';
 const game = new Phaser.Game({
   type: Phaser.CANVAS,
   pixelArt: true,
+
   scale: {
     parent: 'game-container',
     // width: 1024,
@@ -15,6 +16,7 @@ const game = new Phaser.Game({
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
+
   backgroundColor: '#000000',
 });
 

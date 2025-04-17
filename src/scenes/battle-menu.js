@@ -62,7 +62,7 @@ export class BattleMenu {
   #queuedInfoPanelCallback;
   /** @type {boolean} */
   #waitingForPlayerInput;
-  /** @type {Phaser.GameObjects.Image} */
+  /** @type {Phaser.GameObjects.Rectangle} */
   #topTextContainer;
 
   /**
@@ -219,8 +219,29 @@ export class BattleMenu {
       ]
     );
     this.#topTextContainer = this.#scene.add
-      .image(160, 16, UI_ASSET_KEYS.TOPTEXTCONTAINER, 0)
+      .rectangle(
+        160.5,
+        16,
+        1,
+        20,
+        //0xd551b1,
+        0xcf5dac,
+        1
+      )
       .setOrigin(0.5);
+
+    this.#scene.add
+      .rectangle(
+        160.5,
+        16,
+        1,
+        20,
+        //0xd551b1,
+        0x381842,
+        1
+      )
+      .setOrigin(0.5);
+
     (this.#TopTextBattleGameObject = this.#scene.add
       .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
       .setFontSize(21)
@@ -231,7 +252,9 @@ export class BattleMenu {
     this.#txtColorITEM(false);
     this.#txtColorFLEE(false);
 
-    this.#topTextContainer.displayWidth = this.#TopTextBattleGameObject.width;
+    this.#topTextContainer.width = this.#TopTextBattleGameObject.width + 1;
+    console.log('text container width: ' + this.#topTextContainer.width);
+    console.log('text width: ' + this.#TopTextBattleGameObject.width);
     this.#topTextContainer.setX(
       this.#topTextContainer.x - this.#TopTextBattleGameObject.width / 2
     );
