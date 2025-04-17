@@ -19,4 +19,5 @@ export const HEALTH_BAR_ASSET_KEYS = Object.freeze({
 
 export const UI_ASSET_KEYS = Object.freeze({
   CURSOR: 'CURSOR',
+  TOPTEXTCONTAINER: 'TOPTEXTCONTAINER',
 });

@@ -71,6 +71,11 @@ export class PreloadScene extends Phaser.Scene {
       UI_ASSET_KEYS.CURSOR,
       `${monsterTamerAssetPath}/cursor.png`
     );
+
+    this.load.image(
+      UI_ASSET_KEYS.TOPTEXTCONTAINER,
+      `${monsterTamerAssetPath}/top-texture-container-gameobject.png`
+    );
   }
 
   create() {

@@ -62,6 +62,8 @@ export class BattleMenu {
   #queuedInfoPanelCallback;
   /** @type {boolean} */
   #waitingForPlayerInput;
+  /** @type {Phaser.GameObjects.Image} */
+  #topTextContainer;
 
   /**
    *
@@ -216,6 +218,9 @@ export class BattleMenu {
         this.#mainBattleMenuCursorPhaserImageGameObject,
       ]
     );
+    this.#topTextContainer = this.#scene.add
+      .image(160, 16, UI_ASSET_KEYS.TOPTEXTCONTAINER, 0)
+      .setOrigin(0.5);
     (this.#TopTextBattleGameObject = this.#scene.add
       .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
       .setFontSize(21)
@@ -225,6 +230,11 @@ export class BattleMenu {
     this.#txtColorSWITCH(false);
     this.#txtColorITEM(false);
     this.#txtColorFLEE(false);
+
+    this.#topTextContainer.displayWidth = this.#TopTextBattleGameObject.width;
+    this.#topTextContainer.setX(
+      this.#topTextContainer.x - this.#TopTextBattleGameObject.width / 2
+    );
 
     this.#battleTextGameObjectLine1 = this.#txtPINK(
       46,
@@ -754,11 +764,9 @@ export class BattleMenu {
 
     exhaustiveGuard(this.#selectedBattleMenuOption);
   }
-  // #handleTopTextContainer(){
-  //   this.TopTextContainer.width = this.#TopTextBattleGameObject.width;
-  //   this.#handleTopTextContainerLeftNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
-  //   this.#handleTopTextContainerRighttNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
-
-  //   }
-  // }
+  #handleTopTextContainer() {
+    this.#topTextContainer.width = this.#TopTextBattleGameObject.width;
+    // this.#handleTopTextContainerLeftNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+    // this.#handleTopTextContainerRighttNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+  }
 }
