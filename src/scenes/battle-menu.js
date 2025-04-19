@@ -225,7 +225,7 @@ export class BattleMenu {
         1,
         20,
         //0xd551b1,
-        0xcf5dac,
+        0xd551b1,
         1
       )
       .setOrigin(0.5);
@@ -237,7 +237,7 @@ export class BattleMenu {
         1,
         20,
         //0xd551b1,
-        0x381842,
+        0xd551b1,
         1
       )
       .setOrigin(0.5);
