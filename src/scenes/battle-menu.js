@@ -233,11 +233,45 @@ export class BattleMenu {
     this.#scene.add
       .rectangle(
         160.5,
-        16,
+        5.5,
+        153,
         1,
-        20,
         //0xd551b1,
-        0xd551b1,
+        0xb163d2,
+        1
+      )
+      .setOrigin(0.5);
+    this.#scene.add
+      .rectangle(
+        160.5,
+        26.5,
+        153,
+        1,
+        //0xd551b1,
+        0xde92ff,
+        1
+      )
+      .setOrigin(0.5);
+    this.#scene.add
+      .rectangle(
+        160.5,
+        4.5,
+        153,
+        1,
+        //0xd551b1,
+        0xde92ff,
+        1
+      )
+      .setOrigin(0.5);
+
+    this.#scene.add
+      .rectangle(
+        160.5,
+        27.5,
+        153,
+        1,
+        //0xd551b1,
+        0x9749b8,
         1
       )
       .setOrigin(0.5);
