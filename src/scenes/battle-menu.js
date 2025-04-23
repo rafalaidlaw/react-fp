@@ -218,80 +218,12 @@ export class BattleMenu {
         this.#mainBattleMenuCursorPhaserImageGameObject,
       ]
     );
-    this.#topTextContainer = this.#scene.add
-      .rectangle(
-        160.5,
-        16,
-        1,
-        20,
-        //0xd551b1,
-        0xeac4ff,
-        1
-      )
-      .setOrigin(0.5);
+    this.#handleTopTextContainer();
 
-    this.#scene.add
-      .rectangle(
-        160.5,
-        5.5,
-        153,
-        1,
-        //0xd551b1,
-        0xb163d2,
-        1
-      )
-      .setOrigin(0.5);
-    this.#scene.add
-      .rectangle(
-        160.5,
-        26.5,
-        153,
-        1,
-        //0xd551b1,
-        0xde92ff,
-        1
-      )
-      .setOrigin(0.5);
-    this.#scene.add
-      .rectangle(
-        160.5,
-        4.5,
-        153,
-        1,
-        //0xd551b1,
-        0xde92ff,
-        1
-      )
-      .setOrigin(0.5);
-
-    this.#scene.add
-      .rectangle(
-        160.5,
-        27.5,
-        153,
-        1,
-        //0xd551b1,
-        0x9749b8,
-        1
-      )
-      .setOrigin(0.5);
-
-    (this.#TopTextBattleGameObject = this.#scene.add
-      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
-      .setFontSize(21)
-      .setOrigin(0.5)),
-      console.log('This is the width: ' + this.#TopTextBattleGameObject.width);
     this.#txtColorDUEL(true);
     this.#txtColorSWITCH(false);
     this.#txtColorITEM(false);
     this.#txtColorFLEE(false);
-
-    this.#topTextContainer.width = this.#TopTextBattleGameObject.width + 1;
-    console.log('text container width: ' + this.#topTextContainer.width);
-    console.log('text width: ' + this.#TopTextBattleGameObject.width);
-    this.#topTextContainer.setX(
-      this.#topTextContainer.x - this.#TopTextBattleGameObject.width / 2
-    );
 
     this.#battleTextGameObjectLine1 = this.#txtPINK(
       46,
@@ -320,10 +252,6 @@ export class BattleMenu {
 
     this.#moveSelectionSubBattleMenuPhaserContainerGameObject =
       this.#scene.add.container(45, this.#scene.scale.height - 47, [
-        // this.#txtPINK(25, 5, 'Cough Red'),
-        // this.#txtPINK(110, 5, 'Forward March'),
-        // this.#txtPINK(25, 24, 'Riposte'),
-        // this.#txtPINK(110, 24, 'Fleche'),
         this.#attackBattleMenuCursorPhaserImageGameObject,
       ]);
     this.#txtColorMove_1(true);
@@ -822,8 +750,84 @@ export class BattleMenu {
     exhaustiveGuard(this.#selectedBattleMenuOption);
   }
   #handleTopTextContainer() {
-    this.#topTextContainer.width = this.#TopTextBattleGameObject.width;
-    // this.#handleTopTextContainerLeftNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
-    // this.#handleTopTextContainerRighttNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+    this.#topTextContainer = this.#scene.add
+      .rectangle(
+        160.5,
+        16,
+        1,
+        20,
+        //0xd551b1,
+        0xeac4ff,
+        1
+      )
+      .setOrigin(0.5);
+
+    this.#scene.add
+      .rectangle(
+        160.5,
+        5.5,
+        153,
+        1,
+        //0xd551b1,
+        0xb163d2,
+        1
+      )
+      .setOrigin(0.5);
+    this.#scene.add
+      .rectangle(
+        160.5,
+        26.5,
+        153,
+        1,
+        //0xd551b1,
+        0xde92ff,
+        1
+      )
+      .setOrigin(0.5);
+    this.#scene.add
+      .rectangle(
+        160.5,
+        4.5,
+        153,
+        1,
+        //0xd551b1,
+        0xde92ff,
+        1
+      )
+      .setOrigin(0.5);
+
+    this.#scene.add
+      .rectangle(
+        160.5,
+        27.5,
+        153,
+        1,
+        //0xd551b1,
+        0x9749b8,
+        1
+      )
+      .setOrigin(0.5);
+
+    (this.#TopTextBattleGameObject = this.#scene.add
+      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
+      .setFontSize(21)
+      .setOrigin(0.5)),
+      console.log('This is the width: ' + this.#TopTextBattleGameObject.width);
+
+    this.#topTextContainer.width = this.#TopTextBattleGameObject.width + 1;
+    console.log('text container width: ' + this.#topTextContainer.width);
+    console.log('text width: ' + this.#TopTextBattleGameObject.width);
+    this.#topTextContainer.setX(
+      this.#topTextContainer.x - this.#TopTextBattleGameObject.width / 2
+    );
+
+    // this.#topTextContainer.width = this.#TopTextBattleGameObject.width;
+    // // this.#handleTopTextContainerLeftNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+    // // this.#handleTopTextContainerRighttNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
+
+    // this.#moveSelectionSubBattleMenuPhaserContainerGameObject =
+    //   this.#scene.add.container(45, this.#scene.scale.height - 47, [
+    //     this.#attackBattleMenuCursorPhaserImageGameObject,
+    //   ]);
   }
 }
