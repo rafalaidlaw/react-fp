@@ -204,6 +204,12 @@ export class BattleMenu {
       if (this.#queuedInfoPanelCallback) {
         this.#queuedInfoPanelCallback();
         this.#queuedInfoPanelCallback = undefined;
+        this.#TopTextBattleGameObject.destroy();
+        this.#TopTextBattleGameObject = this.#scene.add
+          .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
+          .setFontSize(21)
+          .setOrigin(0.5);
+        this.#handleTopTextContainer();
       }
       return;
     }
