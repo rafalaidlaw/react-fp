@@ -62,8 +62,22 @@ export class BattleMenu {
   #queuedInfoPanelCallback;
   /** @type {boolean} */
   #waitingForPlayerInput;
-  /** @type {Phaser.GameObjects.Rectangle} */
+  /** @type {Phaser.GameObjects.Container} */
   #topTextContainer;
+  /** @type {Phaser.GameObjects.Rectangle} */
+  #HUDrect01;
+  /** @type {Phaser.GameObjects.Rectangle} */
+  #HUDrect02;
+  /** @type {Phaser.GameObjects.Rectangle} */
+  #HUDrect03;
+  /** @type {Phaser.GameObjects.Rectangle} */
+  #HUDrect04;
+  /** @type {Phaser.GameObjects.Rectangle} */
+  #HUDrect05;
+  /** @type {Phaser.GameObjects.Image} */
+  #TOPTEXT_CAP_LEFT;
+  /** @type {Phaser.GameObjects.Image} */
+  #TOPTEXT_CAP_RIGHT;
 
   /**
    *
@@ -197,7 +211,16 @@ export class BattleMenu {
     // get first message from queue and animate message
     const messageToDisplay = this.#queuedInfoPanelMessages.shift();
     // this.#battleTextGameObjectLine1.setText(messageToDisplay);
-    this.#battleTextGameObjectLine1 = this.#txtBLUE(66, 139, messageToDisplay); ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    this.#TopTextBattleGameObject.destroy();
+
+    this.#TopTextBattleGameObject = this.#scene.add
+      .bitmapText(160, 16, 'Jacquard', messageToDisplay)
+      .setFontSize(21)
+      .setOrigin(0.5);
+
+    this.#handleTopTextContainer();
+
+    // this.#battleTextGameObjectLine1 = this.#txtBLUE(66, 139, messageToDisplay);
     this.#waitingForPlayerInput = true;
   }
 
@@ -218,6 +241,33 @@ export class BattleMenu {
         this.#mainBattleMenuCursorPhaserImageGameObject,
       ]
     );
+    (this.#HUDrect01 = this.#scene.add
+      .rectangle(160.5, 16, 1, 20, 0xedc4ff, 1)
+      .setOrigin(0.5)),
+      (this.#HUDrect02 = this.#scene.add
+        .rectangle(160.5, 5.5, 1, 1, 0xb163d2, 1)
+        .setOrigin(0.5)),
+      (this.#HUDrect03 = this.#scene.add
+        .rectangle(160.5, 26.5, 1, 1, 0xde92ff, 1)
+        .setOrigin(0.5)),
+      (this.#HUDrect04 = this.#scene.add
+        .rectangle(160.5, 4.5, 1, 1, 0xde92ff, 1)
+        .setOrigin(0.5)),
+      (this.#HUDrect05 = this.#scene.add
+        .rectangle(160.5, 27.5, 1, 1, 0x9749b8, 1)
+        .setOrigin(0.5)),
+      (this.#TOPTEXT_CAP_LEFT = this.#scene.add
+        .image(71, 28, UI_ASSET_KEYS.TOPTEXT_CAP)
+        .setOrigin(1));
+    this.#TOPTEXT_CAP_RIGHT = this.#scene.add
+      .image(237.5, 4, UI_ASSET_KEYS.TOPTEXT_CAP)
+      .setOrigin(0)
+      .setFlipX(true);
+    this.#TopTextBattleGameObject = this.#scene.add
+      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
+      .setFontSize(21)
+      .setOrigin(0.5);
+
     this.#handleTopTextContainer();
 
     this.#txtColorDUEL(true);
@@ -750,84 +800,34 @@ export class BattleMenu {
     exhaustiveGuard(this.#selectedBattleMenuOption);
   }
   #handleTopTextContainer() {
-    this.#topTextContainer = this.#scene.add
-      .rectangle(
-        160.5,
-        16,
-        1,
-        20,
-        //0xd551b1,
-        0xeac4ff,
-        1
-      )
-      .setOrigin(0.5);
+    let topTextBgWidth = this.#TopTextBattleGameObject.width + 1;
+    let leftCap = 160 - this.#TopTextBattleGameObject.width / 2;
+    let rightCap = 160 + this.#TopTextBattleGameObject.width / 2;
 
-    this.#scene.add
-      .rectangle(
-        160.5,
-        5.5,
-        153,
-        1,
-        //0xd551b1,
-        0xb163d2,
-        1
-      )
-      .setOrigin(0.5);
-    this.#scene.add
-      .rectangle(
-        160.5,
-        26.5,
-        153,
-        1,
-        //0xd551b1,
-        0xde92ff,
-        1
-      )
-      .setOrigin(0.5);
-    this.#scene.add
-      .rectangle(
-        160.5,
-        4.5,
-        153,
-        1,
-        //0xd551b1,
-        0xde92ff,
-        1
-      )
-      .setOrigin(0.5);
+    this.#HUDrect01.width = topTextBgWidth;
+    this.#HUDrect01.setOrigin(0.5);
+    this.#HUDrect02.width = topTextBgWidth;
+    this.#HUDrect02.setOrigin(0.5);
+    this.#HUDrect03.width = topTextBgWidth;
+    this.#HUDrect03.setOrigin(0.5);
+    this.#HUDrect04.width = topTextBgWidth;
+    this.#HUDrect04.setOrigin(0.5);
+    this.#HUDrect05.width = topTextBgWidth;
+    this.#HUDrect05.setOrigin(0.5);
 
-    this.#scene.add
-      .rectangle(
-        160.5,
-        27.5,
-        153,
-        1,
-        //0xd551b1,
-        0x9749b8,
-        1
-      )
-      .setOrigin(0.5);
+    this.#TOPTEXT_CAP_LEFT.setX(leftCap);
+    this.#TOPTEXT_CAP_RIGHT.setX(rightCap);
 
-    (this.#TopTextBattleGameObject = this.#scene.add
-      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
-      .setFontSize(21)
-      .setOrigin(0.5)),
-      console.log('This is the width: ' + this.#TopTextBattleGameObject.width);
+    console.log(this.#HUDrect01);
 
-    this.#topTextContainer.width = this.#TopTextBattleGameObject.width + 1;
-    console.log('text container width: ' + this.#topTextContainer.width);
-    console.log('text width: ' + this.#TopTextBattleGameObject.width);
-    this.#topTextContainer.setX(
-      this.#topTextContainer.x - this.#TopTextBattleGameObject.width / 2
-    );
-
-    // this.#topTextContainer.width = this.#TopTextBattleGameObject.width;
-    // // this.#handleTopTextContainerLeftNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
-    // // this.#handleTopTextContainerRighttNubbin = this.#TopTextBattleGameObject.x - this.#TopTextBattleGameObject.width/2;
-
-    // this.#moveSelectionSubBattleMenuPhaserContainerGameObject =
-    //   this.#scene.add.container(45, this.#scene.scale.height - 47, [
-    //     this.#attackBattleMenuCursorPhaserImageGameObject,
-    //   ]);
+    // this.#topTextContainer = this.#scene.add.container(160.5, 0, [
+    //   this.#scene.add.rectangle(0, 16, topTextBgWidth, 20, 0xedc4ff, 1),
+    //   this.#scene.add.rectangle(0, 5.5, topTextBgWidth, 1, 0xb163d2, 1),
+    //   this.#scene.add.rectangle(0, 26.5, topTextBgWidth, 1, 0xde92ff, 1),
+    //   this.#scene.add.rectangle(0, 4.5, topTextBgWidth, 1, 0xde92ff, 1),
+    //   this.#scene.add.rectangle(0, 27.5, topTextBgWidth, 1, 0x9749b8, 1),
+    // ]);
   }
+  //edc4ff
+  //0xde92ff
 }

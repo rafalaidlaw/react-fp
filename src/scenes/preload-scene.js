@@ -46,6 +46,10 @@ export class PreloadScene extends Phaser.Scene {
       HEALTH_BAR_ASSET_KEYS.LEFT_CAP,
       `${monsterTamerAssetPath}/battle-backgrounds/syringe-nubbin.png`
     );
+    this.load.image(
+      HEALTH_BAR_ASSET_KEYS.LEFT_CAP,
+      `${monsterTamerAssetPath}/top-texture-side-nub.png`
+    );
 
     // monster assets
     this.load.spritesheet(
@@ -73,8 +77,8 @@ export class PreloadScene extends Phaser.Scene {
     );
 
     this.load.image(
-      UI_ASSET_KEYS.TOPTEXTCONTAINER,
-      `${monsterTamerAssetPath}/top-texture-container-gameobject.png`
+      UI_ASSET_KEYS.TOPTEXT_CAP,
+      `${monsterTamerAssetPath}/top-texture-side-nub.png`
     );
   }
 
