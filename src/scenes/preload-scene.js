@@ -77,8 +77,12 @@ export class PreloadScene extends Phaser.Scene {
     );
 
     this.load.image(
-      UI_ASSET_KEYS.TOPTEXT_CAP,
-      `${monsterTamerAssetPath}/top-texture-side-nub.png`
+      UI_ASSET_KEYS.TOPTEXT_CAP_LEFT,
+      `${monsterTamerAssetPath}/top-texture-side-nub-right.png`
+    );
+    this.load.image(
+      UI_ASSET_KEYS.TOPTEXT_CAP_RIGHT,
+      `${monsterTamerAssetPath}/top-texture-side-nub-left.png`
     );
   }
 

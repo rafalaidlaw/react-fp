@@ -9,13 +9,23 @@ import {
 } from '../battle/ui/menu/battle-menu-options.js';
 //preparing the battle-menu
 
+const BATTLE_MENU_FONT_PLACEMENT = Object.freeze({
+  x: 88,
+  y: 136,
+  xx: 185,
+  yy: 154,
+});
 const BATTLE_MENU_CURSOR_POS = Object.freeze({
-  x: -13,
-  y: 11,
+  x: -76,
+  y: 8,
+  xx: 22,
+  yy: 26,
 });
 const ATTACK_MENU_CURSOR_POS = Object.freeze({
-  x: 15,
-  y: 12,
+  x: 34,
+  y: 10,
+  xx: 132,
+  yy: 28,
 });
 export class BattleMenu {
   /** @type {Phaser.Scene} */
@@ -100,13 +110,13 @@ export class BattleMenu {
 
   showMainBattleMenu() {
     // this.#battleTextGameObjectLine1.setText('What will you do').setX(46);
-    if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 0) {
-      this.#battleTextGameObjectLine1 = this.#txtPINK(
-        46,
-        139,
-        'What will you do'
-      );
-    }
+    // if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 0) {
+    //   this.#battleTextGameObjectLine1 = this.#txtPINK(
+    //     46,
+    //     139,
+    //     'What will you do'
+    //   );
+    // }
     this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_MAIN;
 
     // this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
@@ -248,25 +258,25 @@ export class BattleMenu {
       ]
     );
     (this.#HUDrect01 = this.#scene.add
-      .rectangle(160.5, 16, 1, 20, 0xedc4ff, 1)
+      .rectangle(160.5, 17, 1, 20, 0xedc4ff, 1)
       .setOrigin(0.5)),
       (this.#HUDrect02 = this.#scene.add
-        .rectangle(160.5, 5.5, 1, 1, 0xb163d2, 1)
+        .rectangle(160.5, 6.5, 1, 1, 0xedc4ff, 1)
         .setOrigin(0.5)),
       (this.#HUDrect03 = this.#scene.add
-        .rectangle(160.5, 26.5, 1, 1, 0xde92ff, 1)
+        .rectangle(160.5, 27.5, 1, 1, 0xde92ff, 1)
         .setOrigin(0.5)),
       (this.#HUDrect04 = this.#scene.add
-        .rectangle(160.5, 4.5, 1, 1, 0xde92ff, 1)
+        .rectangle(160.5, 5.5, 1, 1, 0xde92ff, 1)
         .setOrigin(0.5)),
       (this.#HUDrect05 = this.#scene.add
-        .rectangle(160.5, 27.5, 1, 1, 0x9749b8, 1)
+        .rectangle(160.5, 28.5, 1, 1, 0x9749b8, 1)
         .setOrigin(0.5)),
       (this.#TOPTEXT_CAP_LEFT = this.#scene.add
-        .image(71, 28, UI_ASSET_KEYS.TOPTEXT_CAP)
+        .image(71, 37, UI_ASSET_KEYS.TOPTEXT_CAP_RIGHT)
         .setOrigin(1));
     this.#TOPTEXT_CAP_RIGHT = this.#scene.add
-      .image(237.5, 4, UI_ASSET_KEYS.TOPTEXT_CAP)
+      .image(237.5, 1, UI_ASSET_KEYS.TOPTEXT_CAP_LEFT)
       .setOrigin(0)
       .setFlipX(true);
     this.#TopTextBattleGameObject = this.#scene.add
@@ -282,13 +292,13 @@ export class BattleMenu {
     this.#txtColorFLEE(false);
 
     this.#battleTextGameObjectLine1 = this.#txtPINK(
-      46,
+      -146,
       139,
       'What will you do'
     );
     // TODO update use orphan data to populate name with chosen orphan
     this.#battleTextGameObjectLine2 = this.#txtPINK(
-      60,
+      -60,
       154,
       `${MONSTER_ASSET_KEYS.ORPHAN}?`
     );
@@ -305,6 +315,7 @@ export class BattleMenu {
         0
       )
       .setOrigin(0);
+    // .setRotation(1.58);
 
     this.#moveSelectionSubBattleMenuPhaserContainerGameObject =
       this.#scene.add.container(45, this.#scene.scale.height - 47, [
@@ -332,7 +343,8 @@ export class BattleMenu {
         1
       )
       .setOrigin(0)
-      .setStrokeStyle(2, /*0xe768fb*/ 0x620044, 1);
+      .setStrokeStyle(2, /*0xe768fb*/ 0x620044, 1)
+      .setAlpha(0);
   }
 
   #createMainInfoSubPane() {
@@ -342,7 +354,8 @@ export class BattleMenu {
     return this.#scene.add
       .rectangle(-119, -2, rectWidth - 2, rectHeight, 0xcf5dac, 1)
       .setOrigin(0)
-      .setStrokeStyle(2, 0x8d1f6a, 1);
+      .setStrokeStyle(2, 0x8d1f6a, 1)
+      .setAlpha(0);
   }
 
   #txtBLUE(x, y, txt) {
@@ -438,52 +451,56 @@ export class BattleMenu {
   #txtColorMove_1(blue) {
     if (blue == true) {
       return (this.#battleTextGameObjectMove_1 = this.#txtBLUE(
-        69,
-        138,
+        BATTLE_MENU_FONT_PLACEMENT.x,
+        BATTLE_MENU_FONT_PLACEMENT.y,
         'Cough Blood'
       ));
     }
     return (this.#battleTextGameObjectMove_1 = this.#txtPINK(
-      69,
-      138,
+      BATTLE_MENU_FONT_PLACEMENT.x,
+      BATTLE_MENU_FONT_PLACEMENT.y,
       'Cough Blood'
     ));
   }
   #txtColorMove_2(blue) {
     if (blue == true) {
       return (this.#battleTextGameObjectMove_2 = this.#txtBLUE(
-        154,
-        138,
-        'Kick The Can'
+        BATTLE_MENU_FONT_PLACEMENT.xx,
+        BATTLE_MENU_FONT_PLACEMENT.y,
+        'Kick Can'
       ));
     }
     return (this.#battleTextGameObjectMove_2 = this.#txtPINK(
-      154,
-      138,
-      'Kick The Can'
+      BATTLE_MENU_FONT_PLACEMENT.xx,
+      BATTLE_MENU_FONT_PLACEMENT.y,
+      'Kick Can'
     ));
   }
   #txtColorMove_3(blue) {
     if (blue == true) {
       return (this.#battleTextGameObjectMove_3 = this.#txtBLUE(
-        69,
-        157,
+        BATTLE_MENU_FONT_PLACEMENT.x,
+        BATTLE_MENU_FONT_PLACEMENT.yy,
         'Pout'
       ));
     }
-    return (this.#battleTextGameObjectMove_3 = this.#txtPINK(69, 157, 'Pout'));
+    return (this.#battleTextGameObjectMove_3 = this.#txtPINK(
+      BATTLE_MENU_FONT_PLACEMENT.x,
+      BATTLE_MENU_FONT_PLACEMENT.yy,
+      'Pout'
+    ));
   }
   #txtColorMove_4(blue) {
     if (blue == true) {
       return (this.#battleTextGameObjectMove_4 = this.#txtBLUE(
-        154,
-        157,
+        BATTLE_MENU_FONT_PLACEMENT.xx,
+        BATTLE_MENU_FONT_PLACEMENT.yy,
         'Despair'
       ));
     }
     return (this.#battleTextGameObjectMove_4 = this.#txtPINK(
-      154,
-      157,
+      BATTLE_MENU_FONT_PLACEMENT.xx,
+      BATTLE_MENU_FONT_PLACEMENT.yy,
       'Despair'
     ));
   }
@@ -491,14 +508,14 @@ export class BattleMenu {
     if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
       if (blue == true) {
         return (this.#battleTextGameObjectDUEL = this.#txtBLUE(
-          151,
-          138,
+          BATTLE_MENU_FONT_PLACEMENT.x,
+          BATTLE_MENU_FONT_PLACEMENT.y,
           'En Garde'
         ));
       }
       return (this.#battleTextGameObjectDUEL = this.#txtPINK(
-        151,
-        138,
+        BATTLE_MENU_FONT_PLACEMENT.x,
+        BATTLE_MENU_FONT_PLACEMENT.y,
         'En Garde'
       ));
     }
@@ -508,15 +525,15 @@ export class BattleMenu {
     if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
       if (blue == true) {
         return (this.#battleTextGameObjectSWITCH = this.#txtBLUE(
-          220,
-          138,
-          'Pray'
+          BATTLE_MENU_FONT_PLACEMENT.xx,
+          BATTLE_MENU_FONT_PLACEMENT.y,
+          'Prayers'
         ));
       }
       return (this.#battleTextGameObjectSWITCH = this.#txtPINK(
-        220,
-        138,
-        'Pray'
+        BATTLE_MENU_FONT_PLACEMENT.xx,
+        BATTLE_MENU_FONT_PLACEMENT.y,
+        'Prayers'
       ));
     }
   }
@@ -524,14 +541,14 @@ export class BattleMenu {
     if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
       if (blue == true) {
         return (this.#battleTextGameObjectITEM = this.#txtBLUE(
-          151,
-          157,
+          BATTLE_MENU_FONT_PLACEMENT.x,
+          BATTLE_MENU_FONT_PLACEMENT.yy,
           'Pneumatic'
         ));
       }
       return (this.#battleTextGameObjectITEM = this.#txtPINK(
-        151,
-        157,
+        BATTLE_MENU_FONT_PLACEMENT.x,
+        BATTLE_MENU_FONT_PLACEMENT.yy,
         'Pneumatic'
       ));
     }
@@ -540,14 +557,14 @@ export class BattleMenu {
     if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 1) {
       if (blue == true) {
         return (this.#battleTextGameObjectFLEE = this.#txtBLUE(
-          220,
-          157,
+          BATTLE_MENU_FONT_PLACEMENT.xx,
+          BATTLE_MENU_FONT_PLACEMENT.yy,
           'Tincture'
         ));
       }
       return (this.#battleTextGameObjectFLEE = this.#txtPINK(
-        220,
-        157,
+        BATTLE_MENU_FONT_PLACEMENT.xx,
+        BATTLE_MENU_FONT_PLACEMENT.yy,
         'Tincture'
       ));
     }
@@ -586,7 +603,7 @@ export class BattleMenu {
         return;
       case BATTLE_MENU_OPTIONS.SWITCH:
         this.#mainBattleMenuCursorPhaserImageGameObject
-          .setPosition(56, BATTLE_MENU_CURSOR_POS.y)
+          .setPosition(BATTLE_MENU_CURSOR_POS.xx, BATTLE_MENU_CURSOR_POS.y)
           .setRotation(0);
         this.#txtColorDESTROY();
         this.#txtColorDUEL(false);
@@ -596,7 +613,7 @@ export class BattleMenu {
         return;
       case BATTLE_MENU_OPTIONS.ITEM:
         this.#mainBattleMenuCursorPhaserImageGameObject
-          .setPosition(BATTLE_MENU_CURSOR_POS.x, 32)
+          .setPosition(BATTLE_MENU_CURSOR_POS.x, BATTLE_MENU_CURSOR_POS.yy)
           .setRotation(0);
         this.#txtColorDESTROY();
         this.#txtColorDUEL(false);
@@ -606,7 +623,7 @@ export class BattleMenu {
         return;
       case BATTLE_MENU_OPTIONS.FLEE:
         this.#mainBattleMenuCursorPhaserImageGameObject
-          .setPosition(56, 32)
+          .setPosition(BATTLE_MENU_CURSOR_POS.xx, BATTLE_MENU_CURSOR_POS.yy)
           .setRotation(0);
         this.#txtColorDESTROY();
         this.#txtColorDUEL(false);
@@ -739,18 +756,21 @@ export class BattleMenu {
         return;
       case ATTACK_MOVE_OPTIONS.MOVE_2:
         this.#attackBattleMenuCursorPhaserImageGameObject.setPosition(
-          100,
+          ATTACK_MENU_CURSOR_POS.xx,
           ATTACK_MENU_CURSOR_POS.y
         );
         return;
       case ATTACK_MOVE_OPTIONS.MOVE_3:
         this.#attackBattleMenuCursorPhaserImageGameObject.setPosition(
           ATTACK_MENU_CURSOR_POS.x,
-          31
+          ATTACK_MENU_CURSOR_POS.yy
         );
         return;
       case ATTACK_MOVE_OPTIONS.MOVE_4:
-        this.#attackBattleMenuCursorPhaserImageGameObject.setPosition(100, 31);
+        this.#attackBattleMenuCursorPhaserImageGameObject.setPosition(
+          ATTACK_MENU_CURSOR_POS.xx,
+          ATTACK_MENU_CURSOR_POS.yy
+        );
         return;
       default:
         exhaustiveGuard(this.#selectedAttackMenuOption);
@@ -770,18 +790,15 @@ export class BattleMenu {
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
       // TODO
-      this.updateInfoPaneMessagesAndWaitForInput(
-        ['You open a Pneumatic Tube...', 'Oops, butter fingers...'],
-        () => {
-          this.#switchToMainBattleMenu();
-        }
-      );
+      this.updateInfoPaneMessagesAndWaitForInput(['Pneumatic Tube'], () => {
+        this.#switchToMainBattleMenu();
+      });
       return;
     }
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
       this.updateInfoPaneMessagesAndWaitForInput(
-        ['God is Dead..', 'And his angels are starving..'],
+        ['God is Dead..', 'His Angels are Starving..'],
         () => {
           this.#switchToMainBattleMenu();
         }
@@ -806,9 +823,9 @@ export class BattleMenu {
     exhaustiveGuard(this.#selectedBattleMenuOption);
   }
   #handleTopTextContainer() {
-    let topTextBgWidth = this.#TopTextBattleGameObject.width + 1;
-    let leftCap = 160 - this.#TopTextBattleGameObject.width / 2;
-    let rightCap = 160 + this.#TopTextBattleGameObject.width / 2;
+    let topTextBgWidth = this.#TopTextBattleGameObject.width - 70;
+    let leftCap = 160 - topTextBgWidth / 2 + 1;
+    let rightCap = 160 + topTextBgWidth / 2;
 
     this.#HUDrect01.width = topTextBgWidth;
     this.#HUDrect01.setOrigin(0.5);
