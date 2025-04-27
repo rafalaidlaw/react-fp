@@ -294,7 +294,7 @@ export class BattleMenu {
     this.#battleTextGameObjectLine1 = this.#txtPINK(
       -146,
       139,
-      'What will you do'
+      'What will you do sailor'
     );
     // TODO update use orphan data to populate name with chosen orphan
     this.#battleTextGameObjectLine2 = this.#txtPINK(
