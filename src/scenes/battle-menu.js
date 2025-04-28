@@ -88,6 +88,8 @@ export class BattleMenu {
   #TOPTEXT_CAP_LEFT;
   /** @type {Phaser.GameObjects.Image} */
   #TOPTEXT_CAP_RIGHT;
+  /** @type {string[]} */
+  #updateHeaderMessage;
 
   /**
    *
