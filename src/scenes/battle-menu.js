@@ -89,7 +89,7 @@ export class BattleMenu {
   /** @type {Phaser.GameObjects.Image} */
   #TOPTEXT_CAP_RIGHT;
   /** @type {string[]} */
-  #updateHeaderMessage;
+  #queuedBannerCopy;
 
   /**
    *
@@ -104,6 +104,7 @@ export class BattleMenu {
     this.#selectedAttackMenuOption = ATTACK_MOVE_OPTIONS.MOVE_1;
     this.#queuedInfoPanelCallback = undefined;
     this.#queuedInfoPanelMessages = [];
+    this.#queuedBannerCopy = [];
     this.#waitingForPlayerInput = false;
     this.#createMainInfoPane();
     this.#createMainBattleMenu();
@@ -112,22 +113,17 @@ export class BattleMenu {
 
   showMainBattleMenu() {
     // this.#battleTextGameObjectLine1.setText('What will you do').setX(46);
-    // if (this.#mainBattleMenuPhaserContainerGameObject.alpha == 0) {
-    //   this.#battleTextGameObjectLine1 = this.#txtPINK(
-    //     46,
-    //     139,
-    //     'What will you do'
-    //   );
-    // }
+
+    this.#TopTextBattleGameObject.destroy();
+    this.#TopTextBattleGameObject = this.#scene.add
+      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
+      .setFontSize(21)
+      .setOrigin(0.5);
+    this.#handleTopTextContainer();
+
     this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_MAIN;
 
-    // this.#selectedBattleMenuOption = BATTLE_MENU_OPTIONS.DUEL;
     this.#mainBattleMenuPhaserContainerGameObject.setAlpha(1);
-    // this.#txtColorDESTROY();
-    // this.#txtColorDUEL(true);
-    // this.#txtColorSWITCH(false);
-    // this.#txtColorITEM(false);
-    // this.#txtColorFLEE(false);
 
     this.#battleTextGameObjectLine1.setAlpha(1);
     this.#battleTextGameObjectLine2.setAlpha(1);
@@ -197,11 +193,13 @@ export class BattleMenu {
 
   /**
    * @param {string[]} messages
+   * * @param {string[]} bannerCopy
    * @param {() => void} [callback]
    */
-  updateInfoPaneMessagesAndWaitForInput(messages, callback) {
+  updateInfoPaneMessagesAndWaitForInput(messages, bannerCopy, callback) {
     this.#queuedInfoPanelMessages = messages;
     this.#queuedInfoPanelCallback = callback;
+    this.#queuedBannerCopy = bannerCopy;
 
     this.#updateInfoPaneWithMessage();
   }
@@ -232,13 +230,17 @@ export class BattleMenu {
     this.#TopTextBattleGameObject.destroy();
 
     this.#TopTextBattleGameObject = this.#scene.add
-      .bitmapText(160, 16, 'Jacquard', messageToDisplay)
+      .bitmapText(160, 16, 'Jacquard', this.#queuedBannerCopy)
       .setFontSize(21)
       .setOrigin(0.5);
 
     this.#handleTopTextContainer();
 
-    // this.#battleTextGameObjectLine1 = this.#txtBLUE(66, 139, messageToDisplay);
+    this.#battleTextGameObjectLine1 = this.#txtBLUE(
+      160,
+      154,
+      messageToDisplay
+    ).setOrigin(0.5);
     this.#waitingForPlayerInput = true;
   }
 
@@ -469,13 +471,13 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_2 = this.#txtBLUE(
         BATTLE_MENU_FONT_PLACEMENT.xx,
         BATTLE_MENU_FONT_PLACEMENT.y,
-        'Kick Can'
+        'Kick Cat'
       ));
     }
     return (this.#battleTextGameObjectMove_2 = this.#txtPINK(
       BATTLE_MENU_FONT_PLACEMENT.xx,
       BATTLE_MENU_FONT_PLACEMENT.y,
-      'Kick Can'
+      'Kick Cat'
     ));
   }
   #txtColorMove_3(blue) {
@@ -787,20 +789,32 @@ export class BattleMenu {
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.DUEL) {
       this.showMonsterAttackSubMenu();
+      this.#TopTextBattleGameObject.destroy();
+      this.#TopTextBattleGameObject = this.#scene.add
+        .bitmapText(160, 16, 'Jacquard', 'En Garde!')
+        .setFontSize(21)
+        .setOrigin(0.5);
+      this.#handleTopTextContainer();
+
       return;
     }
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
       // TODO
-      this.updateInfoPaneMessagesAndWaitForInput(['Pneumatic Tube'], () => {
-        this.#switchToMainBattleMenu();
-      });
+      this.updateInfoPaneMessagesAndWaitForInput(
+        ['Your Tubes Are Tied.'],
+        ['Pneumatic Tube'],
+        () => {
+          this.#switchToMainBattleMenu();
+        }
+      );
       return;
     }
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
       this.updateInfoPaneMessagesAndWaitForInput(
-        ['God is Dead..', 'His Angels are Starving..'],
+        ['God is Dead', 'His Angels are Starving..'],
+        ['To Whom Do You Pray?'],
         () => {
           this.#switchToMainBattleMenu();
         }
@@ -811,10 +825,11 @@ export class BattleMenu {
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
       this.updateInfoPaneMessagesAndWaitForInput(
         [
-          "The Medicine Bag's Latch is Stuck...",
-          'You try to wiggle it loose...',
-          'If only you had some whale blubber...',
+          "The Bag's Latch is Stuck",
+          'You try to wiggle it loose',
+          'It needs whale blubber.',
         ],
+        ['Tinctures'],
         () => {
           this.#switchToMainBattleMenu();
         }
@@ -844,15 +859,5 @@ export class BattleMenu {
     this.#TOPTEXT_CAP_RIGHT.setX(rightCap);
 
     console.log(this.#HUDrect01);
-
-    // this.#topTextContainer = this.#scene.add.container(160.5, 0, [
-    //   this.#scene.add.rectangle(0, 16, topTextBgWidth, 20, 0xedc4ff, 1),
-    //   this.#scene.add.rectangle(0, 5.5, topTextBgWidth, 1, 0xb163d2, 1),
-    //   this.#scene.add.rectangle(0, 26.5, topTextBgWidth, 1, 0xde92ff, 1),
-    //   this.#scene.add.rectangle(0, 4.5, topTextBgWidth, 1, 0xde92ff, 1),
-    //   this.#scene.add.rectangle(0, 27.5, topTextBgWidth, 1, 0x9749b8, 1),
-    // ]);
   }
-  //edc4ff
-  //0xde92ff
 }
