@@ -90,6 +90,8 @@ export class BattleMenu {
   #TOPTEXT_CAP_RIGHT;
   /** @type {string[]} */
   #queuedBannerCopy;
+  /** @types {number | undefined} */
+  #selectedAttackIndex;
 
   /**
    *
@@ -457,13 +459,13 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_1 = this.#txtBLUE(
         BATTLE_MENU_FONT_PLACEMENT.x,
         BATTLE_MENU_FONT_PLACEMENT.y,
-        'Cough Blood'
+        'Despair'
       ));
     }
     return (this.#battleTextGameObjectMove_1 = this.#txtPINK(
       BATTLE_MENU_FONT_PLACEMENT.x,
       BATTLE_MENU_FONT_PLACEMENT.y,
-      'Cough Blood'
+      'Despair'
     ));
   }
   #txtColorMove_2(blue) {
@@ -471,13 +473,13 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_2 = this.#txtBLUE(
         BATTLE_MENU_FONT_PLACEMENT.xx,
         BATTLE_MENU_FONT_PLACEMENT.y,
-        'Kick Cat'
+        'Pout'
       ));
     }
     return (this.#battleTextGameObjectMove_2 = this.#txtPINK(
       BATTLE_MENU_FONT_PLACEMENT.xx,
       BATTLE_MENU_FONT_PLACEMENT.y,
-      'Kick Cat'
+      'Pout'
     ));
   }
   #txtColorMove_3(blue) {
@@ -485,13 +487,13 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_3 = this.#txtBLUE(
         BATTLE_MENU_FONT_PLACEMENT.x,
         BATTLE_MENU_FONT_PLACEMENT.yy,
-        'Pout'
+        'Cough Blood'
       ));
     }
     return (this.#battleTextGameObjectMove_3 = this.#txtPINK(
       BATTLE_MENU_FONT_PLACEMENT.x,
       BATTLE_MENU_FONT_PLACEMENT.yy,
-      'Pout'
+      'Cough Blood'
     ));
   }
   #txtColorMove_4(blue) {
@@ -499,13 +501,13 @@ export class BattleMenu {
       return (this.#battleTextGameObjectMove_4 = this.#txtBLUE(
         BATTLE_MENU_FONT_PLACEMENT.xx,
         BATTLE_MENU_FONT_PLACEMENT.yy,
-        'Despair'
+        'Kick Cat'
       ));
     }
     return (this.#battleTextGameObjectMove_4 = this.#txtPINK(
       BATTLE_MENU_FONT_PLACEMENT.xx,
       BATTLE_MENU_FONT_PLACEMENT.yy,
-      'Despair'
+      'Kick Cat'
     ));
   }
   #txtColorDUEL(blue) {
@@ -514,13 +516,13 @@ export class BattleMenu {
         return (this.#battleTextGameObjectDUEL = this.#txtBLUE(
           BATTLE_MENU_FONT_PLACEMENT.x,
           BATTLE_MENU_FONT_PLACEMENT.y,
-          'En Garde'
+          'Duel'
         ));
       }
       return (this.#battleTextGameObjectDUEL = this.#txtPINK(
         BATTLE_MENU_FONT_PLACEMENT.x,
         BATTLE_MENU_FONT_PLACEMENT.y,
-        'En Garde'
+        'Duel'
       ));
     }
   }
@@ -547,13 +549,13 @@ export class BattleMenu {
         return (this.#battleTextGameObjectITEM = this.#txtBLUE(
           BATTLE_MENU_FONT_PLACEMENT.x,
           BATTLE_MENU_FONT_PLACEMENT.yy,
-          'Pneumatic'
+          'Tinctures'
         ));
       }
       return (this.#battleTextGameObjectITEM = this.#txtPINK(
         BATTLE_MENU_FONT_PLACEMENT.x,
         BATTLE_MENU_FONT_PLACEMENT.yy,
-        'Pneumatic'
+        'Tinctures'
       ));
     }
   }
@@ -563,13 +565,13 @@ export class BattleMenu {
         return (this.#battleTextGameObjectFLEE = this.#txtBLUE(
           BATTLE_MENU_FONT_PLACEMENT.xx,
           BATTLE_MENU_FONT_PLACEMENT.yy,
-          'Tincture'
+          'Capture'
         ));
       }
       return (this.#battleTextGameObjectFLEE = this.#txtPINK(
         BATTLE_MENU_FONT_PLACEMENT.xx,
         BATTLE_MENU_FONT_PLACEMENT.yy,
-        'Tincture'
+        'Capture'
       ));
     }
   }
@@ -802,8 +804,12 @@ export class BattleMenu {
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
       // TODO
       this.updateInfoPaneMessagesAndWaitForInput(
-        ['Your Tubes Are Tied.'],
-        ['Pneumatic Tube'],
+        [
+          'You Reach for a Tincture',
+          "The Bag's Latch is Stuck",
+          'It needs whale blubber.',
+        ],
+        ['Tinctures'],
         () => {
           this.#switchToMainBattleMenu();
         }
@@ -824,12 +830,9 @@ export class BattleMenu {
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
       this.updateInfoPaneMessagesAndWaitForInput(
-        [
-          "The Bag's Latch is Stuck",
-          'You try to wiggle it loose',
-          'It needs whale blubber.',
-        ],
-        ['Tinctures'],
+        ['Orphan uses Pneumatic Tube.'],
+        ['Pneumatic Tube'],
+
         () => {
           this.#switchToMainBattleMenu();
         }

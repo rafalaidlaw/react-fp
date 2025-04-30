@@ -59,7 +59,7 @@ export class BattleScene extends Phaser.Scene {
     // render out the player and enemy monsters
     this.add.sprite(239, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .image(87, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .image(86, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
