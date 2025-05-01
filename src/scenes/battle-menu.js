@@ -108,9 +108,18 @@ export class BattleMenu {
     this.#queuedInfoPanelMessages = [];
     this.#queuedBannerCopy = [];
     this.#waitingForPlayerInput = false;
+    this.#selectedAttackIndex = undefined;
     this.#createMainInfoPane();
     this.#createMainBattleMenu();
     this.#createMonsterAttackSubMenu();
+  }
+
+  /** @types {number | undefined} */
+  get selectedAttack() {
+    if (this.#activeBattleMenu === ACTIVE_BATTLE_MENU.BATTLE_MOVE_SELECT) {
+      return this.#selectedAttackIndex;
+    }
+    return undefined;
   }
 
   showMainBattleMenu() {
@@ -133,6 +142,7 @@ export class BattleMenu {
     this.#battleTextGameObjectSWITCH.setAlpha(1);
     this.#battleTextGameObjectITEM.setAlpha(1);
     this.#battleTextGameObjectFLEE.setAlpha(1);
+    this.#selectedAttackIndex = undefined;
   }
 
   hideMainBattleMenu() {
@@ -182,7 +192,7 @@ export class BattleMenu {
         return;
       }
       if (this.#activeBattleMenu === ACTIVE_BATTLE_MENU.BATTLE_MOVE_SELECT) {
-        // TODO
+        this.#handlePlayerChooseAttack();
         return;
       }
       return;
@@ -803,6 +813,7 @@ export class BattleMenu {
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.ITEM) {
       // TODO
+      this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_ITEM;
       this.updateInfoPaneMessagesAndWaitForInput(
         [
           'You Reach for a Tincture',
@@ -818,6 +829,7 @@ export class BattleMenu {
     }
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.SWITCH) {
+      this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_SWITCH;
       this.updateInfoPaneMessagesAndWaitForInput(
         ['God is Dead', 'His Angels are Starving..'],
         ['To Whom Do You Pray?'],
@@ -829,6 +841,7 @@ export class BattleMenu {
     }
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.FLEE) {
+      this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_FLEE;
       this.updateInfoPaneMessagesAndWaitForInput(
         ['Orphan uses Pneumatic Tube.'],
         ['Pneumatic Tube'],
@@ -862,5 +875,26 @@ export class BattleMenu {
     this.#TOPTEXT_CAP_RIGHT.setX(rightCap);
 
     console.log(this.#HUDrect01);
+  }
+  #handlePlayerChooseAttack() {
+    let selectedMoveIndex = 0;
+    switch (this.#selectedAttackMenuOption) {
+      case ATTACK_MOVE_OPTIONS.MOVE_1:
+        selectedMoveIndex = 0;
+        break;
+      case ATTACK_MOVE_OPTIONS.MOVE_2:
+        selectedMoveIndex = 1;
+        break;
+      case ATTACK_MOVE_OPTIONS.MOVE_3:
+        selectedMoveIndex = 2;
+        break;
+      case ATTACK_MOVE_OPTIONS.MOVE_4:
+        selectedMoveIndex = 3;
+        break;
+      default:
+        exhaustiveGuard(this.#selectedAttackMenuOption);
+    }
+
+    this.#selectedAttackIndex = selectedMoveIndex;
   }
 }

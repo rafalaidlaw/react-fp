@@ -86,7 +86,22 @@ export class BattleScene extends Phaser.Scene {
     );
     if (wasSpaceKeyPressed) {
       this.#battleMenu.handlePlayerInput('OK');
-      return;
+
+      //check if the player selected an attack, and update display text
+      if (this.#battleMenu.selectedAttack === undefined) {
+        return;
+      }
+      console.log(
+        `Player selected the following move: ${this.#battleMenu.selectedAttack}`
+      );
+      this.#battleMenu.hideMonsterAttackSubMenu();
+      this.#battleMenu.updateInfoPaneMessagesAndWaitForInput(
+        ['Orphan Begins to cry'],
+        ['Attack!'],
+        () => {
+          this.#battleMenu.showMainBattleMenu();
+        }
+      );
     }
 
     if (Phaser.Input.Keyboard.JustDown(this.#cursorKeys.shift)) {
