@@ -125,12 +125,7 @@ export class BattleMenu {
   showMainBattleMenu() {
     // this.#battleTextGameObjectLine1.setText('What will you do').setX(46);
 
-    this.#TopTextBattleGameObject.destroy();
-    this.#TopTextBattleGameObject = this.#scene.add
-      .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
-      .setFontSize(21)
-      .setOrigin(0.5);
-    this.#handleTopTextContainer();
+    this.#handleTopTextContainer(['What Now Orphan?']);
 
     this.#activeBattleMenu = ACTIVE_BATTLE_MENU.BATTLE_MAIN;
 
@@ -226,12 +221,8 @@ export class BattleMenu {
       if (this.#queuedInfoPanelCallback) {
         this.#queuedInfoPanelCallback();
         this.#queuedInfoPanelCallback = undefined;
-        this.#TopTextBattleGameObject.destroy();
-        this.#TopTextBattleGameObject = this.#scene.add
-          .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
-          .setFontSize(21)
-          .setOrigin(0.5);
-        this.#handleTopTextContainer();
+
+        this.#handleTopTextContainer(['What Now Orphan?']);
       }
       return;
     }
@@ -239,14 +230,8 @@ export class BattleMenu {
     // get first message from queue and animate message
     const messageToDisplay = this.#queuedInfoPanelMessages.shift();
     // this.#battleTextGameObjectLine1.setText(messageToDisplay);
-    this.#TopTextBattleGameObject.destroy();
 
-    this.#TopTextBattleGameObject = this.#scene.add
-      .bitmapText(160, 16, 'Jacquard', this.#queuedBannerCopy)
-      .setFontSize(21)
-      .setOrigin(0.5);
-
-    this.#handleTopTextContainer();
+    this.#handleTopTextContainer(this.#queuedBannerCopy);
 
     this.#battleTextGameObjectLine1 = this.#txtBLUE(
       160,
@@ -295,12 +280,11 @@ export class BattleMenu {
       .image(237.5, 1, UI_ASSET_KEYS.TOPTEXT_CAP_LEFT)
       .setOrigin(0)
       .setFlipX(true);
+
     this.#TopTextBattleGameObject = this.#scene.add
       .bitmapText(160, 16, 'Jacquard', 'What Now Orphan?')
       .setFontSize(21)
       .setOrigin(0.5);
-
-    this.#handleTopTextContainer();
 
     this.#txtColorDUEL(true);
     this.#txtColorSWITCH(false);
@@ -801,12 +785,8 @@ export class BattleMenu {
 
     if (this.#selectedBattleMenuOption === BATTLE_MENU_OPTIONS.DUEL) {
       this.showMonsterAttackSubMenu();
-      this.#TopTextBattleGameObject.destroy();
-      this.#TopTextBattleGameObject = this.#scene.add
-        .bitmapText(160, 16, 'Jacquard', 'En Garde!')
-        .setFontSize(21)
-        .setOrigin(0.5);
-      this.#handleTopTextContainer();
+
+      this.#handleTopTextContainer(['En Garde!']);
 
       return;
     }
@@ -855,7 +835,15 @@ export class BattleMenu {
 
     exhaustiveGuard(this.#selectedBattleMenuOption);
   }
-  #handleTopTextContainer() {
+  /**
+   * @param {string[]} topText
+   * */
+  #handleTopTextContainer(topText) {
+    this.#TopTextBattleGameObject.destroy();
+    this.#TopTextBattleGameObject = this.#scene.add
+      .bitmapText(160, 16, 'Jacquard', topText)
+      .setFontSize(21)
+      .setOrigin(0.5);
     let topTextBgWidth = this.#TopTextBattleGameObject.width - 70;
     let leftCap = 160 - topTextBgWidth / 2 + 1;
     let rightCap = 160 + topTextBgWidth / 2;
@@ -876,6 +864,7 @@ export class BattleMenu {
 
     console.log(this.#HUDrect01);
   }
+
   #handlePlayerChooseAttack() {
     let selectedMoveIndex = 0;
     switch (this.#selectedAttackMenuOption) {
