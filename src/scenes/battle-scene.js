@@ -8,6 +8,7 @@ import Phaser from '../lib/phaser.js';
 import { BattleMenu } from './battle-menu.js';
 import { SCENE_KEYS } from './scene-keys.js';
 import { DIRECTION } from '../common/direction.js';
+import { Background } from '../battle/background.js';
 
 export class BattleScene extends Phaser.Scene {
   /** @type {BattleMenu} */
@@ -49,12 +50,13 @@ export class BattleScene extends Phaser.Scene {
         .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
         .setOrigin(0),
     ];
-    let bob = [];
-    bob = this.#nubbinCreate();
-    console.log(bob.map((x) => eval(x)));
+    let nub = [];
+    nub = this.#nubbinCreate();
+    console.log(nub.map((x) => eval(x)));
     console.log(`[${BattleScene.name}:create] invoked`);
     // create main background
-    this.add.sprite(0, 0, BATTLE_BACKGROUND_ASSET_KEYS.FOREST).setOrigin(0);
+    const background = new Background(this);
+    background.showForest();
 
     // render out the player and enemy monsters
     this.add.sprite(239, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
@@ -66,11 +68,11 @@ export class BattleScene extends Phaser.Scene {
     this.add.container(
       1000,
       2,
-      [].concat(bob.map((x) => eval(x)).concat(bill[0]))
+      [].concat(nub.map((x) => eval(x)).concat(bill[0]))
     );
 
     this.add
-      .container(319000, 2, [].concat(bob.map((x) => eval(x)).concat(bill[1])))
+      .container(319000, 2, [].concat(nub.map((x) => eval(x)).concat(bill[1])))
       .setScale(-1, 1);
 
     //render main info and sub info panes
@@ -144,11 +146,11 @@ export class BattleScene extends Phaser.Scene {
   }
 
   #nubbinCreate() {
-    let bob = [];
+    let nub = [];
     for (let i = 0; i <= 9; i++) {
-      bob.push(`this.#createHealthBar(16 + 2 * ${i}, 9).setDepth(-1)`);
+      nub.push(`this.#createHealthBar(16 + 2 * ${i}, 9).setDepth(-1)`);
     }
-    //console.log(bob);
-    return bob.slice();
+    //console.log(nub);
+    return nub.slice();
   }
 }
