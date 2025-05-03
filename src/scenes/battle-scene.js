@@ -59,20 +59,20 @@ export class BattleScene extends Phaser.Scene {
     background.showForest();
 
     // render out the player and enemy monsters
-    this.add.sprite(239, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
+    this.add.sprite(238, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
       .image(86, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
     this.add.container(
-      1000,
-      2,
+      11,
+      44,
       [].concat(nub.map((x) => eval(x)).concat(bill[0]))
     );
 
     this.add
-      .container(319000, 2, [].concat(nub.map((x) => eval(x)).concat(bill[1])))
+      .container(310, 44, [].concat(nub.map((x) => eval(x)).concat(bill[1])))
       .setScale(-1, 1);
 
     //render main info and sub info panes
@@ -137,10 +137,7 @@ export class BattleScene extends Phaser.Scene {
 
   #createHealthBar(x, y) {
     const scaleY = 1;
-    const leftCap = this.add
-      .image(x, y, HEALTH_BAR_ASSET_KEYS.LEFT_CAP)
-      .setOrigin(1, 0.5)
-      .setScale(1, scaleY);
+    const leftCap = this.add.image(0, y, HEALTH_BAR_ASSET_KEYS.LEFT_CAP);
 
     return this.add.container(x, y, [leftCap]);
   }
@@ -148,7 +145,7 @@ export class BattleScene extends Phaser.Scene {
   #nubbinCreate() {
     let nub = [];
     for (let i = 0; i <= 9; i++) {
-      nub.push(`this.#createHealthBar(16 + 2 * ${i}, 9).setDepth(-1)`);
+      nub.push(`this.#createHealthBar(5, 35 - 2 * ${i}).setDepth(-1)`);
     }
     //console.log(nub);
     return nub.slice();
