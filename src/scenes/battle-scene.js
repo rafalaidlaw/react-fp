@@ -9,6 +9,7 @@ import { BattleMenu } from './battle-menu.js';
 import { SCENE_KEYS } from './scene-keys.js';
 import { DIRECTION } from '../common/direction.js';
 import { Background } from '../battle/background.js';
+import { HealthBar } from '../battle/ui/health-bar.js';
 
 export class BattleScene extends Phaser.Scene {
   /** @type {BattleMenu} */
@@ -42,7 +43,7 @@ export class BattleScene extends Phaser.Scene {
   }
 
   create() {
-    let bill = [
+    let healthBarRender = [
       this.add
         .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
         .setOrigin(0),
@@ -52,8 +53,7 @@ export class BattleScene extends Phaser.Scene {
     ];
     let nub = [];
     nub = this.#nubbinCreate();
-    console.log(nub.map((x) => eval(x)));
-    console.log(`[${BattleScene.name}:create] invoked`);
+
     // create main background
     const background = new Background(this);
     background.showForest();
@@ -61,18 +61,22 @@ export class BattleScene extends Phaser.Scene {
     // render out the player and enemy monsters
     this.add.sprite(238, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .image(86, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .sprite(86, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
     this.add.container(
       11,
       44,
-      [].concat(nub.map((x) => eval(x)).concat(bill[0]))
+      [].concat(nub.map((x) => eval(x)).concat(healthBarRender[0]))
     );
 
     this.add
-      .container(310, 44, [].concat(nub.map((x) => eval(x)).concat(bill[1])))
+      .container(
+        310,
+        44,
+        [].concat(nub.map((x) => eval(x)).concat(healthBarRender[1]))
+      )
       .setScale(-1, 1);
 
     //render main info and sub info panes
@@ -147,7 +151,7 @@ export class BattleScene extends Phaser.Scene {
     for (let i = 0; i <= 9; i++) {
       nub.push(`this.#createHealthBar(5, 35 - 2 * ${i}).setDepth(-1)`);
     }
-    //console.log(nub);
+
     return nub.slice();
   }
 }
