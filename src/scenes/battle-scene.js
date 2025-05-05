@@ -59,9 +59,9 @@ export class BattleScene extends Phaser.Scene {
     background.showForest();
 
     // render out the player and enemy monsters
-    this.add.sprite(238, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
+    this.add.sprite(230, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
-      .sprite(86, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
+      .sprite(87, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
       .setScale(1);
 
