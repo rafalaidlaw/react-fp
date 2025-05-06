@@ -51,8 +51,6 @@ export class BattleScene extends Phaser.Scene {
         .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
         .setOrigin(0),
     ];
-    let nub = [];
-    nub = this.#nubbinCreate();
 
     // create main background
     const background = new Background(this);
@@ -65,22 +63,10 @@ export class BattleScene extends Phaser.Scene {
       .setFlipX(true)
       .setScale(1);
 
-    this.add.container(
-      11,
-      44,
-      [].concat(nub.map((x) => eval(x)).concat(healthBarRender[0]))
-    );
-
-    this.add
-      .container(
-        310,
-        44,
-        [].concat(nub.map((x) => eval(x)).concat(healthBarRender[1]))
-      )
-      .setScale(-1, 1);
-
-    //render main info and sub info panes
-    this.#battleMenu = new BattleMenu(this);
+    new HealthBar(this, 11, 44, 7).container,
+      new HealthBar(this, 310, 44, 7).container.setScale(-1, 1),
+      //render main info and sub info panes
+      (this.#battleMenu = new BattleMenu(this));
     this.#battleMenu.showMainBattleMenu();
 
     this.#cursorKeys = this.input.keyboard.createCursorKeys();
@@ -130,28 +116,5 @@ export class BattleScene extends Phaser.Scene {
     if (selectedDirection !== DIRECTION.NONE) {
       this.#battleMenu.handlePlayerInput(selectedDirection);
     }
-  }
-
-  /**
-   *
-   * @param {number} x the x position to place the health bar container
-   * @param {number} y the y position to place the health bar container
-   * @returns {Phaser.GameObjects.Container}
-   */
-
-  #createHealthBar(x, y) {
-    const scaleY = 1;
-    const leftCap = this.add.image(0, y, HEALTH_BAR_ASSET_KEYS.LEFT_CAP);
-
-    return this.add.container(x, y, [leftCap]);
-  }
-
-  #nubbinCreate() {
-    let nub = [];
-    for (let i = 0; i <= 9; i++) {
-      nub.push(`this.#createHealthBar(5, 35 - 2 * ${i}).setDepth(-1)`);
-    }
-
-    return nub.slice();
   }
 }

@@ -1,4 +1,7 @@
-import { HEALTH_BAR_ASSET_KEYS } from '../../assets/asset-keys.js';
+import {
+  HEALTH_BAR_ASSET_KEYS,
+  BATTLE_ASSET_KEYS,
+} from '../../assets/asset-keys.js';
 import Phaser from '../../lib/phaser.js';
 
 export class HealthBar {
@@ -22,56 +25,43 @@ export class HealthBar {
    * @param {number} x
    * @param {number} y
    */
-  constructor(scene, x, y) {
+  constructor(scene, x, y, nubbins) {
     this.#scene = scene;
-    this.#fullWidth = 360;
-    this.#scaleY = 0.7;
 
-    this.#healthBarContainer = this.#scene.add.container(x, y, []);
-    this.#createHealthBarImages(x, y);
-    this.#setMeterPercentage(1);
+    let nub = [];
+    nub = this.nubbinCreate(nubbins);
+
+    this.#healthBarContainer = this.#scene.add.container(
+      x,
+      y,
+      [].concat(
+        nub
+          .map((x) => eval(x))
+          .concat(
+            this.#scene.add
+              .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
+              .setOrigin(0)
+          )
+      )
+    );
   }
 
   get container() {
     return this.#healthBarContainer;
   }
 
-  /**
-   * @param {number} x the x position to place the health bar container
-   * @param {number} y the y position to place the health bar container
-   * @returns {void}
-   */
-  #createHealthBarImages(x, y) {
-    this.#leftCap = this.#scene.add
-      .image(x, y, HEALTH_BAR_ASSET_KEYS.LEFT_CAP)
-      .setOrigin(0, 0.5)
-      .setScale(1, this.#scaleY);
+  createHealthBar(x, y) {
+    const scaleY = 1;
+    const leftCap = this.#scene.add.image(0, y, HEALTH_BAR_ASSET_KEYS.LEFT_CAP);
 
-    this.#middle = this.#scene.add
-      .image(
-        this.#leftCap.x + this.#leftCap.width,
-        y,
-        HEALTH_BAR_ASSET_KEYS.MIDDLE
-      )
-      .setOrigin(0, 0.5)
-      .setScale(1, this.#scaleY);
-
-    this.#rightCap = this.#scene.add
-      .image(
-        this.#middle.x + this.#middle.displayWidth,
-        y,
-        HEALTH_BAR_ASSET_KEYS.RIGHT_CAP
-      )
-      .setOrigin(0, 0.5)
-      .setScale(1, this.#scaleY);
-
-    this.#healthBarContainer.add([this.#leftCap, this.#middle, this.#rightCap]);
+    return this.#scene.add.container(x, y, [leftCap]);
   }
+  nubbinCreate(nubbins) {
+    let nub = [];
+    for (let i = 0; i <= nubbins; i++) {
+      nub.push(`this.createHealthBar(5, 35 - 2 * ${i}).setDepth(-1)`);
+    }
 
-  #setMeterPercentage(percent = 1) {
-    const width = this.#fullWidth * percent;
-
-    this.#middle.displayWidth = width;
-    this.#rightCap.x = this.#middle.x + this.#middle.displayWidth;
+    return nub.slice();
   }
 }
