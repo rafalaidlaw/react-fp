@@ -63,10 +63,10 @@ export class BattleScene extends Phaser.Scene {
       .setFlipX(true)
       .setScale(1);
 
-    // new HealthBar(this, 11, 44, 16).container,
-    //   new HealthBar(this, 310, 44, 7).container.setScale(-1, 1),
-    //render main info and sub info panes
-    this.#battleMenu = new BattleMenu(this);
+    new HealthBar(this, 11, 44, 15).container,
+      new HealthBar(this, 310, 44, 15).container.setScale(-1, 1),
+      //render main info and sub info panes
+      (this.#battleMenu = new BattleMenu(this));
     this.#battleMenu.showMainBattleMenu();
 
     this.#cursorKeys = this.input.keyboard.createCursorKeys();
