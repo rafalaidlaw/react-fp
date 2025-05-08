@@ -44,7 +44,7 @@ export class BattleMonster {
     this._scene = config.scene;
     this._monsterDetails = config.monsterDetails;
 
-    this._healthBar = new HealthBar(this._scene, 34, 34, 15);
+    //this._healthBar = new HealthBar(this._scene, 34, 34, 10);
     this._phaserGameObject = this._scene.add.sprite(
       position.x,
       position.y,

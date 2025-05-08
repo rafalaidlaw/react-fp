@@ -5,12 +5,15 @@ import { SCENE_KEYS } from './scene-keys.js';
 import { DIRECTION } from '../common/direction.js';
 import { Background } from '../battle/background.js';
 import { HealthBar } from '../battle/ui/health-bar.js';
+import { BattleMonster } from '../battle/Monsters/battle-monster.js';
 
 export class BattleScene extends Phaser.Scene {
   /** @type {BattleMenu} */
   #battleMenu;
   /** @type {Phaser.Types.Input.Keyboard.CursorKeys} */
   #cursorKeys;
+  /** @type {BattleMonster} */
+  #activeEnemyMonster;
   constructor() {
     super({
       key: SCENE_KEYS.BATTLE_SCENE,
@@ -43,7 +46,27 @@ export class BattleScene extends Phaser.Scene {
     background.showForest();
 
     // render out the player and enemy monsters
-    this.add.sprite(230, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
+    this.#activeEnemyMonster = new BattleMonster(
+      {
+        scene: this,
+        monsterDetails: {
+          name: MONSTER_ASSET_KEYS.ENEMY,
+          assetKey: MONSTER_ASSET_KEYS.ENEMY,
+          assetFrame: 0,
+          currentHp: 25,
+          maxHp: 25,
+          attackIds: [],
+          baseAttack: 3,
+        },
+      },
+      {
+        x: 230,
+        y: 58,
+      }
+    );
+
+    // render out the player and enemy monsters
+    // this.add.sprite(230, 58, MONSTER_ASSET_KEYS.ENEMY, 0).setScale(1);
     this.add
       .sprite(87, 96, MONSTER_ASSET_KEYS.ORPHAN, 0)
       .setFlipX(true)
