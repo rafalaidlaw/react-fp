@@ -1,9 +1,4 @@
-import {
-  BATTLE_ASSET_KEYS,
-  BATTLE_BACKGROUND_ASSET_KEYS,
-  HEALTH_BAR_ASSET_KEYS,
-  MONSTER_ASSET_KEYS,
-} from '../assets/asset-keys.js';
+import { MONSTER_ASSET_KEYS } from '../assets/asset-keys.js';
 import Phaser from '../lib/phaser.js';
 import { BattleMenu } from './battle-menu.js';
 import { SCENE_KEYS } from './scene-keys.js';
@@ -43,15 +38,6 @@ export class BattleScene extends Phaser.Scene {
   }
 
   create() {
-    let healthBarRender = [
-      this.add
-        .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
-        .setOrigin(0),
-      this.add
-        .image(0, 0, BATTLE_ASSET_KEYS.HEALTH_BAR_BACKGROUND)
-        .setOrigin(0),
-    ];
-
     // create main background
     const background = new Background(this);
     background.showForest();
