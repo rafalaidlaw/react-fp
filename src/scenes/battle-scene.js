@@ -72,8 +72,8 @@ export class BattleScene extends Phaser.Scene {
       .setFlipX(true)
       .setScale(1);
 
-    new HealthBar(this, 11, 44, 15).container,
-      new HealthBar(this, 310, 44, 15).container.setScale(-1, 1),
+    new HealthBar(this, 13, 44, 15).container.setScale(1, 1),
+      new HealthBar(this, 307, 44, 15).container.setScale(-0.9, 1),
       //render main info and sub info panes
       (this.#battleMenu = new BattleMenu(this));
     this.#battleMenu.showMainBattleMenu();

@@ -59,7 +59,7 @@ export class HealthBar {
   nubbinCreate(nubbins) {
     let nub = [];
     for (let i = 0; i <= nubbins; i++) {
-      nub.push(`this.createHealthBar(5, 35 - 2 * ${i}).setDepth(-1)`);
+      nub.push(`this.createHealthBar(3, 35 - 2 * ${i}).setDepth(-1)`);
     }
 
     return nub.slice();
