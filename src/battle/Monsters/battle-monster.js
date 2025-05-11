@@ -52,4 +52,5 @@ export class BattleMonster {
       this._monsterDetails.assetFrame || 0
     );
   }
+  //todo isolate all config into maluable form
 }
