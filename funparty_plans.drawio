@@ -251,14 +251,23 @@
                 <mxCell id="YjPkbUaIYx_jNYHQSDdL-17" value="Chicken God&lt;div&gt;Attack moveset&lt;/div&gt;&lt;div&gt;What came first&lt;/div&gt;&lt;div&gt;Chicken or Egg?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="390" y="2890" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="Unlocked Toggle in Menu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="16" value="Unlocked Toggle in Menu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="550" y="2840" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="58IuxtUkfn7E68bcIEmH-16" value="Nihilism moves charged at night&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optimism moves in Day&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="58IuxtUkfn7E68bcIEmH-16" value="Nihilism moves charged at night&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optimism moves in Day&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="595" y="2950" width="120" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="Orphans challenge you to duel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="17" value="Orphans challenge you to duel" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="130" y="2720" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Daniel Johnston&lt;div&gt;Monsters&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="2980" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Saying goodbye in the orphonage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Every Orphan attacks you&lt;/div&gt;&lt;div&gt;out of jealousy that you&#39;ve been adopted&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="3070" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Minigame where you&lt;div&gt;Walk the Cow.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Waking the cow chors play..&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Either that or&lt;/div&gt;&lt;div&gt;When fighting a cow&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;most likely when fighting the cow&lt;/div&gt;&lt;div&gt;yeah..&lt;/div&gt;&lt;div&gt;A cow with&lt;/div&gt;&lt;div&gt;a tapeworm&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="3250" width="120" height="210" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
