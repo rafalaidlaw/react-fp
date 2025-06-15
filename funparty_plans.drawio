@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="1426" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1906" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -249,7 +249,7 @@
           <mxGeometry x="110" y="2860" width="188" height="200" as="geometry" />
         </mxCell>
         <mxCell id="YjPkbUaIYx_jNYHQSDdL-17" value="Chicken God&lt;div&gt;Attack moveset&lt;/div&gt;&lt;div&gt;What came first&lt;/div&gt;&lt;div&gt;Chicken or Egg?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="390" y="2890" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="2840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="16" value="Unlocked Toggle in Menu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="2840" width="120" height="60" as="geometry" />
@@ -260,8 +260,20 @@
         <mxCell id="17" value="Orphans challenge you to duel" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="130" y="2720" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FhYe4CfdeehGhFqYvxai-17" value="Walking the cow&lt;div&gt;Along Copyright LAw Lands&lt;/div&gt;&lt;div&gt;if you step on the copywritten tile sets the Queen&#39;s Guard&amp;nbsp;&lt;/div&gt;&lt;div&gt;attack&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The queen is Victoria who holds the plaster mold of alberts hand... when fighting the sillouhette of alberts ghost appears and he attacks,&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="FhYe4CfdeehGhFqYvxai-17" value="Walking the cow&lt;div&gt;Along Copyright LAw Lands&lt;/div&gt;&lt;div&gt;if you step on the copywritten tile sets the Queen&#39;s Guard&amp;nbsp;&lt;/div&gt;&lt;div&gt;attack&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The queen is Victoria who holds the plaster mold of alberts hand... when fighting the sillouhette of alberts ghost appears and he attacks,&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="170" y="3140" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ge01rvNQZDmTp5gs2OYc-17" value="Walking the cow&lt;div&gt;Mini Game&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Walking the cow&lt;/div&gt;&lt;div&gt;Rail walker&lt;/div&gt;&lt;div&gt;The player can swing a stick left or right&lt;/div&gt;&lt;div&gt;Swinging the stick rings the bell on Bessie&#39;s neck&lt;/div&gt;&lt;div&gt;The ring attracts the copywraiths&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Swing stick left and right at incoming enemies.&lt;/div&gt;&lt;div&gt;Every swing cause the cow to veer in that direction.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 swings will bring you to the edge&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You are faced with a series&lt;/div&gt;&lt;div&gt;of moral dilemas&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Will you step on Copywritten Lands?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;And invite the wrath of Copywraiths.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A Nobbit in a knowl invites you to walk his cow along Copywraith&lt;/div&gt;&lt;div&gt;lands.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="3140" width="296" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="ge01rvNQZDmTp5gs2OYc-18" value="There is a church that&lt;div&gt;needs one more bell&lt;/div&gt;&lt;div&gt;to finish it&#39;s tower&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bring the bell on Bessie&#39;s Collar to&lt;/div&gt;&lt;div&gt;finish the church&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="3400" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ge01rvNQZDmTp5gs2OYc-20" value="Saying goodbye to&lt;div&gt;the other orphans in&lt;/div&gt;&lt;div&gt;the orphanage&lt;/div&gt;&lt;div&gt;each orphan attacks you out&lt;/div&gt;&lt;div&gt;of jealousy that you &#39;ve been&lt;/div&gt;&lt;div&gt;adopted&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2930" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ge01rvNQZDmTp5gs2OYc-21" value="Along the way the orphan is stopped by a unknown voice&lt;div&gt;provided moral choices&lt;/div&gt;&lt;div&gt;such as pouring seeds into&lt;/div&gt;&lt;div&gt;the cows ear to kill it.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Or leading the cow off a cliff.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It turns out that the cow is infested by a talking tape worm, which if the wrong choice is made the orphan will have to fight.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ultimately leading the cow to the Toll Troll will have him eat the cow and allow you to pass unharmed.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="3390" width="190" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
