@@ -1,281 +1,338 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
-  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="1906" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="Starter Orphan" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="80" width="710" height="120" as="geometry" />
-        </mxCell>
-        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:%email%&quot;&gt;Email&lt;/a&gt;" name="Nun Offit" position="Orphan Tamer" location="Office 1" email="me@example.com" placeholders="1" link="https://www.draw.io" id="dNxyNK7c78bLwvsdeMH5-12">
-          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/user-avatars-1/512/users-3-128.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
-            <mxGeometry x="120" y="30" width="180" height="70" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-13" value="" style="endArrow=blockThin;endFill=1;fontSize=11;edgeStyle=elbowEdgeStyle;elbow=vertical;rounded=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-12" target="dNxyNK7c78bLwvsdeMH5-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="Albie&lt;br&gt;&lt;i style=&quot;color: gray&quot;&gt;Fatkid in an Innertube&lt;/i&gt;&lt;br&gt;Email" name="Priest Peter Phillips" position="Orphan Tamer" location="Office 2" placeholders="1" id="dNxyNK7c78bLwvsdeMH5-14">
-          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/user-avatars-1/512/users-10-3-128.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeFolding=1;treeMoving=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
-            <mxGeometry x="400" y="30" width="200" height="80" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="9H34w2Jh71Ep6UbLUVoz-1" value="&lt;div&gt;Albie&lt;/div&gt;Fat Kid in an Innertube&lt;div&gt;Type: Innocence&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="110" y="290" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="9H34w2Jh71Ep6UbLUVoz-2" value="&lt;div&gt;Sootie&lt;/div&gt;Raggamuffin&lt;br&gt;&lt;div&gt;Type: Ash Orphan&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="320" y="290" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="9H34w2Jh71Ep6UbLUVoz-3" value="&lt;div&gt;Moppet&lt;/div&gt;Shivering Ailment&lt;br&gt;&lt;div&gt;Type: Anxious&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="560" y="290" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="c4BANhSZFIQ7KN4WRA-t-1" value="Orphodex&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Using react fundamentals course to make&lt;/div&gt;&lt;div&gt;pokedex for orphans where I will. be able to keep my daily orphan drawings&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="410" width="130" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="lMN6it-LYemtHTq4qIZc-1" value="8 Gyms&lt;div&gt;Are churches following other religions. Once youj defeat the cult leader your cross or effiigy is raised on top of church like mario flag when clearing a level&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="240" y="420" width="130" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="lMN6it-LYemtHTq4qIZc-2" value="&lt;div&gt;8 Types&lt;/div&gt;&lt;div&gt;Each gym has type and a biome.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Top of screen London has steam Orphans.&lt;/div&gt;&lt;div&gt;They&#39;re god is commerce.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Volcano Biome&lt;br&gt;Has Ash and Fire types. Their God is Ancient Balrog.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Teal Area&lt;/div&gt;&lt;div&gt;Twighlight Type. Focus on sleep&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;French War&lt;br&gt;Napoleonic area war torn.&lt;br&gt;God of War&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Snow Area&lt;br&gt;&lt;br&gt;&lt;br&gt;Myst Area&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hell ARea&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heaven Area&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="680" y="380" width="130" height="520" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-1" value="BP State Machine" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1160" width="120" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-2" value="Intro" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-2" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1340" as="sourcePoint" />
-            <mxPoint x="200" y="1390" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-6" value="Pre Battle Info" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1392" width="120" height="58" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-6" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1432" as="sourcePoint" />
-            <mxPoint x="200" y="1482" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-8" value="Bring Out Enemy" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1482" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-8" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1522" as="sourcePoint" />
-            <mxPoint x="200" y="1572" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-10" value="Player Input&lt;br&gt;(pause)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1570" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-10" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1610" as="sourcePoint" />
-            <mxPoint x="200" y="1660" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-12" value="Enemy Input" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1662" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-12" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1702" as="sourcePoint" />
-            <mxPoint x="200" y="1752" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-14" value="Battle" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1752" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-14" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1792" as="sourcePoint" />
-            <mxPoint x="200" y="1842" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-18" target="1dcjqhPWXCqPS0pfsLZp-10" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="1880" as="sourcePoint" />
-            <mxPoint x="440" y="1540" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="320" y="1870" />
-              <mxPoint x="320" y="1600" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-10" target="1dcjqhPWXCqPS0pfsLZp-23" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1580" as="sourcePoint" />
-            <mxPoint x="90" y="2080" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="100" y="1600" />
-              <mxPoint x="100" y="2050" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-18" value="Post Attack Check" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1840" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-18" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="1880" as="sourcePoint" />
-            <mxPoint x="200" y="1930" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-20" value="Finished" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="1930" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-23" value="Finished" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="2020" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="2020" as="sourcePoint" />
-            <mxPoint x="200" y="1990" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="200" y="2010" />
-              <mxPoint x="200" y="2010" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-27" value="BLUE NUN&lt;div&gt;grows old and haggared by tvolcanoe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 drawings&lt;/div&gt;&lt;div&gt;yopung buyeatiful&lt;/div&gt;&lt;div&gt;transuition&lt;/div&gt;&lt;div&gt;hagard old&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="390" y="690" width="120" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="1dcjqhPWXCqPS0pfsLZp-28" value="Thom Ba-bombdadil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="690" width="200" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="EJm_T1MfFVbmYTKbSGmN-1" value="Champion Forest&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;turns out to be&lt;/div&gt;&lt;div&gt;Champignon Forest&lt;/div&gt;&lt;div&gt;(Mushroom)&lt;/div&gt;&lt;div&gt;as the nun explains&lt;/div&gt;&lt;div&gt;when they get there&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="400" width="120" height="185" as="geometry" />
-        </mxCell>
-        <mxCell id="NaM-DlOi4ERBnAFPFXcm-1" value="Talking Tabby Cat appears throughout gane&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;in the end tabby cat is final god boss&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;end of game zooms out from snoozing twix&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;this is a god dream&lt;/div&gt;&lt;div&gt;We&#39;re on an ultrlight beam&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="50" y="840" width="280" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="_eeatI-6LmOxNyW0kUMp-2" value="Inject&lt;br&gt;JESUS JUICE&lt;div&gt;to greatly enhance tincture&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350" y="1130" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_eeatI-6LmOxNyW0kUMp-3" value="Sing Song About&lt;div&gt;Porridge&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;is like summon animation from ff7&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;maybe there are words learned like minish cap that you insert for different results.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="380" y="1270" width="120" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="_eeatI-6LmOxNyW0kUMp-4" value="Pray is like&lt;div&gt;turning into dragon quarter&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="540" y="1130" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="WhSgem01bFfFkYUl3J8e-1" value="&lt;div&gt;&lt;b&gt;������&lt;/b&gt;&lt;/div&gt;&lt;b&gt;death beseech you&lt;/b&gt;&lt;div&gt;&lt;b&gt;������&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;������&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;������&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="282" width="256" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="WhSgem01bFfFkYUl3J8e-2" value="Catch Foes in PNematic Tubes.&lt;div&gt;Up[on captuire you may choose to&lt;/div&gt;&lt;div&gt;keep or convert.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Converting sqeezezes their essence out of pnematic tube to be used as stim packs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;or potentially to create tarot card&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1260" width="120" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="WhSgem01bFfFkYUl3J8e-3" value="Name selection has&lt;div&gt;ouija board option&lt;/div&gt;&lt;div&gt;where ghost&lt;/div&gt;&lt;div&gt;asks is your name wendolf&lt;/div&gt;&lt;div&gt;bardolf&lt;/div&gt;&lt;div&gt;rolg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="370" y="1520" width="120" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="WhSgem01bFfFkYUl3J8e-4" value="Collecting specimenss&lt;div&gt;for Darwins Theory of&lt;/div&gt;&lt;div&gt;Evolution&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="1560" width="120" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="QeXgW6aQJEQ1C3spduMK-1" value="Hot foot bath&lt;div&gt;wet sheet therapy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="380" y="910" width="120" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="zhvqqRehltlr2zDm-ukN-1" value="&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Attack Moves&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono Lig&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Laudanum&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono Lig&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre; color: rgb(239, 240, 235);&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: rgb(90, 247, 142);&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Extol&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: rgb(90, 247, 142);&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Forward March&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: rgb(90, 247, 142);&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Cough Blood&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#330000;" parent="1" vertex="1">
-          <mxGeometry x="580" y="930" width="120" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="qNe9hVO4kIWgMy4WHAtG-1" value="&lt;div&gt;if Prayer&lt;/div&gt;Light beams down&lt;div&gt;from duel circle&lt;/div&gt;&lt;div&gt;and various gods&lt;/div&gt;&lt;div&gt;give you boons&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Its a christmas&lt;/div&gt;&lt;div&gt;miracle&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="1790" width="120" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="qNe9hVO4kIWgMy4WHAtG-2" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="595" y="1780" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="2" value="Bridge Town&lt;br&gt;Town on a Bridge&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bridge town is a town on a bridge based on the london bridge houses that burned down in the great fire of london.&lt;br&gt;&lt;br&gt;This small and manageable sttlement represents victorian London. Swampy marshy low lands lead up to the foggy bridge town.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The orphan ends up burning the town down. The player is given a choice to burn or not to burn the town.&amp;nbsp; If choosing to burn town we get an existential monologue about the darkness brewing an a discarded child, shunned by the world. If choosing not to burn down the town we get an oops you did it anyways. Then have a constible chase scene out of the Town.&amp;nbsp; Where the Consitbles don&#39;t even notice you.&lt;/div&gt;&lt;div&gt;Then the denizens of the town now ash people chase and attack you through the game.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="390" y="2003.75" width="260" height="332.5" as="geometry" />
-        </mxCell>
-        <mxCell id="3" value="Monstary on a Ciff" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="2140" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="2240" as="sourcePoint" />
-            <mxPoint x="200" y="2170" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="5" value="Infinite&lt;div&gt;Graveyard&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="160" y="2130" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7" target="2" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="2240" as="sourcePoint" />
-            <mxPoint x="310" y="2190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="5" target="7" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="2170" as="sourcePoint" />
-            <mxPoint x="390" y="2170" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7" value="Swampy&lt;div&gt;Lowlands&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="270" y="2130" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="9" value="Champignon Forst" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="710" y="2130" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="9" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="710" y="2240" as="sourcePoint" />
-            <mxPoint x="760" y="2190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="12" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="710" y="2240" as="sourcePoint" />
-            <mxPoint x="750" y="2260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="12" value="Mount Royal&lt;div&gt;Nunnery&lt;/div&gt;&lt;div&gt;Lava ModGod&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="710" y="2250" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="13" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Sissy Dupe&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;Tuberculosis Girl&lt;/span&gt;&lt;br&gt;&lt;div&gt;Type: Blood Thirsty&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="220" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="14" value="Part 1 tutorial is a linear story introducing basic concepts of the game. The world setting, modgodding elements by defeating deities.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Part 2 opens up where Market day happens on Sundays. Different potential parents show up and invite orphan on a potential adventure. Of course the orphan can do things to not be adopted and instead stay at the Cathedreal and work the land... aka hunt for slugs.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Going with a parent can lead to fighting deitys or justa funny interaction, a piece of loot. More orphans to till the land at the oprhanage.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="100" y="2390" width="200" height="290" as="geometry" />
-        </mxCell>
-        <mxCell id="15" value="The first line ever written on a computer:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hell World&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="2390" width="130" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="YjPkbUaIYx_jNYHQSDdL-15" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Church upon Claw&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dewclaw Cathedral)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Endless Graveyard&lt;/div&gt;&lt;div&gt;Town upon Bridge&lt;/div&gt;&lt;div&gt;Misty Moors&lt;/div&gt;&lt;div&gt;Champignon Forest&lt;/div&gt;&lt;div&gt;Wailing Sisters Convent&lt;/div&gt;&lt;div&gt;Lunar Coda&lt;/div&gt;&lt;div&gt;You Will Die Mountain&lt;/div&gt;&lt;div&gt;(Mount Royal)&lt;/div&gt;&lt;div&gt;The Administrative Moons of Hell&lt;/div&gt;&lt;div&gt;Hell World&lt;/div&gt;&lt;div&gt;Hello World&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="390" y="2560" width="240" height="240" as="geometry" />
-        </mxCell>
-        <mxCell id="YjPkbUaIYx_jNYHQSDdL-16" value="Nun is aging fast, to get from Wailing Sisters Covenent at the foot of You Will Die Mountain&lt;div&gt;You must hop upon the moon&lt;/div&gt;&lt;div&gt;Lunar Coda&lt;/div&gt;&lt;div&gt;To ride it across the sky to you&lt;/div&gt;&lt;div&gt;will die mountain&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;either that or Moon is where Hell administration is administered&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="110" y="2860" width="188" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="YjPkbUaIYx_jNYHQSDdL-17" value="Chicken God&lt;div&gt;Attack moveset&lt;/div&gt;&lt;div&gt;What came first&lt;/div&gt;&lt;div&gt;Chicken or Egg?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="400" y="2840" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="16" value="Unlocked Toggle in Menu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550" y="2840" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="58IuxtUkfn7E68bcIEmH-16" value="Nihilism moves charged at night&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optimism moves in Day&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="595" y="2950" width="120" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="17" value="Orphans challenge you to duel" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="130" y="2720" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="FhYe4CfdeehGhFqYvxai-17" value="Walking the cow&lt;div&gt;Along Copyright LAw Lands&lt;/div&gt;&lt;div&gt;if you step on the copywritten tile sets the Queen&#39;s Guard&amp;nbsp;&lt;/div&gt;&lt;div&gt;attack&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The queen is Victoria who holds the plaster mold of alberts hand... when fighting the sillouhette of alberts ghost appears and he attacks,&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="170" y="3140" width="230" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="ge01rvNQZDmTp5gs2OYc-17" value="Walking the cow&lt;div&gt;Mini Game&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Walking the cow&lt;/div&gt;&lt;div&gt;Rail walker&lt;/div&gt;&lt;div&gt;The player can swing a stick left or right&lt;/div&gt;&lt;div&gt;Swinging the stick rings the bell on Bessie&#39;s neck&lt;/div&gt;&lt;div&gt;The ring attracts the copywraiths&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Swing stick left and right at incoming enemies.&lt;/div&gt;&lt;div&gt;Every swing cause the cow to veer in that direction.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 swings will bring you to the edge&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You are faced with a series&lt;/div&gt;&lt;div&gt;of moral dilemas&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Will you step on Copywritten Lands?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;And invite the wrath of Copywraiths.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A Nobbit in a knowl invites you to walk his cow along Copywraith&lt;/div&gt;&lt;div&gt;lands.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="414" y="3140" width="296" height="430" as="geometry" />
-        </mxCell>
-        <mxCell id="ge01rvNQZDmTp5gs2OYc-18" value="There is a church that&lt;div&gt;needs one more bell&lt;/div&gt;&lt;div&gt;to finish it&#39;s tower&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bring the bell on Bessie&#39;s Collar to&lt;/div&gt;&lt;div&gt;finish the church&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="3400" width="120" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="ge01rvNQZDmTp5gs2OYc-20" value="Saying goodbye to&lt;div&gt;the other orphans in&lt;/div&gt;&lt;div&gt;the orphanage&lt;/div&gt;&lt;div&gt;each orphan attacks you out&lt;/div&gt;&lt;div&gt;of jealousy that you &#39;ve been&lt;/div&gt;&lt;div&gt;adopted&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="2930" width="170" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ge01rvNQZDmTp5gs2OYc-21" value="Along the way the orphan is stopped by a unknown voice&lt;div&gt;provided moral choices&lt;/div&gt;&lt;div&gt;such as pouring seeds into&lt;/div&gt;&lt;div&gt;the cows ear to kill it.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Or leading the cow off a cliff.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It turns out that the cow is infested by a talking tape worm, which if the wrong choice is made the orphan will have to fight.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ultimately leading the cow to the Toll Troll will have him eat the cow and allow you to pass unharmed.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="3390" width="190" height="250" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+        <mxGraphModel dx="790" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="Starter Orphan" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="710" height="120" as="geometry"/>
+                </mxCell>
+                <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:%email%&quot;&gt;Email&lt;/a&gt;" name="Nun Offit" position="Orphan Tamer" location="Office 1" email="me@example.com" placeholders="1" link="https://www.draw.io" id="dNxyNK7c78bLwvsdeMH5-12">
+                    <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/user-avatars-1/512/users-3-128.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+                        <mxGeometry x="120" y="30" width="180" height="70" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="dNxyNK7c78bLwvsdeMH5-13" value="" style="endArrow=blockThin;endFill=1;fontSize=11;edgeStyle=elbowEdgeStyle;elbow=vertical;rounded=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-12" target="dNxyNK7c78bLwvsdeMH5-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <UserObject label="Albie&lt;br&gt;&lt;i style=&quot;color: gray&quot;&gt;Fatkid in an Innertube&lt;/i&gt;&lt;br&gt;Email" name="Priest Peter Phillips" position="Orphan Tamer" location="Office 2" placeholders="1" id="dNxyNK7c78bLwvsdeMH5-14">
+                    <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/user-avatars-1/512/users-10-3-128.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeFolding=1;treeMoving=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+                        <mxGeometry x="400" y="30" width="200" height="80" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="9H34w2Jh71Ep6UbLUVoz-1" value="&lt;div&gt;Albie&lt;/div&gt;Fat Kid in an Innertube&lt;div&gt;Type: Innocence&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="290" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9H34w2Jh71Ep6UbLUVoz-2" value="&lt;div&gt;Sootie&lt;/div&gt;Raggamuffin&lt;br&gt;&lt;div&gt;Type: Ash Orphan&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="290" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9H34w2Jh71Ep6UbLUVoz-3" value="&lt;div&gt;Moppet&lt;/div&gt;Shivering Ailment&lt;br&gt;&lt;div&gt;Type: Anxious&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="290" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4BANhSZFIQ7KN4WRA-t-1" value="Orphodex&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Using react fundamentals course to make&lt;/div&gt;&lt;div&gt;pokedex for orphans where I will. be able to keep my daily orphan drawings&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="410" width="130" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="lMN6it-LYemtHTq4qIZc-1" value="8 Gyms&lt;div&gt;Are churches following other religions. Once youj defeat the cult leader your cross or effiigy is raised on top of church like mario flag when clearing a level&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="420" width="130" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="lMN6it-LYemtHTq4qIZc-2" value="&lt;div&gt;8 Types&lt;/div&gt;&lt;div&gt;Each gym has type and a biome.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Top of screen London has steam Orphans.&lt;/div&gt;&lt;div&gt;They&#39;re god is commerce.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Volcano Biome&lt;br&gt;Has Ash and Fire types. Their God is Ancient Balrog.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Teal Area&lt;/div&gt;&lt;div&gt;Twighlight Type. Focus on sleep&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;French War&lt;br&gt;Napoleonic area war torn.&lt;br&gt;God of War&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Snow Area&lt;br&gt;&lt;br&gt;&lt;br&gt;Myst Area&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hell ARea&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heaven Area&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="380" width="130" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-1" value="BP State Machine" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1160" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-2" value="Intro" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1300" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1340" as="sourcePoint"/>
+                        <mxPoint x="200" y="1390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-6" value="Pre Battle Info" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1392" width="120" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-6" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1432" as="sourcePoint"/>
+                        <mxPoint x="200" y="1482" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-8" value="Bring Out Enemy" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1482" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-8" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1522" as="sourcePoint"/>
+                        <mxPoint x="200" y="1572" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-10" value="Player Input&lt;br&gt;(pause)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-10" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1610" as="sourcePoint"/>
+                        <mxPoint x="200" y="1660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-12" value="Enemy Input" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1662" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-12" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1702" as="sourcePoint"/>
+                        <mxPoint x="200" y="1752" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-14" value="Battle" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1752" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1792" as="sourcePoint"/>
+                        <mxPoint x="200" y="1842" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-18" target="1dcjqhPWXCqPS0pfsLZp-10" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="320" y="1880" as="sourcePoint"/>
+                        <mxPoint x="440" y="1540" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="320" y="1870"/>
+                            <mxPoint x="320" y="1600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-10" target="1dcjqhPWXCqPS0pfsLZp-23" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1580" as="sourcePoint"/>
+                        <mxPoint x="90" y="2080" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="100" y="1600"/>
+                            <mxPoint x="100" y="2050"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-18" value="Post Attack Check" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1840" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-18" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="1880" as="sourcePoint"/>
+                        <mxPoint x="200" y="1930" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-20" value="Finished" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1930" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-23" value="Finished" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="2020" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="2020" as="sourcePoint"/>
+                        <mxPoint x="200" y="1990" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="200" y="2010"/>
+                            <mxPoint x="200" y="2010"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-27" value="BLUE NUN&lt;div&gt;grows old and haggared by tvolcanoe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 drawings&lt;/div&gt;&lt;div&gt;yopung buyeatiful&lt;/div&gt;&lt;div&gt;transuition&lt;/div&gt;&lt;div&gt;hagard old&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="690" width="120" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="1dcjqhPWXCqPS0pfsLZp-28" value="Thom Ba-bombdadil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="690" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="EJm_T1MfFVbmYTKbSGmN-1" value="Champion Forest&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;turns out to be&lt;/div&gt;&lt;div&gt;Champignon Forest&lt;/div&gt;&lt;div&gt;(Mushroom)&lt;/div&gt;&lt;div&gt;as the nun explains&lt;/div&gt;&lt;div&gt;when they get there&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="400" width="120" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="NaM-DlOi4ERBnAFPFXcm-1" value="Talking Tabby Cat appears throughout gane&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;in the end tabby cat is final god boss&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;end of game zooms out from snoozing twix&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;this is a god dream&lt;/div&gt;&lt;div&gt;We&#39;re on an ultrlight beam&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="840" width="280" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="_eeatI-6LmOxNyW0kUMp-2" value="Inject&lt;br&gt;JESUS JUICE&lt;div&gt;to greatly enhance tincture&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="1130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_eeatI-6LmOxNyW0kUMp-3" value="Sing Song About&lt;div&gt;Porridge&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;is like summon animation from ff7&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;maybe there are words learned like minish cap that you insert for different results.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="1270" width="120" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="_eeatI-6LmOxNyW0kUMp-4" value="Pray is like&lt;div&gt;turning into dragon quarter&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="1130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="WhSgem01bFfFkYUl3J8e-1" value="&lt;div&gt;&lt;b&gt;������&lt;/b&gt;&lt;/div&gt;&lt;b&gt;death beseech you&lt;/b&gt;&lt;div&gt;&lt;b&gt;������&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;������&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;������&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="282" width="256" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="WhSgem01bFfFkYUl3J8e-2" value="Catch Foes in PNematic Tubes.&lt;div&gt;Up[on captuire you may choose to&lt;/div&gt;&lt;div&gt;keep or convert.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Converting sqeezezes their essence out of pnematic tube to be used as stim packs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;or potentially to create tarot card&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="1260" width="120" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="WhSgem01bFfFkYUl3J8e-3" value="Name selection has&lt;div&gt;ouija board option&lt;/div&gt;&lt;div&gt;where ghost&lt;/div&gt;&lt;div&gt;asks is your name wendolf&lt;/div&gt;&lt;div&gt;bardolf&lt;/div&gt;&lt;div&gt;rolg&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="1520" width="120" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="WhSgem01bFfFkYUl3J8e-4" value="Collecting specimenss&lt;div&gt;for Darwins Theory of&lt;/div&gt;&lt;div&gt;Evolution&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="1560" width="120" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="QeXgW6aQJEQ1C3spduMK-1" value="Hot foot bath&lt;div&gt;wet sheet therapy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="910" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="zhvqqRehltlr2zDm-ukN-1" value="&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Attack Moves&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono Lig&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Laudanum&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;quot;Operator Mono Lig&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre; color: rgb(239, 240, 235);&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: rgb(90, 247, 142);&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Extol&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: rgb(90, 247, 142);&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Forward March&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: rgb(90, 247, 142);&quot;&gt;&lt;font style=&quot;color: rgb(51, 0, 0);&quot;&gt;Cough Blood&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#330000;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="930" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="qNe9hVO4kIWgMy4WHAtG-1" value="&lt;div&gt;if Prayer&lt;/div&gt;Light beams down&lt;div&gt;from duel circle&lt;/div&gt;&lt;div&gt;and various gods&lt;/div&gt;&lt;div&gt;give you boons&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Its a christmas&lt;/div&gt;&lt;div&gt;miracle&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="1790" width="120" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="qNe9hVO4kIWgMy4WHAtG-2" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="1780" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Bridge Town&lt;br&gt;Town on a Bridge&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bridge town is a town on a bridge based on the london bridge houses that burned down in the great fire of london.&lt;br&gt;&lt;br&gt;This small and manageable sttlement represents victorian London. Swampy marshy low lands lead up to the foggy bridge town.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The orphan ends up burning the town down. The player is given a choice to burn or not to burn the town.&amp;nbsp; If choosing to burn town we get an existential monologue about the darkness brewing an a discarded child, shunned by the world. If choosing not to burn down the town we get an oops you did it anyways. Then have a constible chase scene out of the Town.&amp;nbsp; Where the Consitbles don&#39;t even notice you.&lt;/div&gt;&lt;div&gt;Then the denizens of the town now ash people chase and attack you through the game.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="2003.75" width="260" height="332.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Monstary on a Ciff" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2140" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="2240" as="sourcePoint"/>
+                        <mxPoint x="200" y="2170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Infinite&lt;div&gt;Graveyard&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="2130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="260" y="2240" as="sourcePoint"/>
+                        <mxPoint x="310" y="2190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="5" target="7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="2170" as="sourcePoint"/>
+                        <mxPoint x="390" y="2170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Swampy&lt;div&gt;Lowlands&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="2130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Champignon Forst" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="2130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="9" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="710" y="2240" as="sourcePoint"/>
+                        <mxPoint x="760" y="2190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="9" target="12" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="710" y="2240" as="sourcePoint"/>
+                        <mxPoint x="750" y="2260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Mount Royal&lt;div&gt;Nunnery&lt;/div&gt;&lt;div&gt;Lava ModGod&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="2250" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Sissy Dupe&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;Tuberculosis Girl&lt;/span&gt;&lt;br&gt;&lt;div&gt;Type: Blood Thirsty&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="220" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Part 1 tutorial is a linear story introducing basic concepts of the game. The world setting, modgodding elements by defeating deities.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Part 2 opens up where Market day happens on Sundays. Different potential parents show up and invite orphan on a potential adventure. Of course the orphan can do things to not be adopted and instead stay at the Cathedreal and work the land... aka hunt for slugs.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Going with a parent can lead to fighting deitys or justa funny interaction, a piece of loot. More orphans to till the land at the oprhanage.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="2390" width="200" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="The first line ever written on a computer:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hell World&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="2390" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="YjPkbUaIYx_jNYHQSDdL-15" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Church upon Claw&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dewclaw Cathedral)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Endless Graveyard&lt;/div&gt;&lt;div&gt;Town upon Bridge&lt;/div&gt;&lt;div&gt;Misty Moors&lt;/div&gt;&lt;div&gt;Champignon Forest&lt;/div&gt;&lt;div&gt;Wailing Sisters Convent&lt;/div&gt;&lt;div&gt;Lunar Coda&lt;/div&gt;&lt;div&gt;You Will Die Mountain&lt;/div&gt;&lt;div&gt;(Mount Royal)&lt;/div&gt;&lt;div&gt;The Administrative Moons of Hell&lt;/div&gt;&lt;div&gt;Hell World&lt;/div&gt;&lt;div&gt;Hello World&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="2560" width="240" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="YjPkbUaIYx_jNYHQSDdL-16" value="Nun is aging fast, to get from Wailing Sisters Covenent at the foot of You Will Die Mountain&lt;div&gt;You must hop upon the moon&lt;/div&gt;&lt;div&gt;Lunar Coda&lt;/div&gt;&lt;div&gt;To ride it across the sky to you&lt;/div&gt;&lt;div&gt;will die mountain&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;either that or Moon is where Hell administration is administered&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="2860" width="188" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="YjPkbUaIYx_jNYHQSDdL-17" value="Chicken God&lt;div&gt;Attack moveset&lt;/div&gt;&lt;div&gt;What came first&lt;/div&gt;&lt;div&gt;Chicken or Egg?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="2840" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Unlocked Toggle in Menu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="2840" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58IuxtUkfn7E68bcIEmH-16" value="Nihilism moves charged at night&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Optimism moves in Day&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="2950" width="120" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Orphans challenge you to duel" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="2720" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="FhYe4CfdeehGhFqYvxai-17" value="Walking the cow&lt;div&gt;Along Copyright LAw Lands&lt;/div&gt;&lt;div&gt;if you step on the copywritten tile sets the Queen&#39;s Guard&amp;nbsp;&lt;/div&gt;&lt;div&gt;attack&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The queen is Victoria who holds the plaster mold of alberts hand... when fighting the sillouhette of alberts ghost appears and he attacks,&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="3140" width="230" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="ge01rvNQZDmTp5gs2OYc-17" value="Walking the cow&lt;div&gt;Mini Game&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Walking the cow&lt;/div&gt;&lt;div&gt;Rail walker&lt;/div&gt;&lt;div&gt;The player can swing a stick left or right&lt;/div&gt;&lt;div&gt;Swinging the stick rings the bell on Bessie&#39;s neck&lt;/div&gt;&lt;div&gt;The ring attracts the copywraiths&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Swing stick left and right at incoming enemies.&lt;/div&gt;&lt;div&gt;Every swing cause the cow to veer in that direction.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 swings will bring you to the edge&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;You are faced with a series&lt;/div&gt;&lt;div&gt;of moral dilemas&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Will you step on Copywritten Lands?&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;And invite the wrath of Copywraiths.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A Nobbit in a knowl invites you to walk his cow along Copywraith&lt;/div&gt;&lt;div&gt;lands.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="3140" width="296" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="ge01rvNQZDmTp5gs2OYc-18" value="There is a church that&lt;div&gt;needs one more bell&lt;/div&gt;&lt;div&gt;to finish it&#39;s tower&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Bring the bell on Bessie&#39;s Collar to&lt;/div&gt;&lt;div&gt;finish the church&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="3400" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ge01rvNQZDmTp5gs2OYc-20" value="Saying goodbye to&lt;div&gt;the other orphans in&lt;/div&gt;&lt;div&gt;the orphanage&lt;/div&gt;&lt;div&gt;each orphan attacks you out&lt;/div&gt;&lt;div&gt;of jealousy that you &#39;ve been&lt;/div&gt;&lt;div&gt;adopted&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="2930" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ge01rvNQZDmTp5gs2OYc-21" value="Along the way the orphan is stopped by a unknown voice&lt;div&gt;provided moral choices&lt;/div&gt;&lt;div&gt;such as pouring seeds into&lt;/div&gt;&lt;div&gt;the cows ear to kill it.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Or leading the cow off a cliff.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It turns out that the cow is infested by a talking tape worm, which if the wrong choice is made the orphan will have to fight.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ultimately leading the cow to the Toll Troll will have him eat the cow and allow you to pass unharmed.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="3390" width="190" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Frozen Sea&lt;div&gt;Walking Moses Path&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="3680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;div&gt;Living Hell Mountain&lt;/div&gt;Three eyed Cat&lt;div&gt;If Third eye opens&lt;/div&gt;&lt;div&gt;Flame explodes out of it&lt;/div&gt;&lt;div&gt;and ignites it&#39;s mane&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="3780" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Zeitgosts&lt;div&gt;Are brains from Conformists in bridgerton.&lt;/div&gt;&lt;div&gt;Conformists vs Nihilists&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="3740" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Conversation system&lt;div&gt;to piss off people&lt;/div&gt;&lt;div&gt;and provoke them&lt;/div&gt;&lt;div&gt;to battle.&lt;/div&gt;&lt;div&gt;In starting area&lt;/div&gt;&lt;div&gt;you may recieve&lt;/div&gt;&lt;div&gt;good starter gear by&lt;/div&gt;&lt;div&gt;defeating orphans&lt;/div&gt;&lt;div&gt;around the church.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="3540" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Church" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="4000" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="22">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="4030" as="sourcePoint"/>
+                        <mxPoint x="220" y="4030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="Endlessv Graves" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="4000" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="24">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="4040" as="sourcePoint"/>
+                        <mxPoint x="410" y="4030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="Walking the cow" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="3920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="28">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="3950" as="sourcePoint"/>
+                        <mxPoint x="590" y="3950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="Kill 2 Orphans" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="4062" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="30">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="4092" as="sourcePoint"/>
+                        <mxPoint x="590" y="4092" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="Ogre" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="3990" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="32">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="580" y="4030" as="sourcePoint"/>
+                        <mxPoint x="820" y="4020" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
