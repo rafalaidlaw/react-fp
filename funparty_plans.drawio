@@ -275,62 +275,80 @@
                 <mxCell id="ge01rvNQZDmTp5gs2OYc-21" value="Along the way the orphan is stopped by a unknown voice&lt;div&gt;provided moral choices&lt;/div&gt;&lt;div&gt;such as pouring seeds into&lt;/div&gt;&lt;div&gt;the cows ear to kill it.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Or leading the cow off a cliff.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It turns out that the cow is infested by a talking tape worm, which if the wrong choice is made the orphan will have to fight.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Ultimately leading the cow to the Toll Troll will have him eat the cow and allow you to pass unharmed.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="20" y="3390" width="190" height="250" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="Frozen Sea&lt;div&gt;Walking Moses Path&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="18" value="Frozen Sea&lt;div&gt;Walking Moses Path&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="50" y="3680" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="&lt;div&gt;Living Hell Mountain&lt;/div&gt;Three eyed Cat&lt;div&gt;If Third eye opens&lt;/div&gt;&lt;div&gt;Flame explodes out of it&lt;/div&gt;&lt;div&gt;and ignites it&#39;s mane&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="19" value="&lt;div&gt;Living Hell Mountain&lt;/div&gt;Three eyed Cat&lt;div&gt;If Third eye opens&lt;/div&gt;&lt;div&gt;Flame explodes out of it&lt;/div&gt;&lt;div&gt;and ignites it&#39;s mane&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="3780" width="140" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="Zeitgosts&lt;div&gt;Are brains from Conformists in bridgerton.&lt;/div&gt;&lt;div&gt;Conformists vs Nihilists&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="20" value="Zeitgosts&lt;div&gt;Are brains from Conformists in bridgerton.&lt;/div&gt;&lt;div&gt;Conformists vs Nihilists&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="270" y="3740" width="120" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="Conversation system&lt;div&gt;to piss off people&lt;/div&gt;&lt;div&gt;and provoke them&lt;/div&gt;&lt;div&gt;to battle.&lt;/div&gt;&lt;div&gt;In starting area&lt;/div&gt;&lt;div&gt;you may recieve&lt;/div&gt;&lt;div&gt;good starter gear by&lt;/div&gt;&lt;div&gt;defeating orphans&lt;/div&gt;&lt;div&gt;around the church.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                <mxCell id="21" value="Conversation system&lt;div&gt;to piss off people&lt;/div&gt;&lt;div&gt;and provoke them&lt;/div&gt;&lt;div&gt;to battle.&lt;/div&gt;&lt;div&gt;In starting area&lt;/div&gt;&lt;div&gt;you may recieve&lt;/div&gt;&lt;div&gt;good starter gear by&lt;/div&gt;&lt;div&gt;defeating orphans&lt;/div&gt;&lt;div&gt;around the church.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="230" y="3540" width="180" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="Church" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="22" value="Church" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="4000" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="22">
+                <mxCell id="23" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="22" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="170" y="4030" as="sourcePoint"/>
                         <mxPoint x="220" y="4030" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" value="Endlessv Graves" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="24" value="Endlessv Graves" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="220" y="4000" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="24">
+                <mxCell id="26" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="24" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="170" y="4040" as="sourcePoint"/>
                         <mxPoint x="410" y="4030" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="Walking the cow" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="3920" width="120" height="60" as="geometry"/>
+                <mxCell id="28" value="Walking the cow&lt;div&gt;Feed To Satiate Ogre&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="418" y="3910" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="28">
+                <mxCell id="29" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="28" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="540" y="3950" as="sourcePoint"/>
                         <mxPoint x="590" y="3950" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="30" value="Kill 2 Orphans" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="4062" width="120" height="60" as="geometry"/>
+                <mxCell id="30" value="Feed 1 Turburculous Orphan to kill Ogre" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="418" y="4092" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="30">
+                <mxCell id="31" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="30" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="540" y="4092" as="sourcePoint"/>
                         <mxPoint x="590" y="4092" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="32" value="Ogre" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="630" y="3990" width="120" height="60" as="geometry"/>
+                <mxCell id="34" value="Objects on Battle Scene&lt;div&gt;sometimes there will be&lt;/div&gt;&lt;div&gt;a sword in a skeleton&lt;/div&gt;&lt;div&gt;or a gun in the center of the grid&lt;/div&gt;&lt;div&gt;player can fight it&#39;s way to grab item&lt;/div&gt;&lt;div&gt;and use it to quickly defeat&lt;/div&gt;&lt;div&gt;enemy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="3610" width="180" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="32">
+                <mxCell id="36" value="Ogre" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="3970" width="136" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="endArrow=classic;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24" target="28" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="580" y="4030" as="sourcePoint"/>
-                        <mxPoint x="820" y="4020" as="targetPoint"/>
+                        <mxPoint x="430" y="4060" as="sourcePoint"/>
+                        <mxPoint x="480" y="4010" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24" target="30" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="4060" as="sourcePoint"/>
+                        <mxPoint x="480" y="4010" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;div&gt;REference to 1800 fine art&lt;/div&gt;Meowphelia&lt;div&gt;scream&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4152" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Giant Mewophelia&lt;div&gt;Tries to bat you uin mushroom forest&lt;/div&gt;&lt;div&gt;sits in swamp&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;trial of ma na tree art&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="162" y="4100" width="138" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Idea:&lt;div&gt;Camera is always faceing Cathederal.&lt;/div&gt;&lt;div&gt;Each new map zooms out one area further, showing the previous area in a lower resolution,&lt;/div&gt;&lt;div&gt;like 8 bit&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="4260" width="180" height="180" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
