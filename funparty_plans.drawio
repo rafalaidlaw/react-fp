@@ -296,7 +296,7 @@
                         <mxPoint x="220" y="4130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" value="Endlessv Graves" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="24" value="Endless Graves" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="220" y="4100" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="24" edge="1">
@@ -311,7 +311,7 @@
                 <mxCell id="29" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="28" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="710" y="4050" as="sourcePoint"/>
-                        <mxPoint x="760" y="4050" as="targetPoint"/>
+                        <mxPoint x="780" y="4080" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="30" value="Feed 1 Turburculous Orphan to kill Ogre" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -320,7 +320,7 @@
                 <mxCell id="31" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="30" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="710" y="4192" as="sourcePoint"/>
-                        <mxPoint x="760" y="4192" as="targetPoint"/>
+                        <mxPoint x="780" y="4180" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="34" value="Objects on Battle Scene&lt;div&gt;sometimes there will be&lt;/div&gt;&lt;div&gt;a sword in a skeleton&lt;/div&gt;&lt;div&gt;or a gun in the center of the grid&lt;/div&gt;&lt;div&gt;player can fight it&#39;s way to grab item&lt;/div&gt;&lt;div&gt;and use it to quickly defeat&lt;/div&gt;&lt;div&gt;enemy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -362,8 +362,8 @@
                 <mxCell id="45" value="Feed 3 Orphans&lt;div&gt;To Ogre&lt;/div&gt;&lt;div&gt;To make him full&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="590" y="4290" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Cut Rope Bridge&lt;/span&gt;&lt;div&gt;Turn it into Ladder&lt;/div&gt;&lt;div&gt;You can not get back&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="590" y="3930" width="120" height="60" as="geometry"/>
+                <mxCell id="46" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Cut Rope Bridge&lt;/span&gt;&lt;div&gt;Turn it into Ladder&lt;/div&gt;&lt;div&gt;You can not get back&lt;/div&gt;&lt;div&gt;But if restarting as new orphan&lt;/div&gt;&lt;div&gt;can use&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="588" y="3900" width="120" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="" style="endArrow=classic;html=1;exitX=0.67;exitY=-0.047;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="24" target="46">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -401,6 +401,158 @@
                     <mxGeometry x="0.0072" y="6" relative="1" as="geometry">
                         <mxPoint x="4" y="1" as="offset"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="Valley of Death" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="4075" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="Rotates&lt;div&gt;Around&lt;/div&gt;&lt;div&gt;in Spiral&lt;/div&gt;&lt;div&gt;you walk through&lt;/div&gt;&lt;div&gt;&amp;nbsp;the bridge you walk across to leave orphanage&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="780" y="4065" width="130" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="Unlock Elevator&lt;div&gt;To Return To&lt;/div&gt;&lt;div&gt;Parish&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="785" y="4190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="60" target="59">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="950" y="4060" as="sourcePoint"/>
+                        <mxPoint x="1000" y="4010" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="Who did you see in the Valley of Death?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Satan and the Lord Do Battle in The Desert of My Soul&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A plaque commerating a statue&lt;/div&gt;&lt;div&gt;of Molag Bol Fighting&lt;/div&gt;&lt;div&gt;An Angel&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="4170" width="120" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="59" target="66">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1190" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1200" y="4130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="The Great Arch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1150" y="4100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="Town Upon Bridge" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="4100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="66" target="72">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1270" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1320" y="4030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="72" target="76">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1370" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1440" y="4000" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" value="Satanic Power" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="74">
+                    <mxGeometry x="0.1029" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="72" target="77">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1370" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1460" y="4250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="Holy Power" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="75">
+                    <mxGeometry x="-0.0903" y="-2" relative="1" as="geometry">
+                        <mxPoint y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" value="Nihilism" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1470" y="4030" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="Optimism" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1470" y="4185" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="54" target="36">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="570" y="4080" as="sourcePoint"/>
+                        <mxPoint x="620" y="4030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="36" target="60">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="690" y="4080" as="sourcePoint"/>
+                        <mxPoint x="740" y="4030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="77">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1640" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1660" y="4140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="76">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1640" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1660" y="4130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="Town Burns" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1660" y="4080" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="Ash Orphans&lt;div&gt;Are Created&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1650" y="4170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="88">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1870" y="4080" as="sourcePoint"/>
+                        <mxPoint x="1850" y="4130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" value="Ash Orphans&lt;div&gt;Pursue you&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1850" y="4100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="92">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1920" y="4080" as="sourcePoint"/>
+                        <mxPoint x="2050" y="4130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="94" value="Town Upon Bridge&lt;div&gt;is a town on a bridge&lt;/div&gt;&lt;div&gt;where Nihilsm as recently broken out.&lt;/div&gt;&lt;div&gt;The optimists not wanting the nihilism to spread are quarantining them&lt;/div&gt;&lt;div&gt;and burning them with fire.&lt;/div&gt;&lt;div&gt;If possible.&lt;/div&gt;&lt;div&gt;Murder by&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;Immolation.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Immurdolate.&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1470" y="4270" width="150" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="Mushroom Forest" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2050" y="4100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="95">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2220" y="4080" as="sourcePoint"/>
+                        <mxPoint x="2240" y="4130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97" value="Wailing Sisters" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="2240" y="4100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="" style="endArrow=classic;html=1;exitX=0.16;exitY=1.012;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="63">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1060" y="4240" as="sourcePoint"/>
+                        <mxPoint x="960" y="4450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" value="Satanic Power" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="99">
+                    <mxGeometry x="-0.1507" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="100" value="" style="endArrow=classic;html=1;exitX=0.88;exitY=1.012;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="63">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1060" y="4240" as="sourcePoint"/>
+                        <mxPoint x="1140" y="4450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" value="Holy Power" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="100">
+                    <mxGeometry x="-0.1593" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="103" value="Tip odds in favour of satan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="4450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="Tip odds in favour of God" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1090" y="4450" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
