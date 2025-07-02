@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-        <mxGraphModel dx="790" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="812" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -635,26 +635,35 @@
                 <mxCell id="127" value="Blue mushrooms on&lt;div&gt;red background&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Instead of a complex&lt;/div&gt;&lt;div&gt;item management system&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;healing items are found on the map&lt;/div&gt;&lt;div&gt;like mario.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Blue mushrooms increase health&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="820" y="3310" width="120" height="220" as="geometry"/>
                 </mxCell>
-                <mxCell id="128" value="Sand storms in valley of death&lt;br&gt;Buried Satan and Lord.&lt;br&gt;They are 7x the scale of human&lt;br&gt;You can choose a side by walking up to their chest and&lt;br&gt;Slapping them, with challenge duel button" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="128" value="Sand storms in valley of death&lt;br&gt;Buried Satan and Lord.&lt;br&gt;They are 7x the scale of human&lt;br&gt;You can choose a side by walking up to their chest and&lt;br&gt;Slapping them, with challenge duel button" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="740" y="3120" width="240" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="129" value="With tile system curvature&lt;br&gt;of the spiral down from Parish works simply&lt;br&gt;By having tiles near the side on screen raised up a few pixels" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="129" value="With tile system curvature&lt;br&gt;of the spiral down from Parish works simply&lt;br&gt;By having tiles near the side on screen raised up a few pixels" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1020" y="3110" width="120" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="130" value="Pessimist Precipice&lt;br&gt;Private Premisis&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A spot where you can jump off.&amp;nbsp; If you are innertube orphan you will survive, cushioned by the blow.&amp;nbsp; If you are sword orphab you survive by having the point&amp;nbsp; stick in the groun and break your fall.&lt;br&gt;Umprella Orphan floats to a secret item.&lt;br&gt;Girl with pigtails pigtails spin and act as a helicopter&lt;br&gt;Skirt orphan balloons up and she floats.&lt;br&gt;All others die.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="130" value="Pessimist Precipice&lt;br&gt;Private Premisis&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A spot where you can jump off.&amp;nbsp; If you are innertube orphan you will survive, cushioned by the blow.&amp;nbsp; If you are sword orphab you survive by having the point&amp;nbsp; stick in the groun and break your fall.&lt;br&gt;Umprella Orphan floats to a secret item.&lt;br&gt;Girl with pigtails pigtails spin and act as a helicopter&lt;br&gt;Skirt orphan balloons up and she floats.&lt;br&gt;All others die.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1020" y="3260" width="190" height="260" as="geometry"/>
                 </mxCell>
-                <mxCell id="131" value="When you slap cat,&lt;br&gt;it rubs up against you&lt;br&gt;and you do petting.&lt;br&gt;Or it jumps away and hisses and says no petting.&lt;br&gt;Many options." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="131" value="When you slap cat,&lt;br&gt;it rubs up against you&lt;br&gt;and you do petting.&lt;br&gt;Or it jumps away and hisses and says no petting.&lt;br&gt;Many options." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="790" y="2980" width="120" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="132" value="Rafa Bale the Trash Pale&lt;div&gt;is the games merchant&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="132" value="Rafa Bale the Trash Pale&lt;div&gt;is the games merchant&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="960" y="2980" width="150" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="133" value="He deals in worms, half-worms, quarter-worms, shellings and slugs in shellings and Frogs." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="133" value="He deals in worms, half-worms, quarter-worms, shellings and slugs in shellings and Frogs." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1140" y="2995" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="134" value="It&#39;s a logical Triplet System. Where 960 quarter worms is equal to one Fully Grown Frog or 20 Shelling. Meaning 48 quarter worms are equal to 1 empty Shelling. Snail in its shelling is worth 2.5 Shellings or one tadpole. Of course if you let the tadpole maturate it turns into a Polywog, doubles its worth to 5 Shellings and the price quadruples for a full maturated Frog.&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;So if you buy these 5 tadpoles from me and wait 30 days you will have 5 Frogs, Quadrupling your profits you see?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;Of course if you wait too long the meat goes bad and they are worthless.&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;So what&#39;ll it be?&lt;br&gt;&lt;/font&gt;&lt;/font&gt;Rafa Bale the Trash Pale can&#39;t figure out why you can&#39;t do the math on this&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="134" value="It&#39;s a logical Triplet System. Where 960 quarter worms is equal to one Fully Grown Frog or 20 Shelling. Meaning 48 quarter worms are equal to 1 empty Shelling. Snail in its shelling is worth 2.5 Shellings or one tadpole. Of course if you let the tadpole maturate it turns into a Polywog, doubles its worth to 5 Shellings and the price quadruples for a full maturated Frog.&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;So if you buy these 5 tadpoles from me and wait 30 days you will have 5 Frogs, Quadrupling your profits you see?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;Of course if you wait too long the meat goes bad and they are worthless.&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;So what&#39;ll it be?&lt;br&gt;&lt;/font&gt;&lt;/font&gt;Rafa Bale the Trash Pale can&#39;t figure out why you can&#39;t do the math on this&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1280" y="2900" width="190" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="Don&#39;t step on the Graves,&lt;br&gt;You&#39;ll Summon an Evil Spirit&lt;br&gt;&lt;br&gt;(aka random encounters)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="820" y="230" width="210" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="6 Pak&lt;br&gt;You can Find 6pac 4 Sure&lt;br&gt;With a bunch of Jawas&lt;br&gt;At the top of the map.&lt;br&gt;He will train you&lt;br&gt;in Buffosity." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="985" y="3840" width="120" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="Sweet Baby Deezus&lt;br&gt;Swole as Though art&lt;br&gt;In Heaven&lt;br&gt;Thy Will Be Buns&lt;div&gt;Thy Thighs of Steel&lt;br&gt;No Homo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1121" y="3790" width="120" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
