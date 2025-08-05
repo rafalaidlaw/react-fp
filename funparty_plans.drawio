@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-        <mxGraphModel dx="812" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="582" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="Starter Orphan" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
+                <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="x" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
                     <mxGeometry x="40" y="80" width="710" height="120" as="geometry"/>
                 </mxCell>
                 <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:%email%&quot;&gt;Email&lt;/a&gt;" name="Nun Offit" position="Orphan Tamer" location="Office 1" email="me@example.com" placeholders="1" link="https://www.draw.io" id="dNxyNK7c78bLwvsdeMH5-12">
@@ -142,6 +142,9 @@
                 </mxCell>
                 <mxCell id="1dcjqhPWXCqPS0pfsLZp-27" value="BLUE NUN&lt;div&gt;grows old and haggared by tvolcanoe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 drawings&lt;/div&gt;&lt;div&gt;yopung buyeatiful&lt;/div&gt;&lt;div&gt;transuition&lt;/div&gt;&lt;div&gt;hagard old&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="390" y="690" width="120" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-28" target="144">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="1dcjqhPWXCqPS0pfsLZp-28" value="Thom Ba-bombdadil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="70" y="690" width="200" height="80" as="geometry"/>
@@ -656,14 +659,35 @@
                 <mxCell id="134" value="It&#39;s a logical Triplet System. Where 960 quarter worms is equal to one Fully Grown Frog or 20 Shelling. Meaning 48 quarter worms are equal to 1 empty Shelling. Snail in its shelling is worth 2.5 Shellings or one tadpole. Of course if you let the tadpole maturate it turns into a Polywog, doubles its worth to 5 Shellings and the price quadruples for a full maturated Frog.&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;So if you buy these 5 tadpoles from me and wait 30 days you will have 5 Frogs, Quadrupling your profits you see?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;Of course if you wait too long the meat goes bad and they are worthless.&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;So what&#39;ll it be?&lt;br&gt;&lt;/font&gt;&lt;/font&gt;Rafa Bale the Trash Pale can&#39;t figure out why you can&#39;t do the math on this&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1280" y="2900" width="190" height="400" as="geometry"/>
                 </mxCell>
-                <mxCell id="135" value="Don&#39;t step on the Graves,&lt;br&gt;You&#39;ll Summon an Evil Spirit&lt;br&gt;&lt;br&gt;(aka random encounters)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="135" value="Don&#39;t step on the Graves,&lt;br&gt;You&#39;ll Summon an Evil Spirit&lt;br&gt;&lt;br&gt;(aka random encounters)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="820" y="230" width="210" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="136" value="6 Pak&lt;br&gt;You can Find 6pac 4 Sure&lt;br&gt;With a bunch of Jawas&lt;br&gt;At the top of the map.&lt;br&gt;He will train you&lt;br&gt;in Buffosity." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="136" value="6 Pak&lt;br&gt;You can Find 6pac 4 Sure&lt;br&gt;With a bunch of Jawas&lt;br&gt;At the top of the map.&lt;br&gt;He will train you&lt;br&gt;in Buffosity." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="985" y="3840" width="120" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="137" value="Sweet Baby Deezus&lt;br&gt;Swole as Though art&lt;br&gt;In Heaven&lt;br&gt;Thy Will Be Buns&lt;div&gt;Thy Thighs of Steel&lt;br&gt;No Homo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="137" value="Sweet Baby Deezus&lt;br&gt;Swole as Though art&lt;br&gt;In Heaven&lt;br&gt;Thy Will Be Buns&lt;div&gt;Thy Thighs of Steel&lt;br&gt;No Homo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1121" y="3790" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="Simon&lt;br&gt;Son of Simon&lt;div&gt;A Rumplestiltskin&lt;br&gt;Character&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="410" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="We Live on a pebble&lt;br&gt;three skips from the sun" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="30" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="Visit Kremlin&lt;br&gt;Reference tetris&lt;br&gt;Fight tetroids" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1060" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="Doctor will pay you for &quot;resurecting&quot;&lt;br&gt;bodies.&lt;br&gt;The ressurectionist.&lt;br&gt;You must avoide the watchful eye of the watchman from the qatch house" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1055" y="220" width="120" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="Necropolis rail way&lt;div&gt;train transporting the&lt;br&gt;dead in the&lt;br&gt;wake of Msichief&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="Moira, Abigail, Beth,&lt;br&gt;Bernice, Adiline or Adi&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="610" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="The tide goes out when moon is full. You can collect resources like stranded fish" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="590" width="160" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
