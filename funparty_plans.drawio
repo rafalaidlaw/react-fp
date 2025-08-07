@@ -143,7 +143,7 @@
                 <mxCell id="1dcjqhPWXCqPS0pfsLZp-27" value="BLUE NUN&lt;div&gt;grows old and haggared by tvolcanoe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 drawings&lt;/div&gt;&lt;div&gt;yopung buyeatiful&lt;/div&gt;&lt;div&gt;transuition&lt;/div&gt;&lt;div&gt;hagard old&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="390" y="690" width="120" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="145" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="1dcjqhPWXCqPS0pfsLZp-28" target="144">
+                <mxCell id="145" style="edgeStyle=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="1dcjqhPWXCqPS0pfsLZp-28" target="144" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="1dcjqhPWXCqPS0pfsLZp-28" value="Thom Ba-bombdadil" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -683,11 +683,17 @@
                 <mxCell id="142" value="Necropolis rail way&lt;div&gt;train transporting the&lt;br&gt;dead in the&lt;br&gt;wake of Msichief&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="780" y="150" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="143" value="Moira, Abigail, Beth,&lt;br&gt;Bernice, Adiline or Adi&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="143" value="Moira, Abigail, Beth,&lt;br&gt;Bernice, Adiline or Adi&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="610" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="144" value="The tide goes out when moon is full. You can collect resources like stranded fish" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="144" value="The tide goes out when moon is full. You can collect resources like stranded fish" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="220" y="590" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" value="Tides change with the monthly moon. Allowing you to explore and find passage to new areas when the tide recedes." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="4500" width="180" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="Grandfather clock on pause screene" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="4640" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
