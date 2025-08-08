@@ -695,6 +695,21 @@
                 <mxCell id="147" value="Grandfather clock on pause screene" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="490" y="4640" width="120" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="149" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="4680" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="4676" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="Chim-Chiminy!&lt;br&gt;&lt;br&gt;Rotate isometric Chimney&lt;br&gt;While climbing and rubbing&lt;br&gt;smoke sludge.&lt;br&gt;If you miss a spot and take a step you slip.&lt;br&gt;&lt;br&gt;There is a time limit of the fire underneath you which the&lt;div&gt;stoker is stoking to motivate you.&lt;br&gt;Also if you get caught in smoke&lt;br&gt;you will become dazed and could fall alseep.&lt;br&gt;Dont Worry Though the fire beneath you&lt;br&gt;&lt;/div&gt;&lt;div&gt;will sureley wake you up.&lt;br&gt;Push your mop through the sludge above to make a hole for the smoke to pass.&lt;br&gt;If you are fast enough you may be able to&lt;br&gt;escape to freedom from the clutches of your&lt;br&gt;chimney sweep master.&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="827" y="4690" width="310" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="4760" width="80" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="4950" width="120" height="60" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
