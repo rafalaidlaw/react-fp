@@ -713,6 +713,9 @@
                 <mxCell id="154" value="Grandfather clock&lt;br&gt;On Pause menu keeps time." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="290" y="4750" width="200" height="180" as="geometry"/>
                 </mxCell>
+                <mxCell id="155" value="take thee to a nunery" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
